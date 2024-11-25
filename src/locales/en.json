@@ -1,0 +1,478 @@
+{
+  "authorizationPage": {
+    "bannerText": "Helping animals is easier with FreeVet!"
+  },
+  "authOptions": {
+    "register": "Register",
+    "or": "or",
+    "login": "Login"
+  },
+  "registrationPage": {
+    "header": "Create a new account",
+    "addPhoto": "Add photo",
+    "nameLabel": "Name",
+    "placeholderName": "Your name",
+    "nameErrorRequired": "Name is required",
+    "nameErrorMinLength": "At least 2 characters",
+    "phoneLabel": "Phone",
+    "phoneErrorRequired": "Phone is required",
+    "phoneErrorPattern": "Enter a valid phone number",
+    "submitButton": "Send code",
+    "privacyPolicyText": "By clicking Send Code, you agree to our<br></br>Privacy Policy"
+  },
+  "phoneLoginPage": {
+    "header": "Login with phone number",
+    "subtitle": "Please enter the phone number<br></br>you registered with",
+    "lostAccess": "Lost access to your phone?",
+    "accessRestoration": "Contact us to restore access",
+    "submitButton": "Send code"
+  },
+  "burgerMenu": {
+    "editProfile": "Edit profile",
+    "settings": "Settings"
+  },
+  "settings": {
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "language": "Language"
+  },
+  "codeInputBox": {
+    "codeLabel": "Code",
+    "requiredError": "Incorrect code entered! Please try again",
+    "resendText": "Didn't receive the code?",
+    "resendButton": "Resend code",
+    "resendWait": "You can request the code again in {{seconds}} seconds"
+  },
+  "customButton": {
+    "submitText": "Submit",
+    "disabledText": "Unavailable"
+  },
+  "customButtonSubmit": {
+    "submitText": "Submit",
+    "disabledText": "Unavailable"
+  },
+  "customCheckbox": {
+    "checkedTooltip": "Checkbox selected",
+    "uncheckedTooltip": "Checkbox not selected"
+  },
+  "customInput": {
+    "defaultErrorMessage": "Please fill out this field"
+  },
+  "customMessage": {
+    "questionTitle": "Question №",
+    "awaitingResponse": "Awaiting response",
+    "responseSent": "Response sent",
+    "homelessAnimal": "Homeless animal",
+    "completed": "Completed"
+  },
+  "customPetCard": {
+    "statusMessage": "Status:",
+    "weightLetter": "g"
+  },
+  "customStickTitle": {
+    "userText": "User"
+  },
+  "errorMessages": {
+    "fetchError": "Error loading data from server",
+    "formSendError": "Form submission error. Please try again."
+  },
+  "fileUploader": {
+    "uploadLimitError": "You can upload up to {{maxFiles}} files.",
+    "unsupportedFileType": "File {{fileName}} has an unsupported type."
+  },
+  "footer": {
+    "main": "Main",
+    "profile": "Profile",
+    "donate": "Support",
+    "service": "About Service"
+  },
+  "userRolePage": {
+    "header": "Participant Status",
+    "role": "Select your role in the service",
+    "helpWithFreeVet": "Who do you plan to help with FreeVet?",
+    "helpHomelessAnimals": "Homeless animals",
+    "helpPets": "Pets",
+    "tellAboutYourself": "Tell us about yourself",
+    "volunteer": "I am a volunteer",
+    "shelterWorker": "I work at a shelter",
+    "havePet": "I have a pet",
+    "userStick": "User",
+    "or": "or",
+    "wantToJoin": "Do you want to join the Freevet team?",
+    "vetDoctor": "I am a veterinarian",
+    "cynologist": "I am a dog handler",
+    "zooPsychologist": "I am a zoo psychologist",
+    "vetStick": "Specialist",
+    "saveBtn": "Save"
+  },
+  "l_createVetBookPage": {
+    "header": "Veterinary Book",
+    "noBook": "It looks like your pet<br></br>doesn’t have a digital veterinary book yet :(",
+    "petName": "Pet’s Name",
+    "namePlaceholder": "Enter pet’s name",
+    "addPhoto": "Add photo",
+    "petArt": "Pet species",
+    "petWeight": "Approximate pet weight",
+    "petGender": "Pet gender",
+    "vetBook_description": "Veterinary book is a digital version<br></br>of a pet passport with helpful features<br></br>that simplify pet care",
+    "noCreateBtn": "Don’t create",
+    "createBtn": "Create"
+  },
+  "form": {
+    "createAccount": "Create Account",
+    "name": "Name",
+    "phone": "Phone",
+    "namePlaceholder": "Enter your name",
+    "phonePlaceholder": "+",
+    "addPhoto": "Add Photo",
+    "selectRole": "Select Your Role",
+    "helpWithFreeVet": "Help with Free Vet",
+    "helpHomelessAnimals": "Help Homeless Animals",
+    "helpPets": "Help Pets",
+    "tellAboutYourself": "Tell About Yourself",
+    "volunteer": "Volunteer",
+    "shelterWorker": "Shelter Worker",
+    "havePet": "I Have a Pet",
+    "or": "or",
+    "wantToJoin": "Want to Join Us?",
+    "vetDoctor": "Veterinarian",
+    "cynologist": "Cynologist",
+    "zooPsychologist": "Zoo Psychologist",
+    "phoneLogin": "Phone login is not yet implemented"
+  },
+  "formHeader": {
+    "backButtonAlt": "Back",
+    "title": "Create New Account"
+  },
+  "questionPage": {
+    "title": "Ask a Question",
+    "animalSelection": "Select the animal<br />you want to ask about",
+    "newAnimal": "Animals<br />without digital vet books",
+    "addAnimal": "New Animal",
+    "continueButton": "Continue"
+  },
+  "closeQuestionPage": {
+    "header": "Close Question",
+    "confirmation": "Are you sure you want to close the question?",
+    "ratingPrompt": "Please rate the vet’s answers <br /> on a scale from 1 to 10, <br /> where 1 is not helpful at all, <br /> and 10 is excellent! &#42",
+    "feedbackPrompt": "You may leave your feedback",
+    "submitButton": "Close Question"
+  },
+  "descriptionAnimalPage": {
+    "title": "Ask a Question",
+    "addMedia": "Add Photos and/or Videos",
+    "petArt": "Animal Type",
+    "petWeight": "Approximate Animal Weight",
+    "petGender": "Animal Gender",
+    "homelessCheckbox": "The animal is homeless",
+    "continueButton": "Continue",
+    "requiredSymbol": "*",
+    "validationMessages": {
+      "petArt": {
+        "required": "Animal type is required",
+        "minLength": "Minimum 2 characters"
+      },
+      "petWeight": {
+        "required": "Animal weight is required",
+        "minLength": "Minimum 2 characters"
+      },
+      "petGender": {
+        "required": "Animal gender is required",
+        "minLength": "Minimum 2 characters"
+      }
+    }
+  },
+  "sendQuestionPage": {
+    "header": "Ask a Question",
+    "addedMedia": "Added Photos and/or Videos",
+    "noPhotos": "No photos available",
+    "petArt": "Animal Type",
+    "petWeight": "Approximate Animal Weight",
+    "petGender": "Animal Gender",
+    "homeless": "The animal is homeless",
+    "questionPlaceholder": "Enter text",
+    "submitButton": "Submit Question",
+    "requiredField": "This field is required",
+    "writeQuestion": "Write Your Question"
+  },
+  "respondQuestionPage": {
+    "header": "Respond",
+    "subtitle": "The question has been moved to selected questions (Profile)"
+  },
+  "mainHeader": {
+    "title": "Welcome to FreeVet",
+    "description": "An ecosystem service by TailBook providing the ability to ask qualified and experienced veterinarians questions for free and receive answers."
+  },
+  "verificationPage": {
+    "header": "Phone Verification",
+    "enterCode": "Please enter the code received<br></br>on your phone",
+    "confirm": "Confirm"
+  },
+  "vetVerificationPage": {
+    "header": "Verification",
+    "notAuthorized": "It seems that you are not yet authorized<br></br>in the service as a specialist :(",
+    "additionalData": "Please provide additional data<br></br>to authorize you as a specialist",
+    "nameLabel": "Full Name",
+    "nameRequired": "Name is required",
+    "nameMinLength": "Minimum two characters",
+    "documentsLabel": "Please add documents<br></br>confirming your qualifications",
+    "additionalInfoLabel": "You may also provide additional information",
+    "emailLabel": "Email",
+    "emailRequired": "Email is required",
+    "emailPattern": "",
+    "telegramLabel": "Telegram",
+    "telegramRequired": "Telegram is required",
+    "telegramMinLength": "",
+    "specializationLabel": "Specify your specialization",
+    "specializationRequired": "Specialization is required",
+    "specializationMinLength": "Minimum five characters",
+    "petArtLabel": "Indicate animals (cats, dogs, etc.)<br></br>you specialize in helping",
+    "petArtRequired": "This field is required",
+    "petArtMinLength": "Minimum five characters",
+    "dataReliability": "I confirm the accuracy of the provided information",
+    "submitBtn": "Submit",
+    "cancelBtn": "Cancel"
+  },
+  "vetCodePage": {
+    "header": "Verification",
+    "notAuthorized": "It seems that you are not yet authorized<br></br>in the service as a specialist :(",
+    "enterCode": "Please enter the authorization code<br></br>you received",
+    "cancel": "Cancel",
+    "submit": "Submit"
+  },
+  "opportunity": {
+    "title": "Opportunities",
+    "askQuestion": "Ask a Question",
+    "clinicNavigator": "Vet Clinic Navigator",
+    "pharmacyNavigator": "Vet Pharmacy Navigator",
+    "veterinaryBooks": "Veterinary Records",
+    "onlineReception": "Online Consultation",
+    "more": "And much more",
+    "inDevelopment": "in development"
+  },
+  "questionPetList": {
+    "title": "Animals<br></br>with Digital Veterinary Records"
+  },
+  "statistics": {
+    "title": "Help Statistics",
+    "helpedAnimals": "animals have been helped",
+    "helpedThisMonth": "animals helped this month",
+    "donatedAmount": "euros donated towards project development",
+    "thankYou": "Thank you for your support!",
+    "helpedAnimalsTotal": "animals helped by you",
+    "helpedAnimalsMonth": "animals you helped this month",
+    "serviceStatistics": "Service Statistics"
+  },
+  "accordion": {
+    "title": "Additional Description",
+    "breedlabel": "Breed",
+    "breedplaceholder": "Long-haired mixed breed",
+    "colorlabel": "Color",
+    "colorplaceholder": "Ginger",
+    "agelabel": "Date of Birth",
+    "ageplaceholder": "10/01/2023",
+    "features": "Special Features",
+    "featuresplaceholder": "Polydactyly",
+    "chipNumberLabel": "Chip Number",
+    "chipNumberPlaceholder": "11110120202010210202330340435040540",
+    "clinicLabel": "Clinic where chip was installed",
+    "clinicPlaceholder": "MontVet Podgorica",
+    "chipLocationLabel": "Chip Location",
+    "chipLocationPlaceholder": "Withers",
+    "rabiesVaccination": "Rabies Vaccination",
+    "vaccineLabel": "Vaccine*",
+    "vaccinePlaceholder": "Nobivac",
+    "seriesLabel": "Series*",
+    "seriesPlaceholder": "0989",
+    "expiryDateLabel": "Expiry Date*",
+    "expiryDatePlaceholder": "01/01/2025",
+    "clinicVaccineLabel": "Clinic where vaccine was administered*",
+    "clinicVaccinePlaceholder": "MontVet Podgorica",
+    "vaccineDateLabel": "Vaccination Date*",
+    "vaccineDatePlaceholder": "01/10/2024",
+    "validityEndDateLabel": "Validity End Date*",
+    "validityEndDatePlaceholder": "01/10/2025",
+    "weightlabel": "Weight",
+    "weightplaceholder": "Enter weight",
+    "statuslabel": "Status",
+    "statusplaceholder": "Enter status",
+    "identification": "Identification",
+    "otherVaccinations": "Other Vaccinations",
+    "deworming": "Deworming",
+    "dewormingDrugLabel": "Drug*",
+    "dewormingDrugPlaceholder": "Nobivac",
+    "dewormingDateLabel": "Treatment Date*",
+    "dewormingDatePlaceholder": "01/10/2024",
+    "clinicDewormingLabel": "Clinic where treatment was administered (or self-administered)",
+    "clinicDewormingPlaceholder": "MontVet Podgorica",
+    "ectoparasiteTreatment": "Ectoparasite Treatment",
+    "clinicalExamination": "Clinical Examination",
+    "examinationDateLabel": "Date*",
+    "examinationDatePlaceholder": "01/10/2024",
+    "resultLabel": "Result",
+    "resultPlaceholder": "Healthy, certificate issued",
+    "registration": "Registration",
+    "registrationClinicLabel": "Clinic",
+    "registrationClinicPlaceholder": "MontVet Podgorica",
+    "registrationNumberLabel": "Registration Number",
+    "registrationNumberPlaceholder": "1212039483984837583",
+    "files": "Files",
+    "chipDateLabel": "Chip Installation Date",
+    "chipDatePlaceholder": "01/10/2021",
+    "phototitle": "Add Photo",
+    "photofileLabel": "Attach File",
+    "photolimitMessage": "Upload up to {{maxFiles}} files.",
+    "photounsupportedMessage": "File {{fileName}} has an unsupported type."
+  },
+  "inputPlaceholders": {
+    "breed_placeholder": "Long-haired mixed breed",
+    "color_placeholder": "Ginger",
+    "age_placeholder": "Enter age",
+    "weight_placeholder": "Enter weight",
+    "status_placeholder": "Enter status"
+  },
+  "userPage": {
+    "userName": "Andrey Yeremin",
+    "userRoleVolunteer": "I am a Volunteer",
+    "userRolePetOwner": "I have a Pet",
+    "myQuestions": "My Questions",
+    "myQuestions_subtitle": "Questions you asked",
+    "viewQuestion": "View Question",
+    "vetAnswer": "Veterinarian’s Answer",
+    "allQuestions": "all",
+    "animalInfo": "Street cat, etc...",
+    "vetBooks": "Veterinary Records",
+    "allVetBooks": "all",
+    "myAnimalsTitle": "My Animals",
+    "strayAnimalsTitle": "Stray Animals",
+    "actionsButton": "Actions",
+    "selectedQuestions": "Selected Questions",
+    "additionalQuestion": "Additional question",
+    "modalOptions": {
+      "editProfile": "Edit Profile",
+      "preferences": "Preferences"
+    },
+    "logOutButton": "Log Out"
+  },
+  "DonatePage": {
+    "title": "Support the Service",
+    "titleUser": "Support",
+    "financialSupportTitle": "Financial Support",
+    "financialSupportTitleP": "We would be very grateful for your support! Your help allows us to develop and improve FreeVet",
+    "oneTimeSupportTitle": "One-Time Support",
+    "amountPlaceholder": "Donation amount (euro)",
+    "amountHelpText": "You can specify any amount that feels comfortable for you",
+    "payButton": "Pay",
+    "otherSupportOptionsTitle": "Other Support Options",
+    "moreSupportInfo": "You can find more ways to support on the TailBook community website",
+    "learnMoreButton": "Learn More",
+    "supportAnytimeText": "You can support FreeVet at any time in this section",
+    "joinProjectTitle": "Join the Project",
+    "joinProjectDescription": "If you are ready to volunteer and want to join our specialists—veterinarians, biologists, animal rights advocates—contact us or fill out the form on the service page",
+    "joinProjectDescriptionUser": "You can support FreeVet anytime through a dedicated menu section",
+    "fillFormButton": "Fill Out Form",
+    "contactUsButton": "Contact Us",
+    "applyButton": "Apply",
+    "DonateButton": "Support",
+    "applyButtonUser": "Support Later",
+    "footerThankYou": "Thank you for your support!",
+    "refuseSupport": "Decline Support"
+  },
+  "aboutServicePage": {
+    "serviceTitle": "About the Service",
+    "serviceDescription": "FreeVet is a service within the TailBook Ecosystem that provides an opportunity to ask questions about animal health to top veterinarians. A modern, simple, and convenient way to support the health and well-being of both stray and domestic animals.",
+    "benefitsTitle": "Service Benefits",
+    "benefitsTitle2": "for Specialists",
+    "benefit1": "24/7",
+    "benefitP1": "Access to assistance on weekends and holidays",
+    "benefit2": "Help and Support",
+    "benefitP2": "Guides and detailed instructions",
+    "benefit3": "Experience and Expertise",
+    "benefitP3": "Receive answers from experienced veterinarians with extensive knowledge and years of practice",
+    "benefit4": "Unique Opportunity",
+    "benefitP4": "An opportunity to ask top veterinarians questions in a convenient format",
+    "benefit5": "All You Need and More",
+    "benefitP5": "A dynamically evolving service",
+    "statisticsTitle": "FreeVet in Numbers",
+    "stat1": "animals helped",
+    "stat1span": "203",
+    "stat2": "animals helped this month",
+    "stat2span": "75",
+    "stat3": "euros donated this month",
+    "stat3span": "120",
+    "stat4": "euros donated to project development",
+    "stat4span": "550",
+    "infoTitle": "Information",
+    "info1": "User Guide",
+    "info2": "User Agreement",
+    "info3": "Privacy Policy",
+    "linkServ1": "FreeVet Service Page",
+    "linkServ2": "Send Us a Message",
+    "reviewsTitle": "Service Reviews",
+    "learnMoreButton": "Learn More",
+    "tailbookTitle": "FreeVet - a TailBook Ecosystem Service",
+    "tailbookDescription": "TailBook is an ecosystem that simplifies assistance for stray animals and offers useful services for pets"
+  },
+  "P_addMessagePage": {
+    "header": "Add Message",
+    "addPhoto": "Add a photo and/or video",
+    "additionalMessage": "Write an additional message*",
+    "requiredField": "Required field",
+    "sendMessage": "Send Message",
+    "tailbookDescription": "TailBook - an ecosystem that simplifies assistance for stray animals and provides useful services for pets",
+    "uniqueOpp": "Unique Opportunity",
+    "combineProfWithVol": "Effectively combine profession with volunteer work",
+    "convenience": "Convenience",
+    "modernService": "A modern service with a range of features available anywhere in the world",
+    "newClients": "New Clients",
+    "helpAnimal": "Help an animal and gain a loyal client",
+    "processAuto": "Process Automation",
+    "taskSystem": "Get your personal task management system, stay connected when convenient, respond promptly",
+    "userGuide": "User Guide (Specialist)",
+    "userAgree": "User Agreement (Specialist)",
+    "privacyPolicy": "Privacy Policy (Specialist)"
+  },
+  "E_settingsNotificationProfileSpecialistPage": {
+    "notificationsTitle": "Notifications",
+    "userQuestions": "User Questions",
+    "additionalUserQuestions": "Additional User Questions",
+    "serviceNews": "Service News"
+  },
+  "E_settingsNotificationProfileUserPage": {
+    "notificationsTitle": "Notifications",
+    "vetAnswers": "Veterinarian Answers",
+    "serviceNews": "Service News"
+  },
+  "AnswerExpertToQuestion": {
+    "title": "Answer",
+    "ansver": "Please write your answer",
+    "chat": "Write your message*",
+    "notification": "Hello! \n You need to continue monitoring the cat and contact us again if necessary",
+    "addFoto": "Add relevant photos and/or videos if needed",
+    "sendAnswer": "Send Answer"
+  },
+  "vetMenu": {
+    "questions": "Questions",
+    "fromUsers": "from users",
+    "waitingForAnswer": "Awaiting Answer",
+    "appointments": "Appointments",
+    "online": "online",
+    "inDevelopment": "in development",
+    "forSpecialists": "For Specialists",
+    "consultations": "Consultations"
+  },
+  "notFound": {
+    "heading": "Page Not Found",
+    "btnText": "Return to Home"
+  },
+  "modal_options": {
+    "sendMessage": "Reply",
+    "endSession": "Close"
+  },
+  "ModalWindow": {
+    "answer": "Reply",
+    "closeAnswer": "End Question",
+    "bac": "Back"
+  },
+  "Modal_locales": { "addMessage": "Answer Question" }
+}

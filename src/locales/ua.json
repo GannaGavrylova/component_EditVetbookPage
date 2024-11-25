@@ -1,0 +1,479 @@
+{
+  "authorizationPage": {
+    "bannerText": "Допомагати тваринам простіше разом з FreeVet!"
+  },
+  "authOptions": {
+    "register": "Зареєструватися",
+    "or": "або",
+    "login": "Увійти"
+  },
+  "registrationPage": {
+    "header": "Створити новий акаунт",
+    "addPhoto": "Додати фото",
+    "nameLabel": "Ім'я",
+    "placeholderName": "Ваше ім'я",
+    "nameErrorRequired": "Ім'я обов'язкове",
+    "nameErrorMinLength": "Мінімум 2 символи",
+    "phoneLabel": "Телефон",
+    "phoneErrorRequired": "Телефон обов'язковий",
+    "phoneErrorPattern": "Введіть коректний номер телефону",
+    "submitButton": "Відправити код",
+    "privacyPolicyText": "Натискаючи кнопку Відправити код, Ви погоджуєтесь<br></br>з Політикою конфіденційності"
+  },
+  "phoneLoginPage": {
+    "header": "Вхід за номером телефону",
+    "subtitle": "Будь ласка, введіть номер телефону,<br></br>по якому Ви зареєстровані",
+    "lostAccess": "Втратили доступ до телефону?",
+    "accessRestoration": "Зв'яжіться з нами для відновлення доступу",
+    "submitButton": "Відправити код"
+  },
+  "burgerMenu": {
+    "editProfile": "Редагувати профіль",
+    "settings": "Налаштування"
+  },
+  "settings": {
+    "settings": "Налаштування",
+    "notifications": "Сповіщення",
+    "language": "Мова"
+  },
+  "codeInputBox": {
+    "codeLabel": "Код",
+    "requiredError": "Ви ввели неправильний код! Спробуйте ще раз",
+    "resendText": "Не прийшов код?",
+    "resendButton": "Відправити код повторно",
+    "resendWait": "Запросити код повторно можна через {{seconds}} секунд"
+  },
+  "customButton": {
+    "submitText": "Відправити",
+    "disabledText": "Недоступно"
+  },
+  "customButtonSubmit": {
+    "submitText": "Відправити",
+    "disabledText": "Недоступно"
+  },
+  "customCheckbox": {
+    "checkedTooltip": "Чекбокс відмічений",
+    "uncheckedTooltip": "Чекбокс не відмічений"
+  },
+  "customInput": {
+    "defaultErrorMessage": "Будь ласка, заповніть це поле"
+  },
+  "customMessage": {
+    "questionTitle": "Запитання №",
+    "awaitingResponse": "Чекає відповіді",
+    "responseSent": "Відповідь отримана",
+    "homelessAnimal": "Безпритульна тварина",
+    "completed": "Завершено"
+  },
+  "customPetCard": {
+    "statusMessage": "Статус:",
+    "weightLetter": "г"
+  },
+  "customStickTitle": {
+    "userText": "Користувач"
+  },
+  "errorMessages": {
+    "fetchError": "Помилка завантаження даних з сервера",
+    "formSendError": "Помилка при відправці форми. Будь ласка, спробуйте ще раз."
+  },
+  "fileUploader": {
+    "uploadLimitError": "Ви можете завантажити до {{maxFiles}} файлів.",
+    "unsupportedFileType": "Файл {{fileName}} має непідтримуваний тип."
+  },
+  "footer": {
+    "main": "Головна",
+    "profile": "Профіль",
+    "donate": "Підтримати",
+    "service": "Про сервіс"
+  },
+  "userRolePage": {
+    "header": "Статус учасника",
+    "role": "Виберіть Вашу роль у сервісі",
+    "helpWithFreeVet": "Кому Ви плануєте допомагати з FreeVet?",
+    "helpHomelessAnimals": "Безпритульним тваринам",
+    "helpPets": "Домашнім тваринам",
+    "tellAboutYourself": "Розкажіть про себе",
+    "volunteer": "Я - волонтер",
+    "shelterWorker": "Я - співробітник притулку",
+    "havePet": "У мене є домашня тварина",
+    "userStick": "Користувач",
+    "or": "або",
+    "wantToJoin": "Ви хочете стати учасником команди Freevet?",
+    "vetDoctor": "Я - ветеринар",
+    "cynologist": "Я - кінолог",
+    "zooPsychologist": "Я - зоопсихолог",
+    "vetStick": "Спеціаліст",
+    "saveBtn": "Зберегти"
+  },
+  "l_createVetBookPage": {
+    "header": "Ветеринарна книжка",
+    "noBook": "Схоже, що у Вашого улюбленця<br></br>ще немає цифрової ветеринарної книжки :(",
+    "petName": "Ім'я улюбленця",
+    "namePlaceholder": "Введіть ім'я тварини",
+    "addPhoto": "Додайте фото",
+    "petArt": "Вид тварини",
+    "petWeight": "Приблизна вага тварини",
+    "petGender": "Стать тварини",
+    "vetBook_description": "Ветеринарна книжка -<br></br>це цифрова версія паспорта тварини<br></br>з корисними функціями,<br></br>що спрощують процес догляду",
+    "noCreateBtn": "Не створювати",
+    "createBtn": "Створити"
+  },
+  "form": {
+    "createAccount": "Створити акаунт",
+    "name": "Ім'я",
+    "phone": "Телефон",
+    "namePlaceholder": "Введіть ваше ім'я",
+    "phonePlaceholder": "+",
+    "addPhoto": "Додати фото",
+    "selectRole": "Оберіть вашу роль",
+    "helpWithFreeVet": "Допоможіть з безкоштовним ветеринаром",
+    "helpHomelessAnimals": "Допоможіть бездомним тваринам",
+    "helpPets": "Допоможіть домашнім тваринам",
+    "tellAboutYourself": "Розкажіть про себе",
+    "volunteer": "Волонтер",
+    "shelterWorker": "Працівник притулку",
+    "havePet": "У мене є домашній улюбленець",
+    "or": "або",
+    "wantToJoin": "Хочете приєднатися до нас?",
+    "vetDoctor": "Ветеринар",
+    "cynologist": "Кінолог",
+    "zooPsychologist": "Зоопсихолог",
+    "phoneLogin": "Вхід за телефоном ще не реалізовано"
+  },
+  "formHeader": {
+    "backButtonAlt": "Назад",
+    "title": "Створити новий акаунт"
+  },
+  "questionPage": {
+    "title": "Задати питання",
+    "animalSelection": "Оберіть тварину,<br />по якій хочете задати питання",
+    "newAnimal": "Тварини<br />без цифрових ветеринарних книжок",
+    "addAnimal": "Нова тварина",
+    "continueButton": "Продовжити"
+  },
+  "closeQuestionPage": {
+    "header": "Закрити питання",
+    "confirmation": "Ви впевнені, що хочете закрити питання?",
+    "ratingPrompt": "Будь ласка, оцініть відповіді ветеринарного лікаря <br /> за шкалою від 1 до 10, <br /> де 1 - зовсім не сподобалось, <br /> 10 - все супер! &#42",
+    "feedbackPrompt": "Ви можете залишити свій відгук",
+    "submitButton": "Закрити питання"
+  },
+  "descriptionAnimalPage": {
+    "title": "Задати питання",
+    "addMedia": "Додайте фото та (або) відео",
+    "petArt": "Вид тварини",
+    "petWeight": "Приблизна вага тварини",
+    "petGender": "Стать тварини",
+    "homelessCheckbox": "Тварина є бездомною",
+    "continueButton": "Продовжити",
+    "requiredSymbol": "*",
+    "validationMessages": {
+      "petArt": {
+        "required": "Вид тварини обов'язковий",
+        "minLength": "Мінімум 2 символи"
+      },
+      "petWeight": {
+        "required": "Вага тварини обов'язкова",
+        "minLength": "Мінімум 2 символи"
+      },
+      "petGender": {
+        "required": "Стать тварини обов'язкова",
+        "minLength": "Мінімум 2 символи"
+      }
+    }
+  },
+  "sendQuestionPage": {
+    "header": "Задати питання",
+    "addedMedia": "Додані фото та (або) відео",
+    "noPhotos": "Фото відсутнє",
+    "petArt": "Вид тварини",
+    "petWeight": "Приблизна вага тварини",
+    "petGender": "Стать тварини",
+    "homeless": "Тварина бездомна",
+    "questionPlaceholder": "Введіть текст",
+    "submitButton": "Відправити питання",
+    "requiredField": "Поле обов'язкове для заповнення",
+    "writeQuestion": "Напишіть Ваше питання"
+  },
+  "respondQuestionPage": {
+    "header": "Відгукнутись",
+    "subtitle": "Питання переміщено до вибраних питань (Профіль)"
+  },
+  "mainHeader": {
+    "title": "Ласкаво просимо до FreeVet",
+    "description": "Сервіс екосистеми TailBook, що надає можливість безкоштовно ставити питання кваліфікованим досвідченим ветеринарним лікарям і отримувати на них відповіді."
+  },
+  "verificationPage": {
+    "header": "Перевірка телефону",
+    "enterCode": "Будь ласка, введіть отриманий вами<br></br>на вказаний телефон код",
+    "confirm": "Підтвердити"
+  },
+  "vetVerificationPage": {
+    "header": "Верифікація",
+    "notAuthorized": "Схоже, що Ви ще не авторизовані<br></br>в сервісі як спеціаліст :(",
+    "additionalData": "Будь ласка, вкажіть додаткові дані,<br></br>для авторизації Вас як спеціаліста",
+    "nameLabel": "Повне ім'я та прізвище",
+    "nameRequired": "Ім'я обов'язкове",
+    "nameMinLength": "Мінімум два символи",
+    "documentsLabel": "Будь ласка, додайте документи,<br></br>що підтверджують Вашу кваліфікацію",
+    "additionalInfoLabel": "Також Ви можете вказати додаткову інформацію",
+    "emailLabel": "Email",
+    "emailRequired": "Email обов'язковий",
+    "emailPattern": "",
+    "telegramLabel": "Telegram",
+    "telegramRequired": "Telegram обов'язковий",
+    "telegramMinLength": "",
+    "specializationLabel": "Вкажіть Вашу спеціалізацію",
+    "specializationRequired": "Спеціалізація обов'язкова",
+    "specializationMinLength": "Мінімум п'ять символів",
+    "petArtLabel": "Вкажіть тварин (кошки, собаки і т.д.),<br></br>на допомогу яким Ви спеціалізуєтесь",
+    "petArtRequired": "Поле обов'язкове",
+    "petArtMinLength": "Мінімум п'ять символів",
+    "dataReliability": "Достовірність наданих відомостей підтверджую",
+    "submitBtn": "Відправити",
+    "cancelBtn": "Скасувати"
+  },
+  "vetCodePage": {
+    "header": "Верифікація",
+    "notAuthorized": "Схоже, що Ви ще не авторизовані<br></br>в сервісі як спеціаліст :(",
+    "enterCode": "Будь ласка, введіть отриманий Вами<br></br>код авторизації",
+    "cancel": "Скасувати",
+    "submit": "Відправити"
+  },
+  "opportunity": {
+    "title": "Можливості",
+    "askQuestion": "Задати питання",
+    "clinicNavigator": "Навігатор ветклінік",
+    "pharmacyNavigator": "Навігатор ветаптек",
+    "veterinaryBooks": "Ветеринарні книжки",
+    "onlineReception": "Онлайн-прийом",
+    "more": "І багато іншого",
+    "inDevelopment": "в розробці"
+  },
+  "questionPetList": {
+    "title": "Тварини<br></br>з цифровими ветеринарними книжками"
+  },
+  "statistics": {
+    "title": "Статистика допомоги",
+    "helpedAnimals": "тваринам надана допомога",
+    "helpedThisMonth": "тваринам допомогли в цьому місяці",
+    "donatedAmount": "євро пожертвувано на розвиток проекту",
+    "thankYou": "Дякуємо за Вашу підтримку!",
+    "helpedAnimalsTotal": "тваринам допомогу надали Ви",
+    "helpedAnimalsMonth": "тваринам Ви допомогли в цьому місяці",
+    "serviceStatistics": "Статистика послуг"
+  },
+  "accordion": {
+    "title": "Додатковий опис",
+    "breedlabel": "Порода",
+    "breedplaceholder": "Безпородний довгошерстий",
+    "colorlabel": "Окрас",
+    "colorplaceholder": "Рудий",
+    "agelabel": "Дата народження",
+    "ageplaceholder": "01.10.2023",
+    "features": "Особливі ознаки",
+    "featuresplaceholder": "Полідактилія",
+    "chipNumberLabel": "Чіп Номер",
+    "chipNumberPlaceholder": "11110120202010210202330340435040540",
+    "clinicLabel": "Клініка, в якій встановлено чіп",
+    "clinicPlaceholder": "MontVet Podgorica",
+    "chipLocationLabel": "Місце установки чіпа",
+    "chipLocationPlaceholder": "Холка",
+    "rabiesVaccination": "Вакцинація від сказу",
+    "vaccineLabel": "Вакцина*",
+    "vaccinePlaceholder": "Nobivac",
+    "seriesLabel": "Серія*",
+    "seriesPlaceholder": "0989",
+    "expiryDateLabel": "Термін придатності*",
+    "expiryDatePlaceholder": "01.01.2025",
+    "clinicVaccineLabel": "Клініка, в якій поставлена вакцина*",
+    "clinicVaccinePlaceholder": "MontVet Podgorica",
+    "vaccineDateLabel": "Дата вакцинації*",
+    "vaccineDatePlaceholder": "10.01.2024",
+    "validityEndDateLabel": "Термін закінчення дії*",
+    "validityEndDatePlaceholder": "10.01.2025",
+    "weightlabel": "Вага",
+    "weightplaceholder": "Введіть вагу",
+    "statuslabel": "Статус",
+    "statusplaceholder": "Введіть статус",
+    "identification": "Ідентифікація",
+    "otherVaccinations": "Інші вакцинації",
+    "deworming": "Дегельмінтизація",
+    "dewormingDrugLabel": "Препарат*",
+    "dewormingDrugPlaceholder": "Nobivac",
+    "dewormingDateLabel": "Дата обробки*",
+    "dewormingDatePlaceholder": "10.01.2024",
+    "clinicDewormingLabel": "Клініка, в якій проведена обробка (або самостійно)",
+    "clinicDewormingPlaceholder": "MontVet Podgorica",
+    "ectoparasiteTreatment": "Обробка від ектопаразитів",
+    "clinicalExamination": "Клінічний огляд",
+    "examinationDateLabel": "Дата*",
+    "examinationDatePlaceholder": "10.01.2024",
+    "resultLabel": "Результат",
+    "resultPlaceholder": "Здоровий, видано довідку",
+    "registration": "Реєстрація",
+    "registrationClinicLabel": "Клініка",
+    "registrationClinicPlaceholder": "MontVet Podgorica",
+    "registrationNumberLabel": "Реєстраційний номер",
+    "registrationNumberPlaceholder": "1212039483984837583",
+    "files": "Файли",
+    "chipDateLabel": "Дата установки чіпа",
+    "chipDatePlaceholder": "10.01.2021",
+    "phototitle": "Додати фото",
+    "photofileLabel": "Прикріпіть файл",
+    "photolimitMessage": "Завантажте до {{maxFiles}} файлів.",
+    "photounsupportedMessage": "Файл {{fileName}} має непідтримуваний тип."
+  },
+  "inputPlaceholders": {
+    "breed_placeholder": "Безпородний довгошерстий",
+    "color_placeholder": "Рудий",
+    "age_placeholder": "Введіть вік",
+    "weight_placeholder": "Введіть вагу",
+    "status_placeholder": "Введіть статус"
+  },
+  "userPage": {
+    "userName": "Андрій Єремін",
+    "userRoleVolunteer": "Я - волонтер",
+    "userRolePetOwner": "У мене є домашня тварина",
+    "myQuestions": "Мої питання",
+    "myQuestions_subtitle": "Питання, які Ви задавали",
+    "viewQuestion": "Перегляд питання",
+    "vetAnswer": "Відповідь ветеринарного лікаря",
+    "allQuestions": "всі",
+    "animalInfo": "Вуличний кіт і т.д...",
+    "vetBooks": "Ветеринарні книжки",
+    "allVetBooks": "всі",
+    "myAnimalsTitle": "Мої тварини",
+    "strayAnimalsTitle": "Безпритульні тварини",
+    "actionsButton": "Дії",
+    "additionalQuestion": "Додаткове питання",
+    "modalOptions": {
+      "editProfile": "Редагувати профіль",
+      "preferences": "Уподобання"
+    },
+    "logOutButton": "Вийти"
+  },
+  "DonatePage": {
+    "title": "Підтримати сервіс",
+    "titleUser": "Підтримати",
+    "financialSupportTitle": "Фінансова підтримка",
+    "financialSupportTitleP": "Ми будемо дуже вдячні вам за підтримку! Ваша підтримка допомагає нам розвивати та покращувати FreeVet.",
+    "oneTimeSupportTitle": "Одноразова підтримка",
+    "amountPlaceholder": "Сума донату (євро)",
+    "amountHelpText": "Ви можете вказати будь-яку комфортну для вас суму.",
+    "payButton": "Оплатити",
+    "otherSupportOptionsTitle": "Інші варіанти підтримки",
+    "moreSupportInfo": "Більше варіантів підтримки ви можете знайти на сайті спільноти TailBook.",
+    "learnMoreButton": "Ознайомитися",
+    "supportAnytimeText": "Ви в будь-який час можете підтримати FreeVet у цьому розділі.",
+    "joinProjectTitle": "Приєднатися до проєкту",
+    "joinProjectDescription": "Якщо ви готові допомогти волонтером і хочете приєднатися до наших спеціалістів: ветеринарів, біологів, зоозахисників – напишіть нам або заповніть форму на сторінці сервісу.",
+    "joinProjectDescriptionUser": "Ви в будь-який час можете підтримати FreeVet у спеціальному розділі меню.",
+    "fillFormButton": "Заповнити форму",
+    "contactUsButton": "Написати нам",
+    "applyButton": "Подати заявку",
+    "DonateButton": "Підтримати",
+    "applyButtonUser": "Підтримати пізніше",
+    "footerThankYou": "Дякуємо за вашу підтримку!",
+    "refuseSupport": "Відмовитись від підтримки"
+  },
+  "aboutServicePage": {
+    "serviceTitle": "Про сервіс",
+    "serviceDescription": "FreeVet – це сервіс екосистеми TailBook, основна можливість якого задавати питання про здоров'я тварин найкращим ветеринарам. Сучасний, простий та зручний спосіб підтримувати здоров'я та благополуччя як бездомних, так і домашніх тварин.",
+    "benefitsTitle": "Переваги сервісу",
+    "benefitsTitle2": "для спеціалістів",
+    "benefit1": "24/7",
+    "benefitP1": "Можливість отримати допомогу у вихідні та святкові дні.",
+    "benefit2": "Допомога та підтримка",
+    "benefitP2": "Гайди та детальні інструкції.",
+    "benefit3": "Досвід та експертиза",
+    "benefitP3": "Отримуйте відповіді від досвідчених ветеринарних лікарів з серйозними знаннями та багаторічною практикою.",
+    "benefit4": "Унікальна можливість",
+    "benefitP4": "Можливість задати питання найкращим ветеринарам у зручному форматі.",
+    "benefit5": "Все, що потрібно і навіть більше",
+    "benefitP5": "Динамічно розвивається сервіс.",
+    "statisticsTitle": "FreeVet у цифрах",
+    "stat1": "тваринам надано допомогу",
+    "stat1span": "203",
+    "stat2": "тваринам допомогли в цьому місяці",
+    "stat2span": "75",
+    "stat3": "євро пожертвувано в цьому місяці",
+    "stat3span": "120",
+    "stat4": "євро пожертвувано на розвиток проєкту",
+    "stat4span": "550",
+    "infoTitle": "Інформація",
+    "info1": "Посібник користувача",
+    "info2": "Погодження з користувачем",
+    "info3": "Політика конфіденційності",
+    "linkServ1": "Сторінка сервісу FreeVet",
+    "linkServ2": "Написати нам повідомлення",
+    "reviewsTitle": "Відгуки про сервіс",
+    "learnMoreButton": "Ознайомитися",
+    "tailbookTitle": "FreeVet – сервіс екосистеми TailBook",
+    "tailbookDescription": "TailBook – екосистема, яка полегшує допомогу бездомним тваринам і надає корисні сервіси для домашніх улюбленців."
+  },
+  "P_addMessagePage": {
+    "header": "Додати повідомлення",
+    "addPhoto": "Додайте фото та (або) відео",
+    "additionalMessage": "Напишіть додаткове повідомлення*",
+    "requiredField": "Обов'язкове поле",
+    "sendMessage": "Відправити повідомлення",
+    "tailbookDescription": "TailBook - екосистема, що спрощує допомогу бездомним тваринам та надає корисні сервіси для домашніх улюбленців",
+    "uniqueOpp": "Унікальна можливість",
+    "combineProfWithVol": "Ефективно поєднуйте професію з волонтерською діяльністю",
+    "convenience": "Зручність",
+    "modernService": "Сучасний сервіс з безліччю можливостей в будь-якій точці світу",
+    "newClients": "Нові клієнти",
+    "helpAnimal": "Допоможіть тварині і здобудьте лояльного клієнта",
+    "processAuto": "Автоматизація процесів",
+    "taskSystem": "Отримайте свою особисту систему управління завданнями, будьте на зв'язку, коли вам зручно, оперативно реагуйте",
+    "userGuide": "Посібник користувача (спеціаліст)",
+    "userAgree": "Погодження з користувачем (спеціаліст)",
+    "privacyPolicy": "Політика конфіденційності (спеціаліст)"
+  },
+  "E_settingsNotificationProfileSpecialistPage": {
+    "notificationsTitle": "Сповіщення",
+    "userQuestions": "Запитання користувачів",
+    "additionalUserQuestions": "Додаткові запитання \n користувачів",
+    "serviceNews": "Новини сервісу"
+  },
+  "E_settingsNotificationProfileUserPage": {
+    "notificationsTitle": "Сповіщення",
+    "vetAnswers": "Відповіді ветеринарів",
+    "serviceNews": "Новини сервісу"
+  },
+  "AnswerExpertToQuestion": {
+    "title": "Відповідь",
+    "ansver": "Будь ласка, напишіть свою відповідь",
+    "chat": "Напишіть ваше повідомлення*",
+    "notification": "Доброго дня! \n Вам потрібно продовжувати спостерігати за кішкою та при необхідності знову звернутися до нас",
+    "addFoto": "Додайте відповідне фото та/або відео, якщо це необхідно",
+    "sendAnswer": "Відправити відповідь"
+  },
+  "vetMenu": {
+    "questions": "Запитання",
+    "fromUsers": "від користувачів",
+    "waitingForAnswer": "Очікують відповіді",
+    "appointments": "Прийоми",
+    "online": "онлайн",
+    "inDevelopment": "в розробці",
+    "forSpecialists": "Спеціалістам",
+    "consultations": "Консультації"
+  },
+  "notFound": {
+    "heading": "Сторінка не знайдена",
+    "btnText": "Повернутись на головну"
+  },
+  "modal_options": {
+    "sendMessage": "Відповісти",
+    "endSession": "Закрити"
+  },
+  "ModalWindow": {
+    "answer": "Відповісти",
+    "closeAnswer": "Завершити питання",
+    "bac": "Назад"
+  },
+  "Modal_locales": {
+    "addMessage": "Відповісти на запитання"
+  }
+}

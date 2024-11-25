@@ -1,0 +1,236 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Variables --------------------------------------------------- */
+
+:root {
+  --color-main: #2a9d8f;
+  --color-main-light: #2a9d8f5c;
+
+  --color-input-bg-grey: #8e8e8e;
+  --color-input-bg-green: #2a9d8f17;
+
+  --color-text-dark: #242424;
+  --color-text-grey: #595959;
+  --color-text-white: #fafafa;
+
+  --color-orange: #f28a2e;
+
+  --color-line: #d9d9d9;
+
+  --border-radius-plus: 15px;
+  --border-radius-small: 10px;
+  --border-radius-middle: 20px;
+  --border-radius-large: 60px;
+
+  --border-green: 0.5px solid var(--color-main);
+  --border: 0.5px solid var(--color-text-dark);
+  --border-orange: 0.5px solid var(--color-orange);
+
+  --box-shadow: 0 2px 7px 2px #00000040;
+
+  --container-width: 375px;
+  --container-padding-x: 15px;
+
+  --transition-duration: all 0.2s;
+}
+
+/* Global Styles --------------------------------------------------- */
+
+.globalContainer {
+  /* Ширина контейнара 1440px */
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  /* Центрирование контейнера по-центру */
+  margin-inline: auto;
+  /* 15px зона безопасности с обеих сторон */
+  padding-inline: var(--container-padding-x);
+
+  /* background-color: rgb(193, 251, 193); */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: var(--color-dark);
+  background: #ffffff;
+}
+
+body,
+html {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Anek Bangla', sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+a,
+Link,
+button,
+input,
+textarea,
+svg * {
+  transition: var(--transition-duration);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+select,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+    Убираем внешние отступы body и двум другим тегам,
+    у которых есть атрибут class
+   */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+    Убираем внешние отступы вертикали нужным тегам,
+    у которых есть атрибут class
+   */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+    Убираем стандартный маркер маркированному списку,
+    у которого есть атрибут class
+   */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+    Обнуляем вертикальные внешние отступы параграфа,
+    объявляем локальную переменную для внешнего отступа вниз,
+    чтобы избежать взаимодействие с более сложным селектором
+   */
+p {
+  /* --paragraphMarginBottom: 24px; */
+
+  margin-block: 0;
+}
+
+/**
+    Внешний отступ вниз для параграфа без атрибута class,
+    который расположен не последним среди своих соседних элементов
+   */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/**
+    Упрощаем работу с изображениями
+   */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+    Наследуем свойства шрифт для полей ввода
+   */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+  height: 100%;
+}
+
+/**
+    Плавный скролл
+   */
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/**
+    Приводим к единому цвету svg-элементы
+   */
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+/**
+    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+   */
+svg * {
+  transition-property: fill, stroke;
+}
