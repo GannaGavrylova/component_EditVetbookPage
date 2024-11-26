@@ -52,7 +52,6 @@
   box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
   color: var(--color-dark);
-  background: #ffffff;
 }
 
 body,
@@ -60,6 +59,7 @@ html {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.1;
+  background: #ffffff;
 }
 
 h1,

@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next"
 import { languages } from '@shared/const'
 import classes from "./languageSwitcher.module.css"
 
-
 export const LanguageSwitcher = () => {
     const { i18n } = useTranslation()
     const [isOpen, setIsOpen] = useState(false)

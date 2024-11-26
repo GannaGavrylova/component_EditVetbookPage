@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next"
-import classes from "./Index.module.css"
 import logo from "@/assets/TailBook_ecosystem.png"
 import banner from "@/assets/banner.png"
 import { LanguageSwitcher } from '@shared/components/languageSwitcher/LanguageSwitcher'
 import { AuthProvidersList } from './components/AuthProvidersList'
+import classes from "./IndexPage.module.css"
 
 export const IndexPage = () => {
     const { t } = useTranslation()

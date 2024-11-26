@@ -1,0 +1,18 @@
+.formHeader {
+  display: flex;
+  width: 335px;
+  align-items: center;
+  position: relative;
+}
+
+.formHeader_leftArrowBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+}
+
+.formHeader h2 {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0 auto;
+}
