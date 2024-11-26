@@ -41,8 +41,11 @@
   "vite": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
+      "@": [
         "src/*"
+      ],
+      "@shared/": [
+        "src/shared/"
       ]
     }
   }

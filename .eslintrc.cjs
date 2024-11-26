@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -18,5 +18,15 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'import/newline-after-import': ['error', { count: 1 }],
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        caughtErrors: 'all',
+        ignoreRestSiblings: false,
+        reportUsedIgnorePattern: false,
+      },
+    ],
   },
 }

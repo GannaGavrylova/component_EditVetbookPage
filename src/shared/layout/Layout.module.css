@@ -1,0 +1,5 @@
+.box {
+  max-width: 375px;
+  margin-inline: auto;
+  min-height: 100svh;
+}

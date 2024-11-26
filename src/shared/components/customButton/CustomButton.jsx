@@ -15,6 +15,7 @@ export const CustomButton = ({
   const { t } = useTranslation()
   const buttonClasses = disabled ? `${s.button} ${s.disabled}` : s.button
 
+
   return (
     <Link
       to={disabled ? "#" : link}
