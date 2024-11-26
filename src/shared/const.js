@@ -6,7 +6,7 @@ import flagRU from '@/assets/flags/ru.svg'
 import flagUA from '@/assets/flags/ua.svg'
 import flagFR from '@/assets/flags/fr.svg'
 
-export const API_BASE_URL = 'https://freevet.me'
+export const API_BASE_URL = import.meta.env.API_BASE_URL || 'https://freevet.me'
 
 export const languages = [
   { code: 'en', name: 'English', flag: flagEN },

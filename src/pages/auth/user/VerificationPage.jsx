@@ -5,7 +5,7 @@ import clases from "./VerificationPage.module.css"
 import { useState } from "react"
 import { useVerificationCode } from '@shared/hooks/useVerificationCode'
 import { ErrorMessage } from '@shared/components/errorMessage/ErrorMessasge'
-import { FormHeader } from '../components/formHeader/FormHeader'
+import { FormHeader } from '../../../shared/components/formHeader/FormHeader'
 import { CodeInputBox } from '../components/codeInputBox/CodeInputBox'
 
 export const VerificationPage = () => {

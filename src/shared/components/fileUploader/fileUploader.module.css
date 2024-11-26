@@ -1,0 +1,66 @@
+.uploaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 auto;
+  margin: 8px;
+}
+
+.previewContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uploadBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--color-text-white);
+  box-shadow: 0 2px 7px 2px #00000040;
+  cursor: pointer;
+}
+
+.addBox {
+  font-size: 24px;
+  color: #009688;
+}
+
+.previewBox {
+  position: relative;
+}
+
+.previewImage {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.removeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background: var(--color-orange);
+  border: 0.5px solid var(--color-text-white);
+  border-radius: 50%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.previewBox:hover .removeButton {
+  visibility: visible;
+  z-index: 1;
+}
+
+.emptyBox {
+  border: 2px dashed var(--color-line); /* Пунктирная рамка  более подходящая с макета  */
+  border-radius: 20px; /* Закругление углов  */
+  background-color: #f9f9f9; /* Светлый фон для пустых квадратов */
+}
