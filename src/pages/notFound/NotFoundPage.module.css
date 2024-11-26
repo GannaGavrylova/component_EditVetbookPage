@@ -1,0 +1,26 @@
+.section {
+  padding-block: 137px;
+  max-width: 375px;
+  margin-inline: auto;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentBox {
+  flex-grow: 1;
+}
+.imgBox {
+  width: max-content;
+  margin-inline: auto;
+  padding-bottom: 22px;
+}
+
+.heading {
+  width: 80%;
+  margin-inline: auto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+}

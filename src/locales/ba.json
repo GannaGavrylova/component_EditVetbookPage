@@ -1,0 +1,484 @@
+{
+  "authorizationPage": {
+    "bannerText": "Pomoć životinjama je lakša zajedno sa FreeVet!"
+  },
+  "authOptions": {
+    "register": "Registrujte se",
+    "or": "ili",
+    "login": "Prijavite se"
+  },
+  "registrationPage": {
+    "header": "Kreirajte novi nalog",
+    "addPhoto": "Dodajte fotografiju",
+    "nameLabel": "Ime",
+    "placeholderName": "Vaše ime",
+    "nameErrorRequired": "Ime je obavezno",
+    "nameErrorMinLength": "Minimalno 2 karaktera",
+    "phoneLabel": "Telefon",
+    "phoneErrorRequired": "Telefon je obavezan",
+    "phoneErrorPattern": "Unesite validan broj telefona",
+    "submitButton": "Pošaljite kod",
+    "privacyPolicyText": "Klikom na dugme Pošaljite kod, slažete se<br></br>s Politikom privatnosti"
+  },
+  "phoneLoginPage": {
+    "header": "Prijava putem broja telefona",
+    "subtitle": "Molimo unesite broj telefona,<br></br>pod kojim ste registrovani",
+    "lostAccess": "Izgubili ste pristup telefonu?",
+    "accessRestoration": "Kontaktirajte nas za obnavljanje pristupa",
+    "submitButton": "Pošaljite kod"
+  },
+  "burgerMenu": {
+    "editProfile": "Izmenite profil",
+    "settings": "Podešavanja"
+  },
+  "settings": {
+    "settings": "Podešavanja",
+    "notifications": "Obaveštenja",
+    "language": "Jezik"
+  },
+  "codeInputBox": {
+    "codeLabel": "Kod",
+    "requiredError": "Uneli ste pogrešan kod! Pokušajte ponovo",
+    "resendText": "Niste primili kod?",
+    "resendButton": "Pošaljite kod ponovo",
+    "resendWait": "Ponovno traženje koda može biti izvršeno za {{seconds}} sekundi"
+  },
+  "customButton": {
+    "submitText": "Pošaljite",
+    "disabledText": "Nedostupno"
+  },
+  "customButtonSubmit": {
+    "submitText": "Pošaljite",
+    "disabledText": "Nedostupno"
+  },
+  "customCheckbox": {
+    "checkedTooltip": "Čekboks je označen",
+    "uncheckedTooltip": "Čekboks nije označen"
+  },
+  "customInput": {
+    "defaultErrorMessage": "Molimo popunite ovo polje"
+  },
+  "customMessage": {
+    "questionTitle": "Pitanje br.",
+    "awaitingResponse": "Čeka odgovor",
+    "responseSent": "Odgovor je poslat",
+    "homelessAnimal": "Beskućna životinja",
+    "completed": "Završeno"
+  },
+  "customPetCard": {
+    "statusMessage": "Status:",
+    "weightLetter": "g"
+  },
+  "customStickTitle": {
+    "userText": "Korisnik"
+  },
+  "errorMessages": {
+    "fetchError": "Greška prilikom učitavanja podataka sa servera",
+    "formSendError": "Greška prilikom slanja forme. Molimo pokušajte ponovo."
+  },
+  "fileUploader": {
+    "uploadLimitError": "Možete da otpremite do {{maxFiles}} fajlova.",
+    "unsupportedFileType": "Fajl {{fileName}} ima nepodržan tip."
+  },
+  "footer": {
+    "main": "Početna",
+    "profile": "Profil",
+    "donate": "Podrška",
+    "service": "O servisu"
+  },
+  "userRolePage": {
+    "header": "Status učesnika",
+    "role": "Izaberite vašu ulogu u servisu",
+    "helpWithFreeVet": "Komu planirate pomoći sa FreeVet?",
+    "helpHomelessAnimals": "Beskućnim životinjama",
+    "helpPets": "Kućnim ljubimcima",
+    "tellAboutYourself": "Ispričajte nešto o sebi",
+    "volunteer": "Ja sam volonter",
+    "shelterWorker": "Ja sam radnik azila",
+    "havePet": "Imam kućnog ljubimca",
+    "userStick": "Korisnik",
+    "or": "ili",
+    "wantToJoin": "Želite li postati član tima Freevet?",
+    "vetDoctor": "Ja sam veterinar",
+    "cynologist": "Ja sam kinolog",
+    "zooPsychologist": "Ja sam zoo psiholog",
+    "vetStick": "Specijalista",
+    "saveBtn": "Spasi"
+  },
+  "l_createVetBookPage": {
+    "header": "Veterinarska knjižica",
+    "noBook": "Izgleda da vaš ljubimac<br></br>još nema digitalnu veterinarsku knjižicu :(",
+    "petName": "Ime ljubimca",
+    "namePlaceholder": "Unesite ime ljubimca",
+    "addPhoto": "Dodajte fotografiju",
+    "petArt": "Vrsta ljubimca",
+    "petWeight": "Procena težine ljubimca",
+    "petGender": "Pol ljubimca",
+    "vetBook_description": "Veterinarska knjižica -<br></br>digitalna verzija pasoša ljubimca<br></br>s korisnim funkcijama,<br></br>koje pojednostavljuju proces brige",
+    "noCreateBtn": "Ne kreirati",
+    "createBtn": "Kreiraj"
+  },
+
+  "form": {
+    "createAccount": "Kreirajte račun",
+    "name": "Ime",
+    "phone": "Telefon",
+    "namePlaceholder": "Unesite vaše ime",
+    "phonePlaceholder": "+",
+    "addPhoto": "Dodajte fotografiju",
+    "selectRole": "Izaberite vašu ulogu",
+    "helpWithFreeVet": "Pomozite sa besplatnim veterinarom",
+    "helpHomelessAnimals": "Pomozite beskućnim životinjama",
+    "helpPets": "Pomozite kućnim ljubimcima",
+    "tellAboutYourself": "Reci nešto o sebi",
+    "volunteer": "Volonter",
+    "shelterWorker": "Radnik azila",
+    "havePet": "Imam ljubimca",
+    "or": "ili",
+    "wantToJoin": "Želite da se pridružite?",
+    "vetDoctor": "Veterinar",
+    "cynologist": "Kinolog",
+    "zooPsychologist": "Zoo psiholog",
+    "phoneLogin": "Prijava putem telefona još nije implementirana"
+  },
+  "formHeader": {
+    "backButtonAlt": "Nazad",
+    "title": "Kreirajte novi račun"
+  },
+  "questionPage": {
+    "title": "Postaviti pitanje",
+    "animalSelection": "Izaberite životinju,<br />na koju želite postaviti pitanje",
+    "newAnimal": "Životinje<br />bez digitalnih veterinarskih knjižica",
+    "addAnimal": "Nova životinja",
+    "continueButton": "Nastaviti"
+  },
+  "closeQuestionPage": {
+    "header": "Zatvoriti pitanje",
+    "confirmation": "Jeste li sigurni da želite zatvoriti pitanje?",
+    "ratingPrompt": "Molimo ocijenite odgovore veterinarskog ljekara <br /> na skali od 1 do 10, <br /> gdje je 1 - potpuno nije svidjelo, <br /> 10 - sve je super! &#42",
+    "feedbackPrompt": "Možete ostaviti svoj komentar",
+    "submitButton": "Zatvoriti pitanje"
+  },
+  "descriptionAnimalPage": {
+    "title": "Postaviti pitanje",
+    "addMedia": "Dodajte fotografije i (ili) video",
+    "petArt": "Vrsta životinje",
+    "petWeight": "Približna težina životinje",
+    "petGender": "Pol životinje",
+    "homelessCheckbox": "Životinja je beskućnik",
+    "continueButton": "Nastaviti",
+    "requiredSymbol": "*",
+    "validationMessages": {
+      "petArt": {
+        "required": "Vrsta životinje je obavezna",
+        "minLength": "Minimalno 2 karaktera"
+      },
+      "petWeight": {
+        "required": "Težina životinje je obavezna",
+        "minLength": "Minimalno 2 karaktera"
+      },
+      "petGender": {
+        "required": "Pol životinje je obavezan",
+        "minLength": "Minimalno 2 karaktera"
+      }
+    }
+  },
+  "sendQuestionPage": {
+    "header": "Postaviti pitanje",
+    "addedMedia": "Dodane fotografije i (ili) video",
+    "noPhotos": "Nema fotografija",
+    "petArt": "Vrsta životinje",
+    "petWeight": "Približna težina životinje",
+    "petGender": "Pol životinje",
+    "homeless": "Životinja je beskućnik",
+    "questionPlaceholder": "Unesite tekst",
+    "submitButton": "Pošaljite pitanje",
+    "requiredField": "Polje je obavezno za popunjavanje",
+    "writeQuestion": "Napišite vaše pitanje"
+  },
+  "respondQuestionPage": {
+    "header": "Odgovoriti",
+    "subtitle": "Pitanje je premješteno u izabrana pitanja (Profil)"
+  },
+  "mainHeader": {
+    "title": "Dobrodošli u FreeVet",
+    "description": "Servis ekosistema TailBook, koji omogućava besplatno postavljanje pitanja kvalifikovanim iskusnim veterinarima i dobijanje odgovora na njih."
+  },
+  "verificationPage": {
+    "header": "Verifikacija telefona",
+    "enterCode": "Molimo unesite kod koji ste primili<br></br>na navedeni telefon",
+    "confirm": "Potvrdi"
+  },
+
+  "vetVerificationPage": {
+    "header": "Verifikacija",
+    "notAuthorized": "Čini se da još niste autorizovani<br></br>u servisu kao stručnjak :(",
+    "additionalData": "Molimo vas da unesete dodatne podatke,<br></br>za vašu autorizaciju kao stručnjaka",
+    "nameLabel": "Ime i Prezime u potpunosti",
+    "nameRequired": "Ime je obavezno",
+    "nameMinLength": "Minimalno dva karaktera",
+    "documentsLabel": "Molimo dodajte dokumente,<br></br>koji potvrđuju vašu kvalifikaciju",
+    "additionalInfoLabel": "Takođe možete uneti dodatne informacije",
+    "emailLabel": "Email",
+    "emailRequired": "Email je obavezan",
+    "emailPattern": "",
+    "telegramLabel": "Telegram",
+    "telegramRequired": "Telegram je obavezan",
+    "telegramMinLength": "",
+    "specializationLabel": "Unesite vašu specijalizaciju",
+    "specializationRequired": "Specijalizacija je obavezna",
+    "specializationMinLength": "Minimalno pet karaktera",
+    "petArtLabel": "Unesite životinje (mačke, psi itd.),<br></br>na pomoći kojima se specijalizujete",
+    "petArtRequired": "Polje je obavezno",
+    "petArtMinLength": "Minimalno pet karaktera",
+    "dataReliability": "Potvrđujem tačnost predstavljenih podataka",
+    "submitBtn": "Pošaljite",
+    "cancelBtn": "Otkaži"
+  },
+  "vetCodePage": {
+    "header": "Verifikacija",
+    "notAuthorized": "Čini se da još niste autorizovani<br></br>u servisu kao stručnjak :(",
+    "enterCode": "Molimo unesite dobijeni<br></br>autorizacioni kod",
+    "cancel": "Otkaži",
+    "submit": "Pošaljite"
+  },
+  "opportunity": {
+    "title": "Mogućnosti",
+    "askQuestion": "Postaviti pitanje",
+    "clinicNavigator": "Navigacija veterinarskih klinika",
+    "pharmacyNavigator": "Navigacija veterinarskih apoteka",
+    "veterinaryBooks": "Veterinarske knjižice",
+    "onlineReception": "Online prijem",
+    "more": "I mnogo više",
+    "inDevelopment": "u razvoju"
+  },
+  "questionPetList": {
+    "title": "Životinje<br></br>sa digitalnim veterinarskim knjižicama"
+  },
+  "statistics": {
+    "title": "Statistika pomoći",
+    "helpedAnimals": "životinjama je pružena pomoć",
+    "helpedThisMonth": "životinjama je pomognuto ovog meseca",
+    "donatedAmount": "evra donirano za razvoj projekta",
+    "thankYou": "Hvala na vašoj podršci!",
+    "helpedAnimalsTotal": "životinjama kojoj ste pomogli",
+    "helpedAnimalsMonth": "životinjama ste pomogli ovog meseca",
+    "serviceStatistics": "Statistika usluga"
+  },
+
+  "accordion": {
+    "title": "Dodatni opis",
+    "breedlabel": "Pasmina",
+    "breedplaceholder": "Mješovita dugodlaka",
+    "colorlabel": "Boja",
+    "colorplaceholder": "Crvena",
+    "agelabel": "Datum rođenja",
+    "ageplaceholder": "01.10.2023",
+    "features": "Posebne karakteristike",
+    "featuresplaceholder": "Polidaktilija",
+    "chipNumberLabel": "Broj mikročipa",
+    "chipNumberPlaceholder": "11110120202010210202330340435040540",
+    "clinicLabel": "Klinika u kojoj je postavljen mikročip",
+    "clinicPlaceholder": "MontVet Podgorica",
+    "chipLocationLabel": "Mesto postavljanja mikročipa",
+    "chipLocationPlaceholder": "Vrat",
+    "rabiesVaccination": "Vakcinacija protiv bjesnoće",
+    "vaccineLabel": "Vakcina*",
+    "vaccinePlaceholder": "Nobivac",
+    "seriesLabel": "Serija*",
+    "seriesPlaceholder": "0989",
+    "expiryDateLabel": "Datum isteka*",
+    "expiryDatePlaceholder": "01.01.2025",
+    "clinicVaccineLabel": "Klinika u kojoj je postavljena vakcina*",
+    "clinicVaccinePlaceholder": "MontVet Podgorica",
+    "vaccineDateLabel": "Datum vakcinacije*",
+    "vaccineDatePlaceholder": "10.01.2024",
+    "validityEndDateLabel": "Datum isteka važenja*",
+    "validityEndDatePlaceholder": "10.01.2025",
+    "weightlabel": "Težina",
+    "weightplaceholder": "Unesite težinu",
+    "statuslabel": "Status",
+    "statusplaceholder": "Unesite status",
+    "identification": "Identifikacija",
+    "otherVaccinations": "Ostale vakcinacije",
+    "deworming": "Deglomentizacija",
+    "dewormingDrugLabel": "Lijek*",
+    "dewormingDrugPlaceholder": "Nobivac",
+    "dewormingDateLabel": "Datum obrade*",
+    "dewormingDatePlaceholder": "10.01.2024",
+    "clinicDewormingLabel": "Klinika u kojoj je obavljena obrada (ili samostalno)",
+    "clinicDewormingPlaceholder": "MontVet Podgorica",
+    "ectoparasiteTreatment": "Tretman od ektoparazita",
+    "clinicalExamination": "Klinički pregled",
+    "examinationDateLabel": "Datum*",
+    "examinationDatePlaceholder": "10.01.2024",
+    "resultLabel": "Rezultat",
+    "resultPlaceholder": "Zdrav, izdata potvrda",
+    "registration": "Registracija",
+    "registrationClinicLabel": "Klinika",
+    "registrationClinicPlaceholder": "MontVet Podgorica",
+    "registrationNumberLabel": "Registracijski broj",
+    "registrationNumberPlaceholder": "1212039483984837583",
+    "files": "Datoteke",
+    "chipDateLabel": "Datum postavljanja mikročipa",
+    "chipDatePlaceholder": "10.01.2021",
+    "phototitle": "Dodajte foto",
+    "photofileLabel": "Priključite datoteku",
+    "photolimitMessage": "Otpremite do {{maxFiles}} datoteka.",
+    "photounsupportedMessage": "Datoteka {{fileName}} ima nepodržani tip."
+  },
+  "inputPlaceholders": {
+    "breed_placeholder": "Mješovita dugodlaka",
+    "color_placeholder": "Crvena",
+    "age_placeholder": "Unesite starost",
+    "weight_placeholder": "Unesite težinu",
+    "status_placeholder": "Unesite status"
+  },
+  "userPage": {
+    "userName": "Andrej Jeremin",
+    "userRoleVolunteer": "Ja sam volonter",
+    "userRolePetOwner": "Imam kućnog ljubimca",
+    "myQuestions": "Moja pitanja",
+    "myQuestions_subtitle": "Pitanja koja ste postavili",
+    "viewQuestion": "Pogledajte pitanje",
+    "vetAnswer": "Odgovor veterinarskog ljekara",
+    "allQuestions": "svi",
+    "animalInfo": "Ulični mačak itd...",
+    "vetBooks": "Veterinarske knjižice",
+    "allVetBooks": "svi",
+    "myAnimalsTitle": "Moje životinje",
+    "strayAnimalsTitle": "Lutalice",
+    "actionsButton": "Akcije",
+    "additionalQuestion": "Dodatno pitanje",
+    "modalOptions": {
+      "editProfile": "Uredi profil",
+      "preferences": "Preferencije"
+    },
+    "logOutButton": "Odjaviti se"
+  },
+
+  "DonatePage": {
+    "title": "Podržite uslugu",
+    "titleUser": "Podržite",
+    "financialSupportTitle": "Finansijska podrška",
+    "financialSupportTitleP": "Bićemo veoma zahvalni na vašoj podršci! Vaša podrška nam pomaže da razvijamo i unapređujemo FreeVet",
+    "oneTimeSupportTitle": "Jednokratna podrška",
+    "amountPlaceholder": "Iznos donacije (evra)",
+    "amountHelpText": "Možete navesti bilo koji iznos koji vam je udoban",
+    "payButton": "Platiti",
+    "otherSupportOptionsTitle": "Druge opcije podrške",
+    "moreSupportInfo": "Više opcija podrške možete pronaći na web stranici zajednice TailBook",
+    "learnMoreButton": "Saznajte više",
+    "supportAnytimeText": "Možete podržati FreeVet u bilo kojem trenutku na ovoj stranici",
+    "joinProjectTitle": "Pridružite se projektu",
+    "joinProjectDescription": "Ako ste spremni pomoći kao volonter i želite se pridružiti našim stručnjacima: veterinarima, biolozima, zaštitnicima životinja – napišite nam ili ispunite obrazac na stranici usluge",
+    "joinProjectDescriptionUser": "Možete podržati FreeVet u bilo kojem trenutku u posebnom odjeljku menija",
+    "fillFormButton": "Ispunite obrazac",
+    "contactUsButton": "Pišite nam",
+    "applyButton": "Podnesite zahtjev",
+    "DonateButton": "Podržite",
+    "applyButtonUser": "Podržite kasnije",
+    "footerThankYou": "Hvala na vašoj podršci!",
+    "refuseSupport": "Odustati od podrške"
+  },
+  "aboutServicePage": {
+    "serviceTitle": "O usluzi",
+    "serviceDescription": "FreeVet je usluga TailBook ekosistema, čija je glavna funkcija postavljati pitanja najboljim veterinarima o zdravlju životinja. Moderni, jednostavni i praktični način za održavanje zdravlja i blagostanja kako beskućnih, tako i kućnih životinja.",
+    "benefitsTitle": "Prednosti usluge",
+    "benefitsTitle2": "za stručnjake",
+    "benefit1": "24/7",
+    "benefitP1": "Mogućnost dobivanja pomoći tokom vikenda i praznika",
+    "benefit2": "Pomoć i podrška",
+    "benefitP2": "Vodiči i detaljna uputstva",
+    "benefit3": "Iskustvo i stručnost",
+    "benefitP3": "Dobijte odgovore od iskusnih veterinarskih doktora sa ozbiljnim znanjem i dugogodišnjim iskustvom",
+    "benefit4": "Jedinstvena prilika",
+    "benefitP4": "Mogućnost postavljanja pitanja najboljim veterinarima u pogodnom formatu",
+    "benefit5": "Sve što vam treba i više",
+    "benefitP5": "Dinamika razvijajuće usluge",
+    "statisticsTitle": "FreeVet u brojkama",
+    "stat1": "životinjama je pružena pomoć",
+    "stat1span": "203",
+    "stat2": "životinjama je pomognuto ovog meseca",
+    "stat2span": "75",
+    "stat3": "evra je donirano ovog meseca",
+    "stat3span": "120",
+    "stat4": "evra je donirano za razvoj projekta",
+    "stat4span": "550",
+    "infoTitle": "Informacije",
+    "info1": "Korisnički priručnik",
+    "info2": "Korisnički ugovor",
+    "info3": "Politika privatnosti",
+    "linkServ1": "Stranica usluge FreeVet",
+    "linkServ2": "Pošaljite nam poruku",
+    "reviewsTitle": "Recenzije o usluzi",
+    "learnMoreButton": "Saznajte više",
+    "tailbookTitle": "FreeVet - usluga ekosistema TailBook",
+    "tailbookDescription": "TailBook je ekosistem koji pojednostavljuje pomoć beskućnim životinjama i pruža korisne usluge za kućne ljubimce"
+  },
+
+  "P_addMessagePage": {
+    "header": "Dodajte poruku",
+    "addPhoto": "Dodajte foto i (ili) video",
+    "additionalMessage": "Napišite dodatnu poruku*",
+    "requiredField": "Obavezno polje",
+    "sendMessage": "Pošaljite poruku",
+    "tailbookDescription": "TailBook je ekosistem koji pojednostavljuje pomoć beskućnim životinjama i pruža korisne usluge za kućne ljubimce",
+    "uniqueOpp": "Jedinstvena prilika",
+    "combineProfWithVol": "Efikasno spojite profesiju sa volonterskim radom",
+    "convenience": "Pogodnost",
+    "modernService": "Savremena usluga sa mnogo mogućnosti bilo gdje u svijetu",
+    "newClients": "Novi klijenti",
+    "helpAnimal": "Pomozite životinji i steknite lojalnog klijenta",
+    "processAuto": "Automatizacija procesa",
+    "taskSystem": "Dobijte svoj lični sistem za upravljanje zadacima, budite u kontaktu kada vam odgovara, brzo reagujte",
+    "userGuide": "Korisnički vodič (stručnjak)",
+    "userAgree": "Korisnički ugovor (stručnjak)",
+    "privacyPolicy": "Politika privatnosti (stručnjak)"
+  },
+  "E_settingsNotificationProfileSpecialistPage": {
+    "notificationsTitle": "Obavještenja",
+    "userQuestions": "Pitanja korisnika",
+    "additionalUserQuestions": "Dodatna pitanja \n korisnika",
+    "serviceNews": "Novosti usluge"
+  },
+  "E_settingsNotificationProfileUserPage": {
+    "notificationsTitle": "Obavještenja",
+    "vetAnswers": "Odgovori veterinarâ",
+    "serviceNews": "Novosti usluge"
+  },
+  "AnswerExpertToQuestion": {
+    "title": "Odgovor",
+    "ansver": "Molimo napišite svoj odgovor",
+    "chat": "Napišite svoju poruku*",
+    "notification": "Pozdrav! \n Trebali biste nastaviti pratiti mačku i, ako bude potrebno, ponovo nas kontaktirati",
+    "addFoto": "Dodajte odgovarajući foto i/ili video, ako je potrebno",
+    "sendAnswer": "Pošaljite odgovor"
+  },
+  "vetMenu": {
+    "questions": "Pitanja",
+    "fromUsers": "od korisnika",
+    "waitingForAnswer": "Čekaju na odgovor",
+    "appointments": "Pregledi",
+    "online": "online",
+    "inDevelopment": "u razvoju",
+    "forSpecialists": "Za stručnjake",
+    "consultations": "Konsultacije"
+  },
+  "notFound": {
+    "heading": "Stranica nije pronađena",
+    "btnText": "Vrati se na početnu"
+  },
+  "modal_options": {
+    "sendMessage": "Odgovori",
+    "endSession": "Zatvori"
+  },
+  "ModalWindow": {
+    "answer": "Odgovori",
+    "closeAnswer": "Završi pitanje",
+    "bac": "Nazad"
+  },
+  "Modal_locales": {
+    "addMessage": "Odgovori na pitanje"
+  }
+}

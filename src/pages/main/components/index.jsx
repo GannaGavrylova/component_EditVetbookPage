@@ -1,0 +1,5 @@
+export { MainHeader } from './mainHeader/MainHeader'
+export { Opportunity } from './opportunity/Opportunity'
+export { Statistics } from './statistics/Statistics'
+export { TailBook } from './tailBook/TailBook'
+export { MainFooter } from './mainFooter/MainFooter'
