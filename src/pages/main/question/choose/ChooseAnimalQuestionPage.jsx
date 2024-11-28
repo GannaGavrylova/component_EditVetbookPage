@@ -1,64 +1,99 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import s from "./ChooseAnimalQuestionPage.module.css"
 import close from "@/assets/close.svg"
-import classes from "./ChooseAnimalQuestionPage.module.css"
-import Loader from "@shared/components/loader/Loader"
-import { FormHeader } from '@shared/components/formHeader/FormHeader'
-import { getUserQuestions } from '@shared/utils/apiService'
-import { Modal } from '@shared/components/modal/Modal'
-import { Question } from '@shared/components/question/Question'
+import plus from "@/assets/plus.svg"
+import { FormHeader, LineHeader } from '@shared/components'
+import { CustomButton } from '@shared/components/customButton/CustomButton'
+// import QuestionPetList from "../../../components/questionPetList/QuestionPetList"
 
 export const ChooseAnimalQuestionPage = () => {
   const { t } = useTranslation()
-  const userId = localStorage.getItem("userId")
-  const [question, setQuestion] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [isOpen, setIsOpen] = useState(false)
+  const [selectedAnimalType, setSelectedAnimalType] = useState(null)
+  const [isNewAnimalSelected, setIsNewAnimalSelected] = useState(false)
+  // eslint-disable-next-line  
+  const [resetSelection, setResetSelection] = useState(false)
 
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      const response = await getUserQuestions(userId)
-      const len = response.length - 1
-      setQuestion(response[len])
-      setIsLoading(false)
-    }
-    fetchQuestions()
-  }, [userId])
+  // const handleSelectImage = (type) => {
+  //   setIsNewAnimalSelected(false)
+  //   setSelectedAnimalType(type)
+  //   setResetSelection(false)
+  // }
 
-  if (isLoading) {
-    return <Loader />
+  const handleNewAnimalClick = () => {
+    setSelectedAnimalType(null)
+    setIsNewAnimalSelected(!isNewAnimalSelected)
+    setResetSelection(true)
   }
+
+  const animalBasedLink =
+    selectedAnimalType === "digital"
+      ? "/main/question/description-animal/send"
+      : isNewAnimalSelected
+        ? "/main/ask-question/new-animal/add-question-photo"
+        : "#"
+
   return (
-    <div className={classes.q_confirmationPage}>
-      <div className={classes.q_confirmationPage_header}>
+    <div className={s.q_choiceAnimalPage}>
+      <div className={s.q_choiceAnimalPage_header}>
         <FormHeader
-          path="/main/question/choice"
+          path="/main"
           fontSize={36}
           titleKey={t("questionPage.title")}
         />
-        <Link to="/main/question/choice">
-          <img className={classes.closeBtn} src={close} alt="close" />
+        <Link to={"/main"}>
+          <img className={s.closeBtn} src={close} alt="close" />
         </Link>
       </div>
-      <div className={classes.question_box}>
-        <Question {...question} openModal={() => setIsOpen(true)} />
-        {isOpen ? (
-          <Modal
-            linksArr={[
-              {
-                link: `/profile/message/add/${question.id}`,
-                text: t("Modal_locales.addMessage"),
-              },
-              {
-                link: `/main/question/close?questionId=${question.id}`,
-                text: t("closeQuestionPage.header"),
-              },
-            ]}
-            onClose={() => setIsOpen(false)}
-          />
-        ) : null}
+      <LineHeader middle={"var(--color-line)"} />
+      {/* <h5 dangerouslySetInnerHTML={{ __html: t("questionPage.animalSelection") }} /> */}
+      {/* <QuestionPetList
+        categories={[
+          {
+            title: t("userPage.myAnimalsTitle"),
+            images: [
+              { src: "https://placehold.co/400", type: "digital" },
+              { src: "https://placehold.co/400", type: "digital" },
+              { src: "https://placehold.co/400", type: "digital" },
+              { src: "https://placehold.co/400", type: "digital" },
+            ],
+            svgcolor: "green",
+          },
+          {
+            title: t("userPage.strayAnimalsTitle"),
+            images: [
+              { src: "https://placehold.co/400", type: "non-digital" },
+              { src: "https://placehold.co/400", type: "non-digital" },
+              { src: "https://placehold.co/400", type: "non-digital" },
+            ],
+            svgcolor: "orange",
+          },
+        ]}
+        onSelectImage={handleSelectImage}
+        resetSelection={resetSelection}
+      /> */}
+      <div className={s.q_choiceAnimalPage_newAnimal_box}>
+        <h5 dangerouslySetInnerHTML={{ __html: t("questionPage.newAnimal") }} />
+        <div className={s.q_choiceAnimalPage_newAnimal_boxBtnTitle}>
+          <div
+            className={s.q_choiceAnimalPage_newAnimal_btnPlus}
+            onClick={handleNewAnimalClick}
+          >
+            <img src={plus} alt="plus" />
+            <div
+              className={`${s.circle} ${isNewAnimalSelected ? s.selected : ""}`}
+            />
+          </div>
+          <h5>{t("questionPage.addAnimal")}</h5>
+        </div>
       </div>
+      <CustomButton
+        text={t("questionPage.continueButton")}
+        padding={"16px 120.5px"}
+        link={animalBasedLink}
+        disabled={!selectedAnimalType && !isNewAnimalSelected}
+      />
     </div>
   )
 }

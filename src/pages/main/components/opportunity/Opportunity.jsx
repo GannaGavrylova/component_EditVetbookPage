@@ -16,7 +16,7 @@ export const Opportunity = () => {
       <h2>{t("opportunity.title")}</h2>
       <div className={classes.featureCards}>
         <div className={classes.cat}>
-          <Link to="/main/question/choice">
+          <Link to="/main/ask-question">
             <div className={classes.heroImageBox}>
               <img
                 src={OppAdd}

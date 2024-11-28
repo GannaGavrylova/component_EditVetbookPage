@@ -1,13 +1,12 @@
 import axios from 'axios'
 import { API_BASE_URL } from '../const'
 
-// Создаем экземпляр axios с базовыми настройками для формата Json
-// const apiClientJson = axios.create({
-//   baseURL: API_BASE_URL,
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-// })
+const apiClientJson = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
 
 const apiClientMultipart = axios.create({
   baseURL: API_BASE_URL,
@@ -31,6 +30,29 @@ export const getUserQuestions = async (id) => {
 export const addQuestion = async (data) => {
   try {
     const response = await apiClientMultipart.post('/api/questions/add/', data)
+    return response.data
+  } catch (error) {
+    console.error('Ошибка отправки вопроса:', error)
+    throw error
+  }
+}
+
+export const updateQuestion = async (data) => {
+  try {
+    const response = await apiClientJson.post('/api/questions/update/', data)
+    return response.data
+  } catch (error) {
+    console.error('Ошибка отправки вопроса:', error)
+    throw error
+  }
+}
+
+export const closeMessage = async (id, data) => {
+  try {
+    const response = await apiClientMultipart.post(
+      `/api/questions/${id}/complete/`,
+      data
+    )
     return response.data
   } catch (error) {
     console.error('Ошибка отправки вопроса:', error)

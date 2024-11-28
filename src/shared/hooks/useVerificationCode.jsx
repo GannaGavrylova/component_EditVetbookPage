@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useForm } from "react-hook-form"
 import axios from "axios"
 import { API_BASE_URL } from '../const'
-import useInputRefs from './useInputRefs'
+import { useInputRefs } from './useInputRefs'
 
 export const useVerificationCode = (pnone, initialSeconds = 90) => {
   const { handleSubmit, control, setValue, watch, reset } = useForm()

@@ -162,7 +162,7 @@
     "title": "Ask a Question",
     "addMedia": "Add Photos and/or Videos",
     "petArt": "Animal Type",
-    "petWeight": "Approximate Animal Weight",
+    "petWeight": "Approximate Animal Weight, kg",
     "petGender": "Animal Gender",
     "homelessCheckbox": "The animal is homeless",
     "continueButton": "Continue",

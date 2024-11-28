@@ -24,7 +24,7 @@ export const DescriptionAnimalPage = () => {
     mode: "onChange",
   })
 
-  const onUpload = useCallback( //TODO: @KonstantinChuper rewrite with cutom hook
+  const onUpload = useCallback( //TODO: @KonstantinChuper rewrite with cutom hook and change in whole App
     (uploadedFiles) => {
       const newFiles = uploadedFiles.filter(
         (file) => !files.some((f) => f.name === file.name)
@@ -75,7 +75,7 @@ export const DescriptionAnimalPage = () => {
       const response = await addQuestion(formData, isCheckboxChecked)
       console.log("Ответ сервера:", response)
 
-      navigate("/main/question/description-animal/send", {
+      navigate("/main/ask-question/question-text", {
         state: {
           userId: userId,
           petArt: data.petArt,
@@ -105,7 +105,7 @@ export const DescriptionAnimalPage = () => {
     <div className={classes.q_descriptionAnimalPage}>
       <div className={classes.q_descriptionAnimalPage_header}>
         <FormHeader
-          path="/main/question/choice"
+          path="//main/ask-question"
           fontSize={36}
           titleKey={t("questionPage.title")}
         />
@@ -151,6 +151,7 @@ export const DescriptionAnimalPage = () => {
         )}
         <label style={{ alignSelf: "start" }}>
           {t("descriptionAnimalPage.petWeight")}{" "}
+          {/* TODO: add kg to all translations, fix validation */}
           <span style={{ color: "#2A9D8F" }}>
             {t("descriptionAnimalPage.requiredSymbol")}
           </span>
@@ -175,6 +176,7 @@ export const DescriptionAnimalPage = () => {
           <p style={{ color: "red" }}>{errors.petWeight.message}</p>
         )}
         <label style={{ alignSelf: "start" }}>
+          {/* TODO: rewrite with select */}
           {t("descriptionAnimalPage.petGender")}{" "}
           <span style={{ color: "#2A9D8F" }}>
             {t("descriptionAnimalPage.requiredSymbol")}
