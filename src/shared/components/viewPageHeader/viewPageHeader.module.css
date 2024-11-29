@@ -1,0 +1,18 @@
+.viewPageHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  width: 100%;
+}
+
+.viewPageHeader_closeBtn {
+  background: transparent;
+  border: none;
+}
+
+.viewPageHeader h2 {
+  font-weight: 300;
+  font-size: 22px;
+  color: var(--color-text-dark);
+  margin: 0 auto;
+}

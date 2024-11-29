@@ -1,6 +1,6 @@
 
 import { useEffect } from "react"
-import { MainHeader, Opportunity, Statistics, TailBook, MainFooter } from '../../components/'
+import { MainHeader, Opportunity, Statistics, TailBook, MainFooter } from '../../components'
 
 export const MainPage = () => {
 
@@ -9,7 +9,8 @@ export const MainPage = () => {
     const userId = params.get("user_id")
 
     if (userId) {
-      localStorage.setItem("userId", userId) //TODO: @KonstantinChuper: refactor in hook to handle with tokens
+      localStorage.setItem("userId", userId)
+      //TODO: @KonstantinChuper: refactor in hook to handle with tokens
     }
   }, [])
 

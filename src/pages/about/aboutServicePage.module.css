@@ -1,0 +1,369 @@
+/* Основные стили контейнера */
+.container {
+   max-width: 375px;
+  width: 100%;
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 10px 5px 135px;
+  
+}
+
+/* Секция логотипа */
+.logoSection {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+h2 {
+  color: var(--color-main);
+    grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  font-size: 24px;
+   text-align: end;
+    margin-top: -35px;
+}
+
+/* Описание сервиса */
+.serviceDescription {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.highlightFreeVet {
+  color: var(--color-main);
+  font-weight: bold;
+}
+
+.highlightTailBook {
+  color: var(--color-orange);
+  /* font-weight: bold; */
+}
+
+/* Преимущества сервиса */
+.benefitsSection {
+  margin: 20px 0;
+}
+
+/* Сетка для преимуществ сервиса */
+.benefitsGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  max-width: 100%;
+}
+.headerGrid {
+  color: var(--color-main);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.parGrid {
+  font-size: 10px;
+  color: var( --color-text-dark);
+}
+
+.headerContainer {
+  width: 148px;
+  /* height: 82px; */
+ text-align: end;
+  align-self: end;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+/* Заголовки */
+h4, h5 {
+  color: var(--color-main);
+}
+h4 {
+  font-size: 24px;
+}
+
+/* Индивидуальные стили для каждого элемента преимуществ */
+.benefit1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-radius-small);
+  justify-self: center;
+  text-align: left;
+}
+
+.benefit2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-radius-small);
+  padding: 10px;
+    width: 100px;
+  height: 100px;
+  justify-self: center;
+  text-align: left;
+}
+
+.benefit3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-radius-small);
+  padding: 10px;
+  height: 125px;
+  width: 122px;
+  margin-left: 46px;
+  text-align: left;
+}
+
+.benefit4 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 125px;
+  height: 122px;
+  padding: 10px;
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-radius-small);
+margin-left: 43px;
+  text-align: left;
+}
+.benefit5 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-radius-small);
+  padding: 4px;
+    width: 100px;
+  height: 100px;
+  padding-top: 8px;
+  justify-self: center;
+  text-align: left;
+}
+.benefit5 .headerGrid {
+font-size: 13px;
+}
+
+
+/* Индивидуальные стили для каждого элемента статистики */
+.stat1 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  border: 1px solid var(--color-main);
+  border-radius: 50%;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.2s;
+  margin-left: 5px;
+  margin-top: 38px;
+}
+.stat1 span {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--color-main);
+  line-height: 0.9;
+}
+.stat1 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-main);
+  line-height: 0.8;
+  margin-bottom: 20px;
+}
+
+.stat2 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 5;
+  border: 1px solid var(--color-main);
+  border-radius: 50%;
+  padding: 17px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 110px;
+  height: 110px;
+  transition: transform 0.2s;
+}
+.stat2 span {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-main);
+  line-height: 1.1;
+}
+.stat2 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--color-main);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat3 {
+  grid-column: 3 / 4;
+  grid-row: 5 / 5;
+  border: 1px solid var(--color-main);
+  border-radius: 50%;
+  padding: 7px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 110px;
+  height: 110px;
+  transition: transform 0.2s;
+}
+.stat3 span {
+  font-size: 40px;
+  color: var(--color-main);
+  line-height: 1.1;
+}
+.stat3 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  color: var(--color-main);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.stat4 {
+  grid-column: 2 / 3;
+  grid-row: 5 / 5;
+  border: 1px solid var(--color-main);
+  border-radius: 50%;
+  padding: 7px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 110px;
+  height: 110px;
+  transition: transform 0.2s;
+}
+.stat4 span {
+  font-size: 40px;
+  color: var(--color-main);
+  line-height: 1.1;
+}
+.stat4 p {
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  color: var(--color-main);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+
+
+/* Информация */
+.infoSection {
+  margin: 20px 0;
+}
+
+/* Сетка для информации */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  max-width: 100%;
+  justify-items:center;
+  margin-top: 18px;
+  padding: 0px 20px;
+}
+.infoHeader {
+ color: var(--color-main);
+}
+.infoGridPar {
+gap: 12px;
+width: 100px;
+height: 100px;
+border: 1px solid var(--color-main);
+border-radius: var(--border-radius-small);
+color: var(--color-main);
+padding: 25px 5px;
+font-size: 12px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.infoGridPar:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info, .info2 {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 29px;
+  padding: 0px 20px;
+  gap: 8px;
+}
+.info2 {
+  flex-direction: column;
+ align-items: center;
+}
+
+.linkCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.linkCard:hover {
+    transform: translateY(-5px); 
+}
+.linkCard p {
+  font-size: 15px;
+  color: var(--color-main);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.tailbookSection {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tailbookSection h3 {
+  font-size: 20px;
+  color: var(--color-main);
+}
+.tailbookSection p {
+  text-align: center;
+  padding: 0px 27px;
+  font-size: 17px;
+line-height: 1.2;
+}
+/* Секция для иконок социальных сетей */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.socialIcons a {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.socialIcons a:hover {
+  transform: translateY(-5px); 
+}

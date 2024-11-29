@@ -1,0 +1,15 @@
+.p_viewQuestionPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 10px 110px;
+  margin: 0 auto;
+  max-width: 375px;
+
+  /* border: 2px solid green; вспомогательная рамка для просмотра границ страницы*/
+}
+
+.page_heading {
+  font-size: 30px;
+  font-weight: 100;
+}

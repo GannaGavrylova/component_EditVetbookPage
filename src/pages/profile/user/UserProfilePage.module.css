@@ -1,0 +1,94 @@
+.p_userPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  padding: 30px 10px 110px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение содержимого */
+  align-items: center; /* Центрируем содержимое */
+}
+
+.name_Container {
+  display: flex;
+  align-items: start; /* Центрируем содержимое */
+  gap: 20px;
+  margin-bottom: 21px;
+}
+
+.avatar {
+  width: 160px; /* Ширина для изображения */
+  height: 160px; /* Высота для изображения */
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover; /* Обрезаем изображение с сохранением пропорций */
+}
+.question_box_header h6,
+.question_box2 h6 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.question_box_header p,
+.question_box2 p {
+  color: var(--color-orange);
+  font-size: 14px;
+  font-weight: 200;
+}
+.question_box_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.question_box_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column; /* Вертикальное выравнивание для имени и роли */
+  align-items: flex-start; /* Выравнивание по левому краю */
+  max-width: 127px;
+  gap: 21px;
+}
+
+.userName {
+  font-size: 30px; /* Размер шрифта для имени */
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+
+.userRole {
+  background-color: var(--color-main); /* Цвет фона для овала */
+  border-radius: 20px; /* Радиус для овалов */
+  padding: 5px; /* Отступы для текста внутри овалов */
+  color: #ffffff; /* Цвет шрифта для роли */
+  font-size: 10px; /* Размер шрифта для роли */
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.closeBtn {
+  align-self: center;
+  padding: 10px 16px;
+  width: 160px;
+  border: 1px solid black;
+  border-radius: 60px;
+  background-color: #fafafa;
+  color: var(--color-text-dark);
+  cursor: pointer;
+}
+.closeBtn h5 {
+  font-size: 14px;
+  color: var(--color-text-dark);
+}

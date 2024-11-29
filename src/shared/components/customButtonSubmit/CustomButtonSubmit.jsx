@@ -1,26 +1,27 @@
-import { Link } from "react-router-dom"
-import s from "./customButton.module.css"
+import s from "./customButtonSubmit.module.css"
 import { useTranslation } from "react-i18next"
 
-export const CustomButton = ({
+export const CustomButtonSubmit = ({
   backgroundColor,
   border,
   padding,
   text,
-  link = "/",
+  type = "submit",
   color,
   disabled,
   customStyle = {},
+  onClick,
 }) => {
   const { t } = useTranslation()
   const buttonClasses = disabled ? `${s.button} ${s.disabled}` : s.button
 
-
   return (
-    <Link
-      to={disabled ? "#" : link}
+    <button
+      type={type}
+      onClick={onClick}
       className={buttonClasses}
-      style={{
+      disabled={disabled}
+      style={{ //TODO: refactor to class
         backgroundColor: disabled
           ? backgroundColor
           : backgroundColor || "var(--color-main)",
@@ -28,12 +29,13 @@ export const CustomButton = ({
         padding: padding || "16px 51px",
         color: color || "var(--color-text-white)",
         lineHeight: 1.1,
-        pointerEvents: disabled ? "none" : "auto",
+        cursor: disabled ? "not-allowed" : "pointer",
         ...customStyle,
       }}
     >
       {text || t("customButton.submitText")}
-    </Link>
+    </button>
   )
-}
+};
+
 

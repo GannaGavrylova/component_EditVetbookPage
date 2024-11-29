@@ -17,13 +17,13 @@ export const MainFooter = () => {
       { icon: PlusWhite, label: t("footer.main"), path: "/vet/main" },
       { icon: Profile, label: t("footer.profile"), path: "/vet/profile" },
       { icon: Vectore, label: t("footer.donate"), path: "/vet/donate" },
-      { icon: Paw, label: t("footer.service"), path: "/vet/service" },
+      { icon: Paw, label: t("footer.service"), path: "/vet/about" },
     ]
     : [
       { icon: PlusWhite, label: t("footer.main"), path: "/main" },
       { icon: Profile, label: t("footer.profile"), path: "/profile" },
       { icon: Vectore, label: t("footer.donate"), path: "/donate" },
-      { icon: Paw, label: t("footer.service"), path: "/service" },
+      { icon: Paw, label: t("footer.service"), path: "/about" },
     ]
 
   const handleLinkClick = (path) => {
