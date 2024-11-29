@@ -174,4 +174,3 @@ export const AboutServicePage = () => {
   )
 }
 
-export default AboutServicePage
