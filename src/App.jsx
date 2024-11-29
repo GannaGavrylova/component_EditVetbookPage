@@ -10,6 +10,8 @@ import { SendTextQuestionPage } from './pages/main/question/send/SendTextQuestio
 import { ViewSavedQuestion } from './pages/main/question/view/ViewSavedQuestion'
 import { CloseQuestionPage } from './pages/main/question/close/CloseQuestionPage'
 import { DonatePage } from './pages/donate/user/DonatePage'
+import { ViewQuestionPage } from './pages/profile/my-questions/view/ViewQuestionPage'
+import { AllQuestionsPage } from './pages/profile/my-questions/allQuestions/AllQuestionsPage'
 
 
 export const App = () => {
@@ -27,6 +29,11 @@ export const App = () => {
           <Route path="/main/ask-question/question-text" element={<SendTextQuestionPage />} />
           <Route path="/main/ask-question/new-animal/question-saved" element={<ViewSavedQuestion />} />
 
+          <Route path="/profile/my-questions" element={<AllQuestionsPage />} />
+          <Route
+            path="/profile/my-questions/:questionId"
+            element={<ViewQuestionPage />}
+          />
           <Route path="/profile/my-questions/:questionId/close-question" element={<CloseQuestionPage />} />
 
           <Route path="/donate" element={<DonatePage />} />

@@ -1,34 +1,43 @@
 .loader {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.paw {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.loaderCircle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+@-webkit-keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
   }
-  
-  .paw {
-    position: absolute;
-    width: 40px; 
-    height: 40px;
-    z-index: 1;
+  50% {
+    opacity: 0.3;
   }
-  
-  .loaderCircle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    z-index: 0;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes fade {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.3;
-    }
+  50% {
+    opacity: 0.3;
   }
-  
+}

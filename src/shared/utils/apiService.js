@@ -59,3 +59,25 @@ export const closeMessage = async (id, data) => {
     throw error
   }
 }
+
+export const getQuestionById = async (id) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/api/questions/${id}`)
+    return response.data
+  } catch (error) {
+    console.error('Ошибка получения копросов пользователя:', error)
+    throw error
+  }
+}
+
+export const getMessages = async (id) => {
+  try {
+    const response = await axios.get(
+      `${API_BASE_URL}/api/questions/${id}/messages/`
+    )
+    return response.data
+  } catch (error) {
+    console.error('Ошибка получения копросов пользователя:', error)
+    throw error
+  }
+}

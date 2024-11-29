@@ -1,0 +1,26 @@
+.p_allQuestionsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    margin: 15px 0 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.questions_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

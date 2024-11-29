@@ -6,7 +6,6 @@ import classes from "./ViewSavedQuestion.module.css"
 import Loader from "@shared/components/loader/Loader"
 import { FormHeader } from '@shared/components/formHeader/FormHeader'
 import { getUserQuestions } from '@shared/utils/apiService'
-import { Modal } from '@shared/components/modal/Modal'
 import { Question } from '@shared/components/question/Question'
 
 export const ViewSavedQuestion = () => {
@@ -14,7 +13,6 @@ export const ViewSavedQuestion = () => {
   const userId = localStorage.getItem("userId")
   const [question, setQuestion] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const fetchQuestions = async () => {
@@ -42,22 +40,7 @@ export const ViewSavedQuestion = () => {
         </Link>
       </div>
       <div className={classes.question_box}>
-        <Question {...question} openModal={() => setIsOpen(true)} />
-        {isOpen ? (
-          <Modal
-            linksArr={[
-              {
-                link: `/profile/message/add/${question.id}`,
-                text: t("Modal_locales.addMessage"), //TODO: handle user or spec 
-              },
-              {
-                link: `/profile/my-questions/${question.id}/close-question`,
-                text: t("closeQuestionPage.header"),
-              },
-            ]}
-            onClose={() => setIsOpen(false)}
-          />
-        ) : null}
+        <Question {...question} />
       </div>
     </div>
   )

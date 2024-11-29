@@ -1,6 +1,8 @@
-import { Icon } from "./Icon";
-import s from "./Question.module.css";
-import { useTranslation } from "react-i18next";
+import { useModal } from '@shared/hooks/useModal'
+import { Icon } from "./Icon"
+import s from "./Question.module.css"
+import { useTranslation } from "react-i18next"
+import { Modal } from '@shared/components/modal/Modal'
 
 export const Question = ({
   id = 55,
@@ -22,11 +24,12 @@ export const Question = ({
   pet_weight = "1 кг 200 г",
   pet_gender = "Самец",
   is_homeless = true,
-  status = "IN_PROGRESS", //\\ "COMPLETED"
+  status = "IN_PROGRESS", // "IN_PROGRESS" | "COMPLETED"
   question = "Уличный кот, за которым я присматриваю, начал кашлять несколько раз в день в последние три недели. Кашель сухой, без выделений. Он активный, аппетит нормальный, но меня беспокоит частота кашля. Корм не меняли. Также прикладываю видео, где видно и слышно, как кот кашляет.",
-  openModal = () => {},
+  // openModal = () => { },
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const { isModalVisible, openModal, closeModal } = useModal()
 
   return (
     <section className={s.question_section}>
@@ -73,6 +76,21 @@ export const Question = ({
         ) : null}
       </div>
       <p className={s.question_text}>{question}</p>
+      {isModalVisible ? (
+        <Modal
+          linksArr={[
+            {
+              link: `/profile/message/add/${id}`,
+              text: t("Modal_locales.addMessage"),
+            },
+            {
+              link: `/profile/my-questions/${id}/close-question`,
+              text: t("closeQuestionPage.header"),
+            },
+          ]}
+          onClose={closeModal}
+        />
+      ) : null}
     </section>
-  );
-};
+  )
+}
