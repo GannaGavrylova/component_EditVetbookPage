@@ -24,7 +24,7 @@ export const AllQuestionsPage = () => {
           fontSize={36}
           titleKey={t("userPage.myQuestions")}
         />
-        <Link to={"/profile"}>
+        <Link to={"/main"}>
           <img src={close} alt="close" />
         </Link>
       </div>

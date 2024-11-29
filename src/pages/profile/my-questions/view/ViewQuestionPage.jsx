@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import { useQuery } from '@tanstack/react-query'
 import classes from "./ViewQuestionPage.module.css"
 import Loader from '@shared/components/loader/Loader'
@@ -24,7 +24,7 @@ export const ViewQuestionPage = () => {
         fontSize={36}
         titleKey={t("userPage.viewQuestion")}
       />
-      {question ? <Question {...question} /> : null}
+      {question ? <Question {...question} /> : <Navigate to={'/not-found'} />}
       {errorQuestion ? <ErrorMessage message={errorQuestion} /> : null}
       {messages?.map((answer, i) => (
         <SpecialistAnswer key={i} text={answer.text} isUser={answer.is_user} />

@@ -23,7 +23,7 @@ export const getUserQuestions = async (id) => {
     )
     return response.data
   } catch (error) {
-    console.error('Ошибка получения копросов пользователя:', error)
+    console.error('Error fetching user questions:', error)
     throw error
   }
 }
@@ -33,7 +33,7 @@ export const addQuestion = async (data) => {
     const response = await apiClientMultipart.post('/api/questions/add/', data)
     return response.data
   } catch (error) {
-    console.error('Ошибка отправки вопроса:', error)
+    console.error('Error sending question:', error)
     throw error
   }
 }
@@ -43,7 +43,7 @@ export const updateQuestion = async (data) => {
     const response = await apiClientJson.post('/api/questions/update/', data)
     return response.data
   } catch (error) {
-    console.error('Ошибка отправки вопроса:', error)
+    console.error('Error updating question:', error)
     throw error
   }
 }
@@ -56,7 +56,7 @@ export const closeMessage = async (id, data) => {
     )
     return response.data
   } catch (error) {
-    console.error('Ошибка отправки вопроса:', error)
+    console.error('Error closing question:', error)
     throw error
   }
 }
@@ -66,7 +66,7 @@ export const getQuestionById = async (id) => {
     const response = await axios.get(`${API_BASE_URL}/api/questions/${id}`)
     return response.data
   } catch (error) {
-    console.error('Ошибка получения копросов пользователя:', error)
+    console.error('Error fetching question by ID:', error)
     throw error
   }
 }
@@ -78,7 +78,17 @@ export const getMessages = async (id) => {
     )
     return response.data
   } catch (error) {
-    console.error('Ошибка получения копросов пользователя:', error)
+    console.error('Error fetching messages:', error)
+    throw error
+  }
+}
+
+export const getUser = async (id) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/api/users/profile/${id}`)
+    return response.data
+  } catch (error) {
+    console.error('Ошибка получения вопросов пользователя:', error)
     throw error
   }
 }
