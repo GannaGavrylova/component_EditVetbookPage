@@ -1,32 +1,20 @@
-import classes from "./ViewQuestionPage.module.css"
 import { useTranslation } from "react-i18next"
-import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { useQuery } from '@tanstack/react-query'
+import classes from "./ViewQuestionPage.module.css"
 import Loader from '@shared/components/loader/Loader'
-import { SpecialistAnswer, ViewPageHeader } from '@shared/components'
+import { ErrorMessage, SpecialistAnswer, ViewPageHeader } from '@shared/components'
 import { Question } from '@shared/components/question/Question'
 import { getMessages, getQuestionById } from '@shared/utils/apiService'
 
 export const ViewQuestionPage = () => {
   const { t } = useTranslation()
   const { questionId } = useParams()
-  const userId = localStorage.getItem("userId")
-  const [isLoading, setIsLoading] = useState(true)
-  const [question, setQuestion] = useState([])
-  const [answers, setAnswers] = useState(null)
 
-  useEffect(() => {
-    const fetchQuestionAndAnswers = async () => {
-      const response = await getQuestionById(questionId)
-      setQuestion(response)
-      const messages = await getMessages(questionId)
-      setAnswers(messages)
-      setIsLoading(false)
-    }
-    fetchQuestionAndAnswers()
-  }, [userId, questionId])
+  const { data: question, isLoadingQuestion, errorQuestion } = useQuery({ queryKey: ['question'], queryFn: () => getQuestionById(questionId) })
+  const { data: messages, isLoadingMessages, errorMessages } = useQuery({ queryKey: ['messages'], queryFn: () => getMessages(questionId) })
 
-  if (isLoading) {
+  if (isLoadingQuestion || isLoadingMessages) {
     return <Loader />
   }
   return (
@@ -36,10 +24,12 @@ export const ViewQuestionPage = () => {
         fontSize={36}
         titleKey={t("userPage.viewQuestion")}
       />
-      <Question {...question} />
-      {answers.map((answer, i) => (
+      {question ? <Question {...question} /> : null}
+      {errorQuestion ? <ErrorMessage message={errorQuestion} /> : null}
+      {messages?.map((answer, i) => (
         <SpecialistAnswer key={i} text={answer.text} isUser={answer.is_user} />
       ))}
+      {errorMessages ? <ErrorMessage message={errorMessages} /> : null}
     </div>
   )
 }

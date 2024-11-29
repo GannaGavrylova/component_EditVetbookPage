@@ -6,6 +6,8 @@ import close from "@/assets/close.svg"
 
 import { updateQuestion } from '@shared/utils/apiService'
 import { CustomButtonSubmit, LineHeader, FormHeader, CustomTextarea } from '@/shared/components'
+import { useMutation } from '@tanstack/react-query'
+import { ErrorMessage } from '@shared/components'
 
 export const SendTextQuestionPage = () => {
   const { t } = useTranslation()
@@ -22,20 +24,22 @@ export const SendTextQuestionPage = () => {
     mode: "onChange",
   })
 
+  const { mutate, isLoading, error } = useMutation({
+    mutationFn: async (data) => await updateQuestion(data),
+    onSuccess: () => navigate(`/profile/my-questions/`),
+    //TODO: response must include question Id to navigate to this question /profile/my-questions/questionId
+    onError: (error) => {
+      console.error("Error submitting form:", error)
+    },
+  })
+
   const onSubmit = async (data) => {
     try {
       const dataToSend = {
-        user_id: userId || 3,
+        user_id: userId,
         questions: data.question,
       }
-
-      // Отправляем запрос
-      const response = await updateQuestion(dataToSend)
-      console.log("Ответ от сервера:", response)
-      //TODO: response must include question Id
-
-      // Переход на страницу подтверждения с передачей данных через state
-      navigate("/main/ask-question/new-animal/question-saved")
+      mutate(dataToSend)
     } catch (error) {
       console.error("Ошибка при отправке вопроса", error)
     }
@@ -112,12 +116,12 @@ export const SendTextQuestionPage = () => {
         {errors.question && (
           <p className={classes.errorText}>{errors.question.message}</p>
         )}
-
+        {error ? <ErrorMessage message={error} /> : null}
         <div className={classes.btnBox}>
           <CustomButtonSubmit
             text={t("sendQuestionPage.submitButton")}
             padding={"16px 99.5px"}
-            disabled={!isValid}
+            disabled={!isValid || isLoading}
           />
         </div>
       </form>

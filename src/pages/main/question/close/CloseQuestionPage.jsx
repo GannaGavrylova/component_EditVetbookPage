@@ -3,21 +3,27 @@ import { useNavigate, useParams } from "react-router-dom"
 import classes from "./CloseQuestionPage.module.css"
 import { useTranslation } from "react-i18next"
 import { closeMessage } from '@shared/utils/apiService'
-import { CustomCheckbox, CustomTextarea, CustomButtonSubmit } from '@shared/components'
+import { CustomCheckbox, CustomTextarea, CustomButtonSubmit, ErrorMessage } from '@shared/components'
+import { useMutation } from '@tanstack/react-query'
 
 //TODO Добавить URL-адрес
 
 export const CloseQuestionPage = () => {
   const { questionId } = useParams()
-  console.log(questionId)
 
   const { t } = useTranslation()
   const [selectedRating, setSelectedRating] = useState(null)
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [textareaValue, setTextareaValue] = useState("")
+  //TODO: selectedRating&textareaValue rewrite with useForm
   const navigate = useNavigate()
 
-  // Get a specific query parameter
+  const { mutate, isLoading, error } = useMutation({
+    mutationFn: async (formData) => await closeMessage(questionId, formData),
+    onSuccess: () => navigate("/donate"),
+    onError: (error) => {
+      console.error("Error submitting form:", error)
+    },
+  })
 
   const handleCheckboxChange = (e) => {
     const { name } = e.target
@@ -35,22 +41,7 @@ export const CloseQuestionPage = () => {
     const formData = new FormData()
     formData.append("text", textareaValue)
     formData.append("score", selectedRating)
-
-    // Проверяем что попало в FormData
-    for (let pair of formData.entries()) {
-      console.log("FormData содержит:", pair[0], "=", pair[1])
-    }
-
-    try {
-      setIsSubmitting(true)
-      const response = await closeMessage(questionId, formData)
-      console.log("Ответ сервера:", response)
-      navigate("/donate")
-    } catch (error) {
-      console.error("Ошибка при отправке данных:", error)
-    } finally {
-      setIsSubmitting(false)
-    }
+    mutate(formData)
   }
 
   return (
@@ -83,11 +74,12 @@ export const CloseQuestionPage = () => {
             value={textareaValue}
             onChange={handleTextareaChange}
           />
+          {error ? <ErrorMessage message={error} /> : null}
         </div>
         <CustomButtonSubmit
           text={t("closeQuestionPage.submitButton")}
           type="submit"
-          disabled={!selectedRating || isSubmitting}
+          disabled={!selectedRating || isLoading}
           customStyle={{ marginTop: "80px" }}
         />
       </form>

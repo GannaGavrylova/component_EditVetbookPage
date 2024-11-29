@@ -13,7 +13,6 @@ import { DonatePage } from './pages/donate/user/DonatePage'
 import { ViewQuestionPage } from './pages/profile/my-questions/view/ViewQuestionPage'
 import { AllQuestionsPage } from './pages/profile/my-questions/allQuestions/AllQuestionsPage'
 
-
 export const App = () => {
 
   return (

@@ -17,6 +17,7 @@ const apiClientMultipart = axios.create({
 
 export const getUserQuestions = async (id) => {
   try {
+    if (!id) throw new Error('You must provide user id')
     const response = await axios.get(
       `${API_BASE_URL}/api/questions/get/?user_id=${id}`
     )
