@@ -58,7 +58,7 @@ export const Question = ({
         {files.length ? (
           files.map(({ file_url }, idx) => (
             <div key={idx} className={s.question_imgBox}>
-              <img src={file_url} alt={`Image ${file_url}`} />
+              <img src={file_url} alt={`Image ${file_url}`} className={s.img} />
             </div>
           ))
         ) : (
@@ -80,8 +80,9 @@ export const Question = ({
         <Modal
           linksArr={[
             {
-              link: `/profile/message/add/${id}`,
-              text: t("Modal_locales.addMessage"),
+              link: `/profile/my-questions/${id}/add-message`,
+              text: t("P_addMessagePage.header"), //TODO: check if not users question and use t("Modal_locales.addMessage"),
+
             },
             {
               link: `/profile/my-questions/${id}/close-question`,

@@ -1,0 +1,75 @@
+.p_addMessagePage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.p_addMessagePage_head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 39px;
+  position: relative;
+  justify-content: center;
+}
+
+.p_addMessagePage_head h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--color-text-dark);
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.p_addMessagePage_head button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  right: 0;
+}
+.button_close {
+  margin: 0 !important;
+  padding-right: 2px;
+}
+.p_addMessagePage_img {
+  min-width: 16px;
+  min-height: 16px;
+  color: #242424;
+}
+.p_addMessagePage_p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.p_addMessagePage textarea {
+  font-style: italic;
+  outline-color: var(--color-main);
+}
+.p_addMessagePage textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+.p_addMessagePage textarea::-moz-placeholder {
+  font-style: italic;
+}
+.p_addMessagePage textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+.p_addMessagePage textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+.p_addMessagePage textarea::placeholder {
+  font-style: italic;
+}
+.p_addMessagePage button {
+  white-space: nowrap;
+  margin-top: 81px;
+}
+
+.btnBox {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: center;
+}

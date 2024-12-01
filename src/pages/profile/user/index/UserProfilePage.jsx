@@ -5,7 +5,7 @@ import avatarPlaceholder from "@/assets/avatarPlaceholder.svg"
 import { useQuery } from '@tanstack/react-query'
 import { getUser, getUserQuestions } from '@shared/utils/apiService'
 import Loader from '@shared/components/loader/Loader'
-import { BurgerMenu } from '../burgerMenu/BurgerMenu'
+import { BurgerMenu } from '../../burgerMenu/BurgerMenu'
 import { Question } from '@shared/components/question/Question'
 import { UnderConstructionIcon } from '@shared/underConstruction/UnderConstruction'
 import { MainFooter } from '@/pages/main/components'
@@ -22,8 +22,8 @@ export const UserProfilePage = () => {
     navigate("/")
   }
 
-  const { data: questions, isLoadingQuestions, errorQuestions } = useQuery({ queryKey: ['questions'], queryFn: () => getUserQuestions(userId) })
-  const { data: userData, isLoadingUserData, errorUserData } = useQuery({ queryKey: ['user'], queryFn: () => getUser(userId) })
+  const { data: questions, isLoading: isLoadingQuestions, error: errorQuestions } = useQuery({ queryKey: ['questions'], queryFn: () => getUserQuestions(userId) })
+  const { data: userData, isLoading: isLoadingUserData, error: errorUserData } = useQuery({ queryKey: ['user'], queryFn: () => getUser(userId) })
 
 
   if (isLoadingQuestions || isLoadingUserData) {
@@ -31,7 +31,7 @@ export const UserProfilePage = () => {
   }
   return (
     <div className={classes.p_userPage}>
-      {errorUserData ? <ErrorMessage message={errorUserData} /> : null}
+      {errorUserData ? <ErrorMessage message={errorUserData.message} /> : null}
       <BurgerMenu />
       <div className={classes.name_Container}>
         <div className={classes.avatarContainer}>
@@ -57,7 +57,7 @@ export const UserProfilePage = () => {
         </Link>
       </div>
       <div className={classes.question_box_content}>
-        {errorQuestions ? <ErrorMessage message={errorQuestions} /> : null}
+        {errorQuestions ? <ErrorMessage message={errorQuestions.message} /> : null}
         {questions?.map((q) => (
           <Question {...q} key={q.id} />
         ))}

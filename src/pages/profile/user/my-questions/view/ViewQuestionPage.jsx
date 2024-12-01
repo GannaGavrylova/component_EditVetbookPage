@@ -11,8 +11,8 @@ export const ViewQuestionPage = () => {
   const { t } = useTranslation()
   const { questionId } = useParams()
 
-  const { data: question, isLoadingQuestion, errorQuestion } = useQuery({ queryKey: ['question'], queryFn: () => getQuestionById(questionId) })
-  const { data: messages, isLoadingMessages, errorMessages } = useQuery({ queryKey: ['messages'], queryFn: () => getMessages(questionId) })
+  const { data: question, isLoading: isLoadingQuestion, isError: errorQuestion } = useQuery({ queryKey: ['question'], queryFn: () => getQuestionById(questionId) })
+  const { data: messages, isLoading: isLoadingMessages, isError: errorMessages } = useQuery({ queryKey: ['messages'], queryFn: () => getMessages(questionId) })
 
   if (isLoadingQuestion || isLoadingMessages) {
     return <Loader />
@@ -20,7 +20,7 @@ export const ViewQuestionPage = () => {
   return (
     <div className={classes.p_viewQuestionPage}>
       <ViewPageHeader
-        path={"/profile/questions"}
+        path={"/profile/my-questions"}
         fontSize={36}
         titleKey={t("userPage.viewQuestion")}
       />

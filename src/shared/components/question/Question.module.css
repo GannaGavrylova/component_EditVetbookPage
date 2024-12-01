@@ -71,3 +71,8 @@
   font-size: 16px;
   font-style: italic;
 }
+.img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

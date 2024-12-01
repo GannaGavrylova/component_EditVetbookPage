@@ -12,7 +12,7 @@ export const VerificationPage = () => {
     const { t } = useTranslation()
     const navigate = useNavigate()
     const location = useLocation()
-    const { phone_number } = location.state || {} //TODO: renam to phoneNumber if it possible 
+    const { phone_number } = location.state || {} //TODO: rename to phoneNumber if it possible 
     console.log(phone_number) //TODO: delete after testing
     const {
         control,

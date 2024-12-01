@@ -6,7 +6,7 @@ import close from "@/assets/close.svg"
 
 import { updateQuestion } from '@shared/utils/apiService'
 import { CustomButtonSubmit, LineHeader, FormHeader, CustomTextarea } from '@/shared/components'
-import { useMutation } from '@tanstack/react-query'
+import { useMutation, useQueryClient, } from '@tanstack/react-query'
 import { ErrorMessage } from '@shared/components'
 
 export const SendTextQuestionPage = () => {
@@ -23,10 +23,13 @@ export const SendTextQuestionPage = () => {
   } = useForm({
     mode: "onChange",
   })
-
+  const queryClient = useQueryClient()
   const { mutate, isLoading, error } = useMutation({
     mutationFn: async (data) => await updateQuestion(data),
-    onSuccess: () => navigate(`/profile/my-questions/`),
+    onSuccess: () => {
+      navigate(`/profile/my-questions/`)
+      queryClient.invalidateQueries({ queryKey: ['questions'] })
+    },
     //TODO: response must include question Id to navigate to this question /profile/my-questions/questionId
     onError: (error) => {
       console.error("Error submitting form:", error)
