@@ -88,7 +88,6 @@ export const DescriptionAnimalPage = () => {
       files,
     }
 
-    // Trigger mutation
     mutate({ formData, submissionData })
   }
 

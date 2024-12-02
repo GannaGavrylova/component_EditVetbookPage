@@ -1,21 +1,13 @@
 .p_userPage {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Выравнивание по верхнему краю */
   padding: 30px 10px 110px;
   margin: 0 auto;
   max-width: 375px;
 }
 
-.avatarContainer {
-  display: flex;
-  flex-direction: column; /* Вертикальное расположение содержимого */
-  align-items: center; /* Центрируем содержимое */
-}
-
 .name_Container {
   display: flex;
-  align-items: start; /* Центрируем содержимое */
   gap: 20px;
   margin-bottom: 21px;
 }

@@ -92,3 +92,16 @@ export const getUser = async (id) => {
     throw error
   }
 }
+
+export const sendMessage = async (id, data) => {
+  try {
+    const response = await apiClientMultipart.post(
+      `/api/questions/${id}/message/`,
+      data
+    )
+    return response.data
+  } catch (error) {
+    console.error('Ошибка отправки вопроса:', error)
+    throw error
+  }
+}

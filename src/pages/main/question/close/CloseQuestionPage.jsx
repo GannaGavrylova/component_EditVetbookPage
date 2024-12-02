@@ -14,7 +14,6 @@ export const CloseQuestionPage = () => {
   const { t } = useTranslation()
   const [selectedRating, setSelectedRating] = useState(null)
   const [textareaValue, setTextareaValue] = useState("")
-  //TODO: selectedRating&textareaValue rewrite with useForm
   const navigate = useNavigate()
 
   const { mutate, isLoading, error } = useMutation({

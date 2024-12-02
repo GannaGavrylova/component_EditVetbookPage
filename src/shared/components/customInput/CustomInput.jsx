@@ -22,7 +22,6 @@ export const CustomInput = forwardRef((props, ref) => {
 
   return (
     <div style={{ marginBottom: "10px" }}>
-      {" "}
       <input
         className={s.customInput}
         style={{
