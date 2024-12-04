@@ -5,30 +5,35 @@ import s from './pageHeader.module.css'
 import { Link } from 'react-router-dom'
 
 export const PageHeader = ({
-  path,
+  pathArrow,
+  pathClose,
   titleKey,
-  headerPadding = '0',
+  padding = '0',
   fontSize,
-  showArrow = false,
+  showArrow = true,
   showClose = true,
 }) => {
   const { t } = useTranslation()
 
   return (
-    <div className={s.container}>
-      {showArrow && (
-        <Link to={path} className={s.arrowBtn}>
-          <img src={leftArrow} alt={t('formHeader.backButtonAlt')} />
-        </Link>
-      )}
-      <h2 style={{ padding: headerPadding, fontSize: fontSize || '22px' }}>
-        {t(titleKey)}
-      </h2>
-      {showClose && (
-        <Link to={path} className={s.closeBtn}>
-          <img src={close} alt={t('formHeader.backButtonAlt')} />
-        </Link>
-      )}
+    <div className={s.container} style={{ padding: padding }}>
+      <div className={s.buttonSpace}>
+        {showArrow && (
+          <Link to={pathArrow} className={s.arrowBtn}>
+            <img src={leftArrow} alt={t('formHeader.backButtonAlt')} />
+          </Link>
+        )}
+      </div>
+
+      <p style={{ fontSize: fontSize || '36px' }}>{t(titleKey)}</p>
+
+      <div className={s.buttonSpace}>
+        {showClose && (
+          <Link to={pathClose} className={s.closeBtn}>
+            <img src={close} alt={t('formHeader.backButtonAlt')} />
+          </Link>
+        )}
+      </div>
     </div>
   )
 }

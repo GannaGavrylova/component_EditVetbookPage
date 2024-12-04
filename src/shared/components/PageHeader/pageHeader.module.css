@@ -1,19 +1,16 @@
 .container {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .arrowBtn {
   background: transparent;
   border: none;
-  position: absolute;
-  left: 0;
 }
 
 .closeBtn {
   background: transparent;
   border: none;
-  position: absolute;
-  right: 0;
 }
