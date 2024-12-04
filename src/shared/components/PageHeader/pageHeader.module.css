@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrowBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: 0;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+}
