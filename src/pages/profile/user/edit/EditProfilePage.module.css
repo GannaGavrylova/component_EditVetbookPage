@@ -5,20 +5,10 @@
   padding: 30px 10px 110px;
   margin: 0 auto;
   max-width: 375px;
-  /* border: 2px solid green; */
-  /* вспомогательная рамка для просмотра границ страницы */
 }
 
 .editProfilePage h2 {
   color: var(--color-text-dark);
-}
-
-/*TODO поменять компонент шапки на PageHeader, предварительно стянув изменения*/
-.headerContainer {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 40px;
 }
 
 .editForm {
