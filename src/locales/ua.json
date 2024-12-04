@@ -347,10 +347,12 @@
     "strayAnimalsTitle": "Безпритульні тварини",
     "actionsButton": "Дії",
     "additionalQuestion": "Додаткове питання",
+    "addDataToKeepInTouch": "Вкажіть додаткові дані,\n щоб завжди залишатися на зв’язку з FreeVet\n та отримати доступ до нових сервісів",
     "modalOptions": {
       "editProfile": "Редагувати профіль",
       "preferences": "Уподобання"
     },
+    "saveChangesBtn": "Зберегти зміни",
     "logOutButton": "Вийти"
   },
   "DonatePage": {

@@ -350,10 +350,12 @@
     "strayAnimalsTitle": "Animaux errants",
     "actionsButton": "Actions",
     "additionalQuestion": "Question supplémentaire",
+    "addDataToKeepInTouch": "Fournissez des informations supplémentaires,\n pour rester en contact avec FreeVet\n et accéder à de nouveaux services",
     "modalOptions": {
       "editProfile": "Éditer le profil",
       "preferences": "Préférences"
     },
+    "saveChangesBtn": "Enregistrer les modifications",
     "logOutButton": "Se déconnecter"
   },
 

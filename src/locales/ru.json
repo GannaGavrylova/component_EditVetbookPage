@@ -351,10 +351,12 @@
     "strayAnimalsTitle": "Бездомные животные",
     "actionsButton": "Действия",
     "additionalQuestion": "Дополнительный вопрос",
+    "addDataToKeepInTouch": "Укажите дополнительные данные,\n чтобы всегда оставаться на связи с FreeVet\n и получить доступ к новым сервисам",
     "modalOptions": {
       "editProfile": "Редактировать Профиль",
       "preferences": "Предпочтения"
     },
+    "saveChangesBtn": "Сохранить изменения",
     "logOutButton": "Выйти"
   },
 
