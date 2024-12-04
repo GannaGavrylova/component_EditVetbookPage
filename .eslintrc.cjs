@@ -26,6 +26,7 @@ module.exports = {
         caughtErrors: 'all',
         ignoreRestSiblings: false,
         reportUsedIgnorePattern: false,
+        argsIgnorePattern: '^_',
       },
     ],
   },
