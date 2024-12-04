@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import classes from "./AddMessagePage.module.css"
 import { useForm } from "react-hook-form"
 import { sendMessage } from '@shared/utils/apiService'
-import { CustomButtonSubmit, CustomTextarea, ErrorMessage, FileUploader, ViewPageHeader } from '@shared/components'
+import { CustomButtonSubmit, CustomTextarea, ErrorMessage, FileUploader, PageHeader } from '@shared/components'
 import { useMutation } from '@tanstack/react-query'
 
 export const AddMessagePage = () => {
@@ -70,7 +70,7 @@ export const AddMessagePage = () => {
 
   return (
     <div className={classes.p_addMessagePage}>
-      <ViewPageHeader
+      <PageHeader
         path={`/profile/my-questions/${questionId}`}
         fontSize={36}
         titleKey={t("P_addMessagePage.header")}

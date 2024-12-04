@@ -8,6 +8,8 @@ import { FormHeader, LineHeader } from '@shared/components'
 import { CustomButton } from '@shared/components/customButton/CustomButton'
 // import QuestionPetList from "../../../components/questionPetList/QuestionPetList"
 
+// TODO: FIX PAGE
+
 export const ChooseAnimalQuestionPage = () => {
   const { t } = useTranslation()
   const [selectedAnimalType, setSelectedAnimalType] = useState(null)
