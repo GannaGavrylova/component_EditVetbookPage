@@ -12,4 +12,5 @@ export { ViewQuestionPage } from './profile/user/my-questions/view/ViewQuestionP
 export { AllQuestionsPage } from './profile/user/my-questions/allQuestions/AllQuestionsPage'
 export { NotFoundPage } from './notFound/NotFoundPage'
 export { UserProfilePage } from './profile/user/index/UserProfilePage'
+export { SpecialistEditProfilePage } from './profile/specialist/edit/SpecialistEditProfilePage'
 export { AboutServicePage } from './about/AboutServicePage'
