@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import classes from './EditProfilePage.module.css'
-import { FormHeader, CustomInput, CustomButtonSubmit } from '@shared/components'
+import {
+  FormHeader,
+  CustomInput,
+  CustomButtonSubmit,
+  FileUploader,
+} from '@shared/components'
 import close from '@/assets/close.svg'
 
 export const EditProfilePage = () => {
@@ -19,6 +24,7 @@ export const EditProfilePage = () => {
           <img src={close} alt="close" />
         </Link>
       </div>
+      <FileUploader maxFiles={1} boxSize={160} />
       <form className={classes.editForm} action="" method="post">
         <label className={classes.formLabel}>
           {t('registrationPage.nameLabel')}
