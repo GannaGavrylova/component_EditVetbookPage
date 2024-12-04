@@ -32,7 +32,7 @@ export const EditProfilePage = () => {
         </label>
         <label className={classes.formLabel}>
           {t('registrationPage.phoneLabel')}
-          <CustomInput placeholder={t('userPage.userName')} />
+          <CustomInput placeholder={'+382 68 109 018'} />
         </label>
 
         <p className={classes.divideText}>
@@ -41,11 +41,11 @@ export const EditProfilePage = () => {
 
         <label className={classes.formLabel}>
           {t('vetVerificationPage.telegramLabel')}
-          <CustomInput placeholder={t('userPage.userName')} />
+          <CustomInput placeholder={'@andrew_yeremin'} />
         </label>
         <label className={classes.formLabel}>
           {t('vetVerificationPage.emailLabel')}
-          <CustomInput placeholder={t('userPage.userName')} />
+          <CustomInput placeholder={'andrew_yeremin@email.com'} />
         </label>
         <CustomButtonSubmit text={t('userPage.saveChangesBtn')} />
       </form>
