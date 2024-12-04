@@ -9,14 +9,10 @@
 }
 
 .createVetbookPage_header {
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.closeBtn {
-  position: absolute;
-  right: 5px;
 }
 
 .createVetbookPage form {
@@ -43,7 +39,7 @@
 }
 
 .createVetbookPage_description {
-  margin-top: 16px;
+  margin-top: 22px;
   margin-bottom: 6px;
   line-height: 1.25;
   color: #242424;

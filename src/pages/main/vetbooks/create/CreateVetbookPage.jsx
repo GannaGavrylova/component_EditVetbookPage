@@ -1,10 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import classes from './CreateVetbookPage.module.css'
-import close from '@/assets/close.svg'
-import { FormHeader } from '@shared/components'
 import { useVetbookForm } from './hooks/useVetbookForm'
 import { CreateVetbookForm } from './components/CreateVetbookForm'
+import FormHeader from './components/form-header/FormHeader.jsx'
 
 export const CreateVetbookPage = () => {
   const { t } = useTranslation(null, {
@@ -16,10 +14,7 @@ export const CreateVetbookPage = () => {
   return (
     <div className={classes.createVetbookPage}>
       <div className={classes.createVetbookPage_header}>
-        <FormHeader fontSize={36} titleKey={t('createTitle')} />
-        <Link to={'/profile'} className={classes.closeBtn}>
-          <img src={close} alt="close" />
-        </Link>
+        <FormHeader titleKey={t('createTitle')} closePath="/profile" />
       </div>
       <p className={classes.createVetbookPage_description}>
         {t('description')}
