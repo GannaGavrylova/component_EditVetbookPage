@@ -1,5 +1,10 @@
 {
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "printWidth": 500,
+  "bracketSameLine": true,
+  "singleAttributePerLine": false,
+  "bracketSpacing": true,
+  "importFormatting": "oneline"
 }

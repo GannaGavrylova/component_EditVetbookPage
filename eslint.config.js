@@ -29,11 +29,24 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
-
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      'object-curly-newline': [
+        'error',
+        {
+          ImportDeclaration: { multiline: false, consistent: true },
+        },
       ],
+      'max-len': [
+        'error',
+        {
+          code: 500,
+          comments: 86,
+          ignoreUrls: true,
+          ignoreTemplateLiterals: true,
+          ignorePattern: '^(import|export)\\s.+\\sfrom\\s.+;$',
+        },
+      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       'react/prop-types': 'off',
     },
   },

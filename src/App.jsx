@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
+
 import {
   IndexPage,
   VerificationPage,
@@ -21,7 +22,6 @@ import {
 
 
 export const App = () => {
-
   return (
     <Router>
       <Routes>
@@ -29,6 +29,7 @@ export const App = () => {
           <Route index element={<IndexPage />} />
 
           <Route path="/registration/by-phone/verification" element={<VerificationPage />} />
+          <Route path="/verification/role/" element={<ChooseRolePage />} />
 
           <Route path="/main" element={<MainPage />} />
           <Route path="/main/ask-question" element={<ChooseAnimalQuestionPage />} />
@@ -39,10 +40,7 @@ export const App = () => {
 
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/profile/my-questions" element={<AllQuestionsPage />} />
-          <Route
-            path="/profile/my-questions/:questionId"
-            element={<ViewQuestionPage />}
-          />
+          <Route path="/profile/my-questions/:questionId" element={<ViewQuestionPage />} />
           <Route path="/profile/my-questions/:questionId/add-message" element={<AddMessagePage />} />
           <Route path="/profile/my-questions/:questionId/close-question" element={<CloseQuestionPage />} />
 
@@ -55,4 +53,3 @@ export const App = () => {
     </Router>
   )
 }
-

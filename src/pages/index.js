@@ -13,4 +13,6 @@ export { AllQuestionsPage } from './profile/user/my-questions/allQuestions/AllQu
 export { NotFoundPage } from './notFound/NotFoundPage'
 export { UserProfilePage } from './profile/user/index/UserProfilePage'
 export { AboutServicePage } from './about/AboutServicePage'
+export { ChooseRolePage } from './auth/chooseRole/ChooseRolePage'
 export { CreateVetbookPage } from './main/vetbooks/create/CreateVetbookPage'
+
