@@ -105,3 +105,12 @@ export const sendMessage = async (id, data) => {
     throw error
   }
 }
+export const updateUserRole = async (data) => {
+  try {
+    const response = await apiClientJson.post('/api/users/update/', data)
+    return response.data
+  } catch (error) {
+    console.error('Ошибка обновления роли:', error)
+    throw error
+  }
+}
