@@ -1,25 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
 
-import {
-  IndexPage,
-  VerificationPage,
-  AllQuestionsPage,
-  ChooseAnimalQuestionPage,
-  CloseQuestionPage,
-  DescriptionAnimalPage,
-  DonatePage,
-  MainPage,
-  SendTextQuestionPage,
-  ViewQuestionPage,
-  ViewSavedQuestion,
-  NotFoundPage,
-  UserProfilePage,
-  AboutServicePage,
-  AddMessagePage,
-  CreateVetbookPage,
-} from './pages'
-
+import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage } from './pages'
 
 export const App = () => {
   return (
