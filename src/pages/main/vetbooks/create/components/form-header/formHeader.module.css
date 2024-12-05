@@ -1,0 +1,37 @@
+.formHeader {
+  width: 100%;
+  position: relative;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+
+.title {
+  margin: 0 auto;
+  max-width: 270px;
+  text-align: center;
+  color: #272727;
+  line-height: 1.15;
+  font-weight: 300;
+}
+
+.size-default {
+  composes: title;
+  font-size: 36px;
+}
+
+.size-small {
+  composes: title;
+  font-size: 22px;
+}

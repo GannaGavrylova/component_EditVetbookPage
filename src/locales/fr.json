@@ -118,7 +118,22 @@
     "noCreateBtn": "Ne pas créer",
     "createBtn": "Créer"
   },
-
+  "main/vetbooks/create-vetbook": {
+    "createTitle": "Créer un carnet de santé vétérinaire",
+    "descriptionTitle": "Entrez les données pour créer\nun carnet vétérinaire pour votre animal",
+    "description": "Entrez les données pour créer\nun carnet vétérinaire pour votre animal",
+    "addPhoto": "Ajouter une photo",
+    "petName": "Nom de l'animal",
+    "validationMessages": {
+      "required": "Ce champ est obligatoire",
+      "minLength": "Minimum 2 caractères"
+    },
+    "createButton": "Créer un nouveau carnet",
+    "petSpecies": "Espèce de l'animal",
+    "petWeight": "Poids approximatif de l'animal",
+    "petGender": "Sexe de l'animal",
+    "vetBookDescription": "Le carnet vétérinaire est une version numérique du passeport de l'animal avec des fonctionnalités utiles qui simplifient les soins aux animaux"
+  },
   "form": {
     "createAccount": "Créer un compte",
     "name": "Nom",
