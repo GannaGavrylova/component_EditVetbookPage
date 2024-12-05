@@ -14,3 +14,6 @@ export { NotFoundPage } from './notFound/NotFoundPage'
 export { UserProfilePage } from './profile/user/index/UserProfilePage'
 export { EditProfilePage } from './profile/user/edit/EditProfilePage'
 export { AboutServicePage } from './about/AboutServicePage'
+export { ChooseRolePage } from './auth/chooseRole/ChooseRolePage'
+export { CreateVetbookPage } from './main/vetbooks/create/CreateVetbookPage'
+

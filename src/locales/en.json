@@ -118,6 +118,22 @@
     "noCreateBtn": "Don’t create",
     "createBtn": "Create"
   },
+  "main/vetbooks/create-vetbook": {
+    "createTitle": "Create Vetbook",
+    "descriptionTitle": "Enter the data to create\na veterinary book for your pet",
+    "description": "Enter the data to create\na veterinary book for your pet",
+    "addPhoto": "Add Photo",
+    "petName": "Pet's Name",
+    "validationMessages": {
+      "required": "This field is required",
+      "minLength": "Minimum 2 characters"
+    },
+    "createButton": "Create new book",
+    "petSpecies": "Animal species",
+    "petWeight": "Approximate pet weight",
+    "petGender": "Pet Gender",
+    "vetBookDescription": "Veterinary book is a digital version of a pet passport with helpful features that simplify pet care"
+  },
   "form": {
     "createAccount": "Create Account",
     "name": "Name",

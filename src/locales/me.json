@@ -118,7 +118,22 @@
     "noCreateBtn": "Ne kreirati",
     "createBtn": "Kreiraj"
   },
-
+  "main/vetbooks/create-vetbook": {
+    "createTitle": "Kreiraj veterinarsku knjižicu",
+    "descriptionTitle": "Unesite podatke za kreiranje\nveterinarske knjižice za vašeg ljubimca",
+    "description": "Unesite podatke za kreiranje\nveterinarske knjižice za vašeg ljubimca",
+    "addPhoto": "Dodajte fotografiju",
+    "petName": "Ime ljubimca",
+    "validationMessages": {
+      "required": "Ovo polje je obavezno",
+      "minLength": "Minimum 2 karaktera"
+    },
+    "createButton": "Kreiraj novu knjižicu",
+    "petSpecies": "Vrsta životinje",
+    "petWeight": "Približna težina ljubimca",
+    "petGender": "Pol ljubimca",
+    "vetBookDescription": "Veterinarska knjižica je digitalna verzija pasoša ljubimca sa korisnim funkcijama koje pojednostavljuju brigu o ljubimcu"
+  },
   "form": {
     "createAccount": "Kreiraj nalog",
     "name": "Ime",
