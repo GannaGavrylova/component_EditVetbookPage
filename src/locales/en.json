@@ -73,7 +73,12 @@
     "userText": "User"
   },
   "customSelect": {
-    "placeholder": "select gender"
+    "placeholder": "select gender",
+    "option": {
+      "male": "male",
+      "female": "female",
+      "unknown": "unknown"
+    }
   },
   "errorMessages": {
     "fetchError": "Error loading data from server",
@@ -199,11 +204,6 @@
         "required": "Animal gender is required",
         "minLength": "Minimum 2 characters"
       }
-    },
-    "option": {
-      "male": "male",
-      "female": "female",
-      "unknown": "unknown"
     }
   },
   "sendQuestionPage": {

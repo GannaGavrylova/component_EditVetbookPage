@@ -74,7 +74,12 @@
     "userText": "Пользователь"
   },
   "customSelect": {
-    "placeholder": "выберите пол"
+    "placeholder": "выберите пол",
+    "option": {
+      "male": "мужской",
+      "female": "женский",
+      "unknown": "неизвестный"
+    }
   },
   "errorMessages": {
     "fetchError": "Ошибка загрузки данных с сервера",
@@ -199,11 +204,6 @@
         "required": "Пол животного обязательно",
         "minLength": "Минимум 2 символа"
       }
-    },
-    "option": {
-      "male": "мужской",
-      "female": "женский",
-      "unknown": "неизвестный"
     }
   },
   "sendQuestionPage": {

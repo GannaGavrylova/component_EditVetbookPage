@@ -144,11 +144,12 @@ export const DescriptionAnimalPage = () => {
           {...register('petGender', {
             required: t('descriptionAnimalPage.validationMessages.petGender.required'),
           })}
-          options={[
-            { value: 'male', label: t('descriptionAnimalPage.option.male') },
-            { value: 'female', label: t('descriptionAnimalPage.option.female') },
-            { value: 'unknown', label: t('descriptionAnimalPage.option.unknown') },
-          ]}
+          // options={[
+          //   { value: 'male', label: t('descriptionAnimalPage.option.male') },
+          //   { value: 'female', label: t('descriptionAnimalPage.option.female') },
+          //   { value: 'unknown', label: t('descriptionAnimalPage.option.unknown') },
+          // ]}
+          optionsKey="gender"
           color={'var(--color-text-dark)'}
           borderColor="var(--color-main)"
           width={153}

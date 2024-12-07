@@ -5,8 +5,16 @@ import s from './customSelect.module.css'
 export const CustomSelect = forwardRef((props, ref) => {
   const { t } = useTranslation()
   const [selectedValue, setSelectedValue] = useState('')
-  const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, options = [], errorMessage, showError, onChange, ...rest } = props
+  const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, optionsKey, errorMessage, showError, onChange, ...rest } = props
 
+  const options =
+    optionsKey === 'gender'
+      ? [
+          { value: 'male', label: t('customSelect.option.male') },
+          { value: 'female', label: t('customSelect.option.female') },
+          { value: 'unknown', label: t('customSelect.option.unknown') },
+        ]
+      : []
   const handleChange = (event) => {
     setSelectedValue(event.target.value)
     if (onChange) {

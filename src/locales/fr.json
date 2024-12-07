@@ -73,7 +73,12 @@
     "userText": "Utilisateur"
   },
   "customSelect": {
-    "placeholder": "sélectionner le sexe"
+    "placeholder": "sélectionner le sexe",
+    "option": {
+      "male": "masculin",
+      "female": "féminin",
+      "unknown": "inconnu"
+    }
   },
   "errorMessages": {
     "fetchError": "Erreur de chargement des données depuis le serveur",
@@ -199,11 +204,6 @@
         "required": "Le sexe de l'animal est obligatoire",
         "minLength": "Au moins 2 caractères"
       }
-    },
-    "option": {
-      "male": "masculin",
-      "female": "féminin",
-      "unknown": "inconnu"
     }
   },
   "sendQuestionPage": {

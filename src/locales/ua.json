@@ -73,7 +73,12 @@
     "userText": "Користувач"
   },
   "customSelect": {
-    "placeholder": "виберіть стать"
+    "placeholder": "виберіть стать",
+    "option": {
+      "male": "чоловічий",
+      "female": "жіночий",
+      "unknown": "невідомо"
+    }
   },
   "errorMessages": {
     "fetchError": "Помилка завантаження даних з сервера",
@@ -199,11 +204,6 @@
         "required": "Стать тварини обов'язкова",
         "minLength": "Мінімум 2 символи"
       }
-    },
-    "option": {
-      "male": "чоловічий",
-      "female": "жіночий",
-      "unknown": "невідомо"
     }
   },
   "sendQuestionPage": {

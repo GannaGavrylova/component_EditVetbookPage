@@ -74,7 +74,12 @@
     "userText": "Korisnik"
   },
   "customSelect": {
-    "placeholder": "izaberite pol"
+    "placeholder": "izaberite pol",
+    "option": {
+      "male": "muški",
+      "female": "ženski",
+      "unknown": "nepoznato"
+    }
   },
   "errorMessages": {
     "fetchError": "Greška prilikom učitavanja podataka sa servera",
@@ -200,11 +205,6 @@
         "required": "Pol životinje je obavezan",
         "minLength": "Minimalno 2 karaktera"
       }
-    },
-    "option": {
-      "male": "muški",
-      "female": "ženski",
-      "unknown": "nepoznato"
     }
   },
   "sendQuestionPage": {
