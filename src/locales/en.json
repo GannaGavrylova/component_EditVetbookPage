@@ -154,7 +154,8 @@
     "vetDoctor": "Veterinarian",
     "cynologist": "Cynologist",
     "zooPsychologist": "Zoo Psychologist",
-    "phoneLogin": "Phone login is not yet implemented"
+    "phoneLogin": "Phone login is not yet implemented",
+    "invalidDataFormat": "Invalid data format"
   },
   "formHeader": {
     "backButtonAlt": "Back",

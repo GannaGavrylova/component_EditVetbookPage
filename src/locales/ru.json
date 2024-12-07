@@ -154,7 +154,8 @@
     "vetDoctor": "Ветеринар",
     "cynologist": "Кинолог",
     "zooPsychologist": "Зоопсихолог",
-    "phoneLogin": "Вход по телефону еще не реализован"
+    "phoneLogin": "Вход по телефону еще не реализован",
+    "invalidDataFormat": "Неверный формат данных"
   },
   "formHeader": {
     "backButtonAlt": "Назад",

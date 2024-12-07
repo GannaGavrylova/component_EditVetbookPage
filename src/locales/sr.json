@@ -155,7 +155,8 @@
     "vetDoctor": "Veterinar",
     "cynologist": "Kinolog",
     "zooPsychologist": "Zoološki psiholog",
-    "phoneLogin": "Prijava putem telefona još nije implementirana"
+    "phoneLogin": "Prijava putem telefona još nije implementirana",
+    "invalidDataFormat": "Neispravan format podataka"
   },
   "formHeader": {
     "backButtonAlt": "Nazad",

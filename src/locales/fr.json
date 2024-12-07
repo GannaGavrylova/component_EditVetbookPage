@@ -154,7 +154,8 @@
     "vetDoctor": "Vétérinaire",
     "cynologist": "Cynologue",
     "zooPsychologist": "Psychologue animalier",
-    "phoneLogin": "La connexion par téléphone n'est pas encore disponible"
+    "phoneLogin": "La connexion par téléphone n'est pas encore disponible",
+    "invalidDataFormat": "Format de données invalide"
   },
   "formHeader": {
     "backButtonAlt": "Retour",
