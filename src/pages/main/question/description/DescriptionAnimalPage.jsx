@@ -7,6 +7,7 @@ import classes from './DescriptionAnimalPage.module.css'
 import close from '@/assets/close.svg'
 import { addQuestion } from '@shared/utils/apiService'
 import { FormHeader, LineHeader, FileUploader, CustomInput, CustomCheckbox, ErrorMessage, CustomButtonSubmit } from '@/shared/components'
+import { CustomSelect } from '@/shared/components/customSelect/CustomSelect'
 
 export const DescriptionAnimalPage = () => {
   const { t } = useTranslation()
@@ -138,14 +139,16 @@ export const DescriptionAnimalPage = () => {
         <label style={{ alignSelf: 'start' }}>
           {t('descriptionAnimalPage.petGender')} <span style={{ color: '#2A9D8F' }}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
-        <CustomInput
+        <CustomSelect
+          padding={'10px'}
           {...register('petGender', {
             required: t('descriptionAnimalPage.validationMessages.petGender.required'),
-            minLength: {
-              value: 2,
-              message: t('descriptionAnimalPage.validationMessages.petGender.minLength'),
-            },
           })}
+          options={[
+            { value: 'male', label: t('descriptionAnimalPage.option.male') },
+            { value: 'female', label: t('descriptionAnimalPage.option.female') },
+            { value: 'unknown', label: t('descriptionAnimalPage.option.unknown') },
+          ]}
           color={'var(--color-text-dark)'}
           borderColor="var(--color-main)"
           width={153}

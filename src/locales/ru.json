@@ -73,6 +73,9 @@
   "customStickTitle": {
     "userText": "Пользователь"
   },
+  "customSelect": {
+    "placeholder": "выберите пол"
+  },
   "errorMessages": {
     "fetchError": "Ошибка загрузки данных с сервера",
     "formSendError": "Ошибка при отправке формы. Пожалуйста, попробуйте снова."
@@ -196,6 +199,11 @@
         "required": "Пол животного обязательно",
         "minLength": "Минимум 2 символа"
       }
+    },
+    "option": {
+      "male": "мужской",
+      "female": "женский",
+      "unknown": "неизвестный"
     }
   },
   "sendQuestionPage": {

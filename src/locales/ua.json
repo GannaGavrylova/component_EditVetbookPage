@@ -72,6 +72,9 @@
   "customStickTitle": {
     "userText": "Користувач"
   },
+  "customSelect": {
+    "placeholder": "виберіть стать"
+  },
   "errorMessages": {
     "fetchError": "Помилка завантаження даних з сервера",
     "formSendError": "Помилка при відправці форми. Будь ласка, спробуйте ще раз."
@@ -196,6 +199,11 @@
         "required": "Стать тварини обов'язкова",
         "minLength": "Мінімум 2 символи"
       }
+    },
+    "option": {
+      "male": "чоловічий",
+      "female": "жіночий",
+      "unknown": "невідомо"
     }
   },
   "sendQuestionPage": {

@@ -73,6 +73,9 @@
   "customStickTitle": {
     "userText": "Korisnik"
   },
+  "customSelect": {
+    "placeholder": "izaberite pol"
+  },
   "errorMessages": {
     "fetchError": "Greška prilikom učitavanja podataka sa servera",
     "formSendError": "Greška prilikom slanja obrasca. Molimo pokušajte ponovo."
@@ -197,6 +200,11 @@
         "required": "Pol životinje je obavezan",
         "minLength": "Minimalno 2 karaktera"
       }
+    },
+    "option": {
+      "male": "muški",
+      "female": "ženski",
+      "unknown": "nepoznato"
     }
   },
   "sendQuestionPage": {

@@ -1,12 +1,18 @@
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import s from './customSelect.module.css'
 
 export const CustomSelect = forwardRef((props, ref) => {
   const { t } = useTranslation()
+  const [selectedValue, setSelectedValue] = useState('')
+  const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, options = [], errorMessage, showError, onChange, ...rest } = props
 
-  const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, options = [], errorMessage, showError, ...rest } = props
-
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value)
+    if (onChange) {
+      onChange(event)
+    }
+  }
   return (
     <div>
       <select
@@ -23,11 +29,16 @@ export const CustomSelect = forwardRef((props, ref) => {
           lineHeight: 1.1,
         }}
         ref={ref}
+        value={selectedValue}
+        onChange={handleChange}
+        // defaultValue="unknow"
         {...rest}>
+        <option value="" disabled>
+          {t('customSelect.placeholder')}
+        </option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
-            {' '}
-            {option.label}{' '}
+            {t(option.label)}
           </option>
         ))}
       </select>

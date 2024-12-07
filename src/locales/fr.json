@@ -72,6 +72,9 @@
   "customStickTitle": {
     "userText": "Utilisateur"
   },
+  "customSelect": {
+    "placeholder": "sélectionner le sexe"
+  },
   "errorMessages": {
     "fetchError": "Erreur de chargement des données depuis le serveur",
     "formSendError": "Erreur lors de l'envoi du formulaire. Veuillez réessayer."
@@ -196,6 +199,11 @@
         "required": "Le sexe de l'animal est obligatoire",
         "minLength": "Au moins 2 caractères"
       }
+    },
+    "option": {
+      "male": "masculin",
+      "female": "féminin",
+      "unknown": "inconnu"
     }
   },
   "sendQuestionPage": {

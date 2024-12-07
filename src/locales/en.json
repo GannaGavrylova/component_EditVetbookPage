@@ -72,6 +72,9 @@
   "customStickTitle": {
     "userText": "User"
   },
+  "customSelect": {
+    "placeholder": "select gender"
+  },
   "errorMessages": {
     "fetchError": "Error loading data from server",
     "formSendError": "Form submission error. Please try again."
@@ -196,6 +199,11 @@
         "required": "Animal gender is required",
         "minLength": "Minimum 2 characters"
       }
+    },
+    "option": {
+      "male": "male",
+      "female": "female",
+      "unknown": "unknown"
     }
   },
   "sendQuestionPage": {
