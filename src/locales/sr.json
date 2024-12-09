@@ -496,5 +496,19 @@
   },
   "Modal_locales": {
     "addMessage": "Odgovori na pitanje"
-  }
+  },
+  "allVetBooksPage": {
+  "title": "Ветеринарске књижице",
+  "notice": "Чини се да ваш љубимац још увек нема дигиталну ветеринарску књижицу :(",
+  "myAnimals": "Моје животиње",
+  "strayAnimals": "Луталице",
+  "createNewBook": "Направите нову књижицу",
+  "kindOfAnimal": "Врста животиње",
+  "weight": "Тежина",
+  "gender": "Пол",
+  "doctorNotes": "Белешке ветеринара"
 }
+
+}
+
+
