@@ -15,4 +15,4 @@ export { UserProfilePage } from './profile/user/index/UserProfilePage'
 export { AboutServicePage } from './about/AboutServicePage'
 export { ChooseRolePage } from './auth/chooseRole/ChooseRolePage'
 export { CreateVetbookPage } from './main/vetbooks/create/CreateVetbookPage'
-
+export { AllVetBooksPage} from './main/vetbooks/index/AllVetBooksPage'
