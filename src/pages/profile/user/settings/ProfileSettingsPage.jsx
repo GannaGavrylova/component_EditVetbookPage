@@ -1,8 +1,7 @@
 import classes from './ProfileSettingsPage.module.css'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { PageHeader } from '@shared/components'
-import { LanguageSwitcher } from '@shared/components/languageSwitcher/LanguageSwitcher'
+import { PageHeader, LanguageSwitcher } from '@shared/components'
 
 export const ProfileSettingsPage = () => {
   const { t } = useTranslation()
