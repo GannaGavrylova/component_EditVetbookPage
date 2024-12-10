@@ -496,15 +496,11 @@
   "Modal_locales": {
     "addMessage": "Odgovori na pitanje"
   },
-"allVetBooksPage": {
-  "title": "Veterinarske knjižice",
-  "notice": "Izgleda da vaš ljubimac još nema digitalnu veterinarsku knjižicu :(",
-  "myAnimals": "Moje životinje",
-  "strayAnimals": "Lutalice",
-  "createNewBook": "Kreiraj novu knjižicu",
-  "kindOfAnimal": "Vrsta životinje",
-  "weight": "Težina",
-  "gender": "Pol",
-  "doctorNotes": "Napomene veterinara"
-}
+  "AllVetBooksPage": {
+    "title": "Veterinarske knjižice",
+    "notice": "Izgleda da vaš ljubimac još nema digitalnu veterinarsku knjižicu :(",
+    "myAnimals": "Moje životinje",
+    "strayAnimals": "Lutalice",
+    "createNewBook": "Kreiraj novu knjižicu"
+  }
 }

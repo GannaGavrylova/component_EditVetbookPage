@@ -491,16 +491,12 @@
     "bac": "Back"
   },
   "Modal_locales": { "addMessage": "Answer Question" },
-  
-"allVetBooksPage": {
-  "title": "Veterinary Books",
-  "notice": "It seems your pet doesn't have a digital veterinary book yet :(",
-  "myAnimals": "My Animals",
-  "strayAnimals": "Stray Animals",
-  "createNewBook": "Create New Book",
-  "kindOfAnimal": "Kind of Animal",
-  "weight": "Weight",
-  "gender": "Gender",
-  "doctorNotes": "Doctor's Notes"
-}
+
+  "AllVetBooksPage": {
+    "title": "Veterinary Books",
+    "notice": "It seems your pet doesn't have a digital veterinary book yet :(",
+    "myAnimals": "My Animals",
+    "strayAnimals": "Stray Animals",
+    "createNewBook": "Create New Book"
+  }
 }
