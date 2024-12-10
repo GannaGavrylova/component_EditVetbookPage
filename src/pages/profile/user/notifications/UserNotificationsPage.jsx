@@ -7,16 +7,16 @@ export const UserNotificationsPage = () => {
 
   return (
     <div className={classes.userNotificationsPage}>
-      <PageHeader />
-      <div className={classes.swichNotifications}>
-        <p className={classes.h5Notifications}>{t('E_settingsNotificationProfileUserPage.vetAnswers')}</p>
+      <PageHeader pathArrow={'/profile/settings'} titleKey={t('settings.notifications')} padding="24px 0" fontSize={22} showClose={false} />
+      <label className={classes.swichNotifications}>
+        {t('E_settingsNotificationProfileUserPage.vetAnswers')}
         <CustomCheckbox />
-      </div>
+      </label>
 
-      <div className={classes.swichNotifications}>
-        <p className={classes.h5Notifications}>{t('E_settingsNotificationProfileUserPage.vetAnswers')}</p>
+      <label className={classes.swichNotifications}>
+        {t('E_settingsNotificationProfileUserPage.serviceNews')}
         <CustomCheckbox />
-      </div>
+      </label>
     </div>
   )
 }
