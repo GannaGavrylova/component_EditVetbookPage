@@ -8,6 +8,7 @@ import {
   ChooseAnimalQuestionPage,
   CloseQuestionPage,
   ChooseRolePage,
+  ChooseRolePage,
   DescriptionAnimalPage,
   DonatePage,
   MainPage,
@@ -21,6 +22,7 @@ import {
   CreateVetbookPage,
   AllVetBooksPage,
   ChooseRolePage,
+  VisitsHistory,
   VisitsHistory,
 } from './pages'
 
