@@ -7,7 +7,7 @@ export const ProfileSettingsPage = () => {
   const { t } = useTranslation()
   return (
     <div className={classes.profileSettingsPage}>
-      <PageHeader pathArrow={'/profile'} titleKey={t('burgerMenu.settings')} />
+      <PageHeader pathArrow={'/profile'} pathClose={'/profile'} titleKey={t('burgerMenu.settings')} />
 
       <Link to={'/profile/settings/notifications'}>
         <div className={classes.linkContainer}>

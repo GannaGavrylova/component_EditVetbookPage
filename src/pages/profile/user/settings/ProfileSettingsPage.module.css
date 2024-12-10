@@ -1,3 +1,9 @@
+.profileSettingsPage {
+  padding: 30px 10px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
 .linkContainer,
 .langContainer {
   display: flex;
