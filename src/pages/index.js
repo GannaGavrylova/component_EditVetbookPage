@@ -13,7 +13,7 @@ export { AllQuestionsPage } from './profile/user/my-questions/allQuestions/AllQu
 export { NotFoundPage } from './notFound/NotFoundPage'
 export { UserProfilePage } from './profile/user/index/UserProfilePage'
 export { EditProfilePage } from './profile/user/edit/EditProfilePage'
+export { ProfileSettingsPage } from './profile/user/settings/ProfileSettingsPage'
 export { AboutServicePage } from './about/AboutServicePage'
 export { ChooseRolePage } from './auth/chooseRole/ChooseRolePage'
 export { CreateVetbookPage } from './main/vetbooks/create/CreateVetbookPage'
-
