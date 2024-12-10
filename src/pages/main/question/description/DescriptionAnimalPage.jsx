@@ -91,6 +91,13 @@ export const DescriptionAnimalPage = () => {
 
   const isFormValid = isValid && petArt && petWeight && petGender
 
+  const validatePetWeight = (value, t) => {
+    const normalizedValue = value.replace(',', '.')
+    console.log(normalizedValue)
+    const isValidNumber = /^[0-9]+(\.[0-9]{1,3})?$/.test(normalizedValue)
+
+    return isValidNumber ? true : t('descriptionAnimalPage.validationMessages.petWeight.invalidFormat')
+  }
   return (
     <div className={classes.q_descriptionAnimalPage}>
       <div className={classes.q_descriptionAnimalPage_header}>
@@ -103,9 +110,9 @@ export const DescriptionAnimalPage = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <p>{t('descriptionAnimalPage.addMedia')}</p>
         <FileUploader maxFiles={3} boxSize={104} borderRadius={20} onUpload={onUpload} />
-        <label style={{ alignSelf: 'start' }}>
+        <label className={classes.label}>
           {t('descriptionAnimalPage.petArt')}
-          <span style={{ color: '#2A9D8F' }}>{t('descriptionAnimalPage.requiredSymbol')}</span>
+          <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
         <CustomInput
           {...register('petArt', {
@@ -120,35 +127,30 @@ export const DescriptionAnimalPage = () => {
           width={328}
         />
         {errors.petArt && <p style={{ color: 'red' }}>{errors.petArt.message}</p>}
-        <label style={{ alignSelf: 'start' }}>
-          {t('descriptionAnimalPage.petWeight')} <span style={{ color: '#2A9D8F' }}>{t('descriptionAnimalPage.requiredSymbol')}</span>
+        <label className={classes.label}>
+          {t('descriptionAnimalPage.petWeight')} <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
+
+        {/* Примерный вес животного */}
         <CustomInput
           {...register('petWeight', {
             required: t('descriptionAnimalPage.validationMessages.petWeight.required'),
-            minLength: {
-              value: 2,
-              message: t('descriptionAnimalPage.validationMessages.petWeight.minLength'),
-            },
+            validate: (value) => validatePetWeight(value, t),
           })}
           color={'var(--color-text-dark)'}
           borderColor="var(--color-main)"
           width={153}
         />
         {errors.petWeight && <p style={{ color: 'red' }}>{errors.petWeight.message}</p>}
-        <label style={{ alignSelf: 'start' }}>
-          {t('descriptionAnimalPage.petGender')} <span style={{ color: '#2A9D8F' }}>{t('descriptionAnimalPage.requiredSymbol')}</span>
+        <label className={classes.label}>
+          {t('descriptionAnimalPage.petGender')} <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
+        {/* пол животного  */}
         <CustomSelect
           padding={'10px'}
           {...register('petGender', {
             required: t('descriptionAnimalPage.validationMessages.petGender.required'),
           })}
-          // options={[
-          //   { value: 'male', label: t('descriptionAnimalPage.option.male') },
-          //   { value: 'female', label: t('descriptionAnimalPage.option.female') },
-          //   { value: 'unknown', label: t('descriptionAnimalPage.option.unknown') },
-          // ]}
           optionsKey="gender"
           color={'var(--color-text-dark)'}
           borderColor="var(--color-main)"

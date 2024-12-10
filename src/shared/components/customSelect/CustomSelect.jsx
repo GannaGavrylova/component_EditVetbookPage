@@ -4,7 +4,7 @@ import s from './customSelect.module.css'
 
 export const CustomSelect = forwardRef((props, ref) => {
   const { t } = useTranslation()
-  const [selectedValue, setSelectedValue] = useState('')
+  const [selectedValue, setSelectedValue] = useState('unknown')
   const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, optionsKey, errorMessage, showError, onChange, ...rest } = props
 
   const options =
@@ -39,11 +39,8 @@ export const CustomSelect = forwardRef((props, ref) => {
         ref={ref}
         value={selectedValue}
         onChange={handleChange}
-        // defaultValue="unknow"
+        defaultValue="unknow"
         {...rest}>
-        <option value="" disabled>
-          {t('customSelect.placeholder')}
-        </option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {t(option.label)}

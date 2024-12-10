@@ -33,7 +33,7 @@
 }
 
 .q_descriptionAnimalPage label {
-  margin: 8px 0;  
+  margin: 8px 0;
 }
 .checkboxBox {
   display: flex;
@@ -47,5 +47,13 @@
 }
 
 .btnBox {
-margin-top: 28px;
+  margin-top: 28px;
+}
+
+.label {
+  align-self: start;
+}
+
+.requiredSymbol {
+  color: #2a9d8f;
 }
