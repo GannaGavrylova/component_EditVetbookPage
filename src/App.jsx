@@ -7,6 +7,7 @@ import {
   AllQuestionsPage,
   ChooseAnimalQuestionPage,
   CloseQuestionPage,
+  ChooseRolePage,
   DescriptionAnimalPage,
   DonatePage,
   MainPage,
@@ -18,6 +19,7 @@ import {
   AboutServicePage,
   AddMessagePage,
   CreateVetbookPage,
+  VisitsHistory,
 } from './pages'
 
 
@@ -43,6 +45,7 @@ export const App = () => {
           <Route path="/profile/my-questions/:questionId" element={<ViewQuestionPage />} />
           <Route path="/profile/my-questions/:questionId/add-message" element={<AddMessagePage />} />
           <Route path="/profile/my-questions/:questionId/close-question" element={<CloseQuestionPage />} />
+          <Route path="/main/vetbooks/:vetbookId/visits-history" element={<VisitsHistory />} />
 
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/about" element={<AboutServicePage />} />
