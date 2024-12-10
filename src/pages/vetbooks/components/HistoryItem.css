@@ -1,0 +1,32 @@
+
+.history-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.history-item:hover {
+   transform: translateY(-0.5px);
+}
+
+.history-item .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-white);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-main);
+  font-size: 14px;
+  font-weight: 700;
+  width: 80px;
+  height: 40px;
+}
+
+.history-item .description {
+  color: var(--color-text-dark);
+  font-size: 14px;
+  padding-left: 10px;
+}
