@@ -155,7 +155,8 @@
     "vetDoctor": "Veterinar",
     "cynologist": "Kinolog",
     "zooPsychologist": "Zoološki psiholog",
-    "phoneLogin": "Prijava putem telefona još nije implementirana"
+    "phoneLogin": "Prijava putem telefona još nije implementirana",
+    "invalidDataFormat": "Neispravan format podataka"
   },
   "formHeader": {
     "backButtonAlt": "Nazad",
@@ -366,10 +367,12 @@
     "strayAnimalsTitle": "Lutalice",
     "actionsButton": "Akcije",
     "additionalQuestion": "Dodatno pitanje",
+    "addDataToKeepInTouch": "Unesite dodatne podatke,\n kako biste ostali u kontaktu sa FreeVet-om\n i dobili pristup novim uslugama",
     "modalOptions": {
       "editProfile": "Izmeni profil",
       "preferences": "Preferencije"
     },
+    "saveChangesBtn": "Sačuvaj izmjene",
     "logOutButton": "Izlogujte se"
   },
 
@@ -496,5 +499,12 @@
   },
   "Modal_locales": {
     "addMessage": "Odgovori na pitanje"
+  },
+  "AllVetBooksPage": {
+    "title": "Ветеринарске књижице",
+    "notice": "Чини се да ваш љубимац још увек нема дигиталну ветеринарску књижицу :(",
+    "myAnimals": "Моје животиње",
+    "strayAnimals": "Луталице",
+    "createNewBook": "Направите нову књижицу"
   }
 }
