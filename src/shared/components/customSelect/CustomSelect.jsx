@@ -4,17 +4,9 @@ import s from './customSelect.module.css'
 
 export const CustomSelect = forwardRef((props, ref) => {
   const { t } = useTranslation()
-  const [selectedValue, setSelectedValue] = useState('unknown')
-  const { backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, optionsKey, errorMessage, showError, onChange, ...rest } = props
+  const [selectedValue, setSelectedValue] = useState(props.defaultValue || '')
+  const { options = [], backgroundColor, border, borderColor, borderRadius, padding, color, width, margin, errorMessage, showError, onChange, ...rest } = props
 
-  const options =
-    optionsKey === 'gender'
-      ? [
-          { value: 'male', label: t('customSelect.option.male') },
-          { value: 'female', label: t('customSelect.option.female') },
-          { value: 'unknown', label: t('customSelect.option.unknown') },
-        ]
-      : []
   const handleChange = (event) => {
     setSelectedValue(event.target.value)
     if (onChange) {
@@ -39,7 +31,6 @@ export const CustomSelect = forwardRef((props, ref) => {
         ref={ref}
         value={selectedValue}
         onChange={handleChange}
-        defaultValue="unknow"
         {...rest}>
         {options.map((option) => (
           <option key={option.value} value={option.value}>

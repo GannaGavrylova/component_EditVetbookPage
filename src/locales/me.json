@@ -72,12 +72,28 @@
   "customStickTitle": {
     "userText": "Korisnik"
   },
-  "customSelect": {
-    "placeholder": "izaberite pol",
+  "constants": {
     "option": {
       "male": "muški",
       "female": "ženski",
       "unknown": "nepoznato"
+    },
+    "selectAnimal": {
+      "fish": "Akvarijska ribica",
+      "hedgehog": "Jež",
+      "snake": "Zmija",
+      "cat": "Mačka",
+      "rabbit": "Zec",
+      "rat": "Pacov",
+      "guineaPig": "Zamorac",
+      "mouse": "Miš",
+      "bird": "Ptica",
+      "dog": "Pas",
+      "snail": "Puž",
+      "hamster": "Hrčak",
+      "turtle": "Kornjača",
+      "chinchilla": "Činčila",
+      "other": "Drugo"
     }
   },
   "errorMessages": {
@@ -186,7 +202,7 @@
     "title": "Postavite pitanje",
     "addMedia": "Dodajte fotografiju i (ili) video",
     "petArt": "Vrsta životinje",
-    "petWeight": "Približna težina životinje",
+    "petWeight": "Približna težina životinje (kg)",
     "petGender": "Pol životinje",
     "homelessCheckbox": "Životinja je bespomoćna",
     "continueButton": "Nastavi",
@@ -198,7 +214,9 @@
       },
       "petWeight": {
         "required": "Težina životinje je obavezna",
-        "minLength": "Minimalno 2 karaktera"
+        "minLength": "Minimalno 2 karaktera",
+        "invalidFormat": "Dozvoljeni format unosa < 1.5 >",
+        "permissibleWeight": "Težina mora biti veća od 0 kg i ne sme prelaziti 100 kg."
       },
       "petGender": {
         "required": "Pol životinje je obavezan",

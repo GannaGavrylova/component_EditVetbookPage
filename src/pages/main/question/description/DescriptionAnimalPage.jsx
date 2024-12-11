@@ -1,24 +1,27 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+// import { useTranslatedOptions } from './i18nOption'
 import { useForm } from 'react-hook-form'
 import { useMutation } from '@tanstack/react-query'
 import classes from './DescriptionAnimalPage.module.css'
 import close from '@/assets/close.svg'
 import { addQuestion } from '@shared/utils/apiService'
-import { FormHeader, LineHeader, FileUploader, CustomInput, CustomCheckbox, ErrorMessage, CustomButtonSubmit } from '@/shared/components'
-import { CustomSelect } from '@/shared/components/customSelect/CustomSelect'
+import { FormHeader, LineHeader, FileUploader, CustomInput, CustomCheckbox, CustomSelect, useTranslatedOptions, ErrorMessage, CustomButtonSubmit } from '@/shared/components'
 
 export const DescriptionAnimalPage = () => {
   const { t } = useTranslation()
+  const { genderOptions, animalTypeOptions } = useTranslatedOptions()
   const navigate = useNavigate()
   const userId = localStorage.getItem('userId')
   const [files, setFiles] = useState([])
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false)
+  const [isCustomAnimal, setIsCustomAnimal] = useState(false)
 
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors, isValid },
     watch,
   } = useForm({
@@ -77,14 +80,24 @@ export const DescriptionAnimalPage = () => {
       isHomeless: isCheckboxChecked,
       files,
     }
-
     mutate({ formData, submissionData })
   }
 
   const handleHomelessChange = (e) => {
     setIsCheckboxChecked(e.target.checked)
   }
+  const handleAnimalChange = (event) => {
+    const selectedValue = event.target.value
+    if (selectedValue === 'other') {
+      setIsCustomAnimal(true)
+      setValue('petArt', '')
+    } else {
+      setIsCustomAnimal(false)
+      setValue('petArt', selectedValue)
+    }
 
+    setIsCustomAnimal(selectedValue === 'other')
+  }
   const petArt = watch('petArt')
   const petWeight = watch('petWeight')
   const petGender = watch('petGender')
@@ -93,11 +106,19 @@ export const DescriptionAnimalPage = () => {
 
   const validatePetWeight = (value, t) => {
     const normalizedValue = value.replace(',', '.')
-    console.log(normalizedValue)
+
     const isValidNumber = /^[0-9]+(\.[0-9]{1,3})?$/.test(normalizedValue)
 
-    return isValidNumber ? true : t('descriptionAnimalPage.validationMessages.petWeight.invalidFormat')
+    if (!isValidNumber) {
+      return t('descriptionAnimalPage.validationMessages.petWeight.invalidFormat')
+    }
+    const weight = parseFloat(normalizedValue)
+    if (weight <= 0 || weight > 100) {
+      return t('descriptionAnimalPage.validationMessages.petWeight.permissibleWeight')
+    }
+    return true
   }
+
   return (
     <div className={classes.q_descriptionAnimalPage}>
       <div className={classes.q_descriptionAnimalPage_header}>
@@ -114,19 +135,41 @@ export const DescriptionAnimalPage = () => {
           {t('descriptionAnimalPage.petArt')}
           <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
-        <CustomInput
-          {...register('petArt', {
-            required: t('descriptionAnimalPage.validationMessages.petArt.required'),
-            minLength: {
-              value: 2,
-              message: t('descriptionAnimalPage.validationMessages.petArt.minLength'),
-            },
-          })}
-          color={'var(--color-text-dark)'}
-          borderColor="var(--color-main)"
-          width={328}
-        />
-        {errors.petArt && <p style={{ color: 'red' }}>{errors.petArt.message}</p>}
+        {/* вид животного */}
+        {!isCustomAnimal ? (
+          <div>
+            <CustomSelect
+              {...register('petArt', {
+                required: t('descriptionAnimalPage.validationMessages.petArt.selectAnimal'),
+              })}
+              options={animalTypeOptions}
+              defaultValue="cat"
+              color={'var(--color-text-dark)'}
+              borderColor="var(--color-main)"
+              width={328}
+              onChange={handleAnimalChange}
+            />
+            {errors.petArt && <p style={{ color: 'red' }}>{error.petArt.message || t('descriptionAnimalPage.error.generic')}</p>}
+          </div>
+        ) : (
+          <div>
+            <CustomInput
+              {...register('petArt', {
+                required: t('descriptionAnimalPage.validationMessages.petArt.required'),
+
+                minLength: {
+                  value: 2,
+                  message: t('descriptionAnimalPage.validationMessages.petArt.minLength'),
+                },
+              })}
+              color={'var(--color-text-dark)'}
+              borderColor="var(--color-main)"
+              defaultValue=""
+              width={328}
+            />
+            {errors.petArt && <p style={{ color: 'red' }}>{errors.petArt.message || t('descriptionAnimalPage.error.generic')}</p>}
+          </div>
+        )}
         <label className={classes.label}>
           {t('descriptionAnimalPage.petWeight')} <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
@@ -145,13 +188,16 @@ export const DescriptionAnimalPage = () => {
         <label className={classes.label}>
           {t('descriptionAnimalPage.petGender')} <span className={classes.requiredSymbol}>{t('descriptionAnimalPage.requiredSymbol')}</span>
         </label>
+
         {/* пол животного  */}
+
         <CustomSelect
           padding={'10px'}
           {...register('petGender', {
             required: t('descriptionAnimalPage.validationMessages.petGender.required'),
           })}
-          optionsKey="gender"
+          options={genderOptions}
+          defaultValue="unknown"
           color={'var(--color-text-dark)'}
           borderColor="var(--color-main)"
           width={153}

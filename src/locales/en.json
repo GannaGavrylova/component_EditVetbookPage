@@ -72,12 +72,28 @@
   "customStickTitle": {
     "userText": "User"
   },
-  "customSelect": {
-    "placeholder": "select gender",
+  "constants": {
     "option": {
       "male": "male",
       "female": "female",
       "unknown": "unknown"
+    },
+    "selectAnimal": {
+      "fish": "Aquarium fish",
+      "hedgehog": "Hedgehog",
+      "snake": "Snake",
+      "cat": "Cat",
+      "rabbit": "Rabbit",
+      "rat": "Rat",
+      "guineaPig": "Guinea pig",
+      "mouse": "Mouse",
+      "bird": "Bird",
+      "dog": "Dog",
+      "snail": "Snail",
+      "hamster": "Hamster",
+      "turtle": "Turtle",
+      "chinchilla": "Chinchilla",
+      "other": "Other"
     }
   },
   "errorMessages": {
@@ -186,7 +202,7 @@
     "title": "Ask a Question",
     "addMedia": "Add Photos and/or Videos",
     "petArt": "Animal Type",
-    "petWeight": "Approximate Animal Weight, kg",
+    "petWeight": "Approximate Animal Weight (kg)",
     "petGender": "Animal Gender",
     "homelessCheckbox": "The animal is homeless",
     "continueButton": "Continue",
@@ -198,7 +214,9 @@
       },
       "petWeight": {
         "required": "Animal weight is required",
-        "minLength": "Minimum 2 characters"
+        "minLength": "Minimum 2 characters",
+        "invalidFormat": "Valid input format < 1.5 >",
+        "permissibleWeight": "Weight must be greater than 0 kg and not exceed 100 kg."
       },
       "petGender": {
         "required": "Animal gender is required",

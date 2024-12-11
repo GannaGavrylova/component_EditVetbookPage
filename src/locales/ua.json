@@ -72,12 +72,28 @@
   "customStickTitle": {
     "userText": "Користувач"
   },
-  "customSelect": {
-    "placeholder": "виберіть стать",
+  "constants": {
     "option": {
       "male": "чоловічий",
       "female": "жіночий",
       "unknown": "невідомо"
+    },
+    "selectAnimal": {
+      "fish": "Акваріумна рибка",
+      "hedgehog": "Їжак",
+      "snake": "Змія",
+      "cat": "Кіт/Кішка",
+      "rabbit": "Кролик",
+      "rat": "Щур",
+      "guineaPig": "Морська свинка",
+      "mouse": "Миша",
+      "bird": "Птах",
+      "dog": "Собака",
+      "snail": "Равлик",
+      "hamster": "Хом’як",
+      "turtle": "Черепаха",
+      "chinchilla": "Шиншила",
+      "other": "Інше"
     }
   },
   "errorMessages": {
@@ -186,7 +202,7 @@
     "title": "Задати питання",
     "addMedia": "Додайте фото та (або) відео",
     "petArt": "Вид тварини",
-    "petWeight": "Приблизна вага тварини",
+    "petWeight": "Приблизна вага тварини (kg)",
     "petGender": "Стать тварини",
     "homelessCheckbox": "Тварина є бездомною",
     "continueButton": "Продовжити",
@@ -198,7 +214,9 @@
       },
       "petWeight": {
         "required": "Вага тварини обов'язкова",
-        "minLength": "Мінімум 2 символи"
+        "minLength": "Мінімум 2 символи",
+        "invalidFormat": "Допустимий формат вводу < 1.5 >",
+        "permissibleWeight": "Вага повинна бути більше 0 кг і не перевищувати 100 кг."
       },
       "petGender": {
         "required": "Стать тварини обов'язкова",
