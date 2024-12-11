@@ -3,12 +3,7 @@ import leftArrow from '@/assets/left-arrow.svg'
 import s from './formHeader.module.css'
 import { Link } from 'react-router-dom'
 
-export const FormHeader = ({
-  path,
-  titleKey,
-  headerPadding = '0',
-  fontSize,
-}) => {
+export const FormHeader = ({ path, titleKey, headerPadding = '0', fontSize }) => {
   const { t } = useTranslation()
 
   return (
@@ -18,9 +13,7 @@ export const FormHeader = ({
           <img src={leftArrow} alt={t('formHeader.backButtonAlt')} />
         </Link>
       )}
-      <h2 style={{ padding: headerPadding, fontSize: fontSize || '22px' }}>
-        {t(titleKey)}
-      </h2>
+      <h2 style={{ padding: headerPadding, fontSize: fontSize || '22px' }}>{t(titleKey)}</h2>
     </div>
   )
 }

@@ -154,7 +154,8 @@
     "vetDoctor": "Veterinar",
     "cynologist": "Kinolog",
     "zooPsychologist": "Zoo psiholog",
-    "phoneLogin": "Prijava putem telefona još nije implementirana"
+    "phoneLogin": "Prijava putem telefona još nije implementirana",
+    "invalidDataFormat": "Neispravan format podataka"
   },
   "formHeader": {
     "backButtonAlt": "Nazad",
@@ -365,10 +366,12 @@
     "strayAnimalsTitle": "Lutalice",
     "actionsButton": "Akcije",
     "additionalQuestion": "Dodatno pitanje",
+    "addDataToKeepInTouch": "Unesite dodatne podatke,\n kako biste ostali u kontaktu sa FreeVet-om \n i dobili pristup novim uslugama",
     "modalOptions": {
       "editProfile": "Uredi profil",
       "preferences": "Preferencije"
     },
+    "saveChangesBtn": "Sačuvaj izmjene",
     "logOutButton": "Odjaviti se"
   },
 

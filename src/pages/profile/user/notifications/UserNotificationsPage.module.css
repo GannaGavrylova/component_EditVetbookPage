@@ -1,0 +1,15 @@
+.userNotificationsPage {
+  padding: 30px 10px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.switchNotifications {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 24px;
+
+  font-size: 20px;
+}
