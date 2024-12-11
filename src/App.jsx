@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
 
-import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, EditSpecialistPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage } from './pages'
+import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage } from './pages'
 
 export const App = () => {
   return (
@@ -21,6 +21,9 @@ export const App = () => {
           <Route path="/main/vetbooks/create" element={<CreateVetbookPage />} />
 
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="/profile/edit" element={<EditProfilePage />} />
+          <Route path="/profile/settings" element={<ProfileSettingsPage />} />
+          <Route path="/profile/settings/notifications" element={<UserNotificationsPage />} />
           <Route path="/profile/my-questions" element={<AllQuestionsPage />} />
           <Route path="/profile/my-questions/:questionId" element={<ViewQuestionPage />} />
           <Route path="/profile/my-questions/:questionId/add-message" element={<AddMessagePage />} />

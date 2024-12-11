@@ -1,0 +1,31 @@
+.toggler {
+  width: 51px;
+  height: 31px;
+  background-color: var(--color-toggler-bg-grey);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggler.on {
+  background-color: var(--color-main);
+}
+
+.innerToggler {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggler.off .innerToggler {
+  transform: translateX(0);
+}
+
+.toggler.on .innerToggler {
+  transform: translateX(20px);
+}
