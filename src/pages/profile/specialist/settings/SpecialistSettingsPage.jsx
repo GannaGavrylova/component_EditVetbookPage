@@ -9,7 +9,7 @@ export const SpecialistSettingsPage = () => {
     <div className={classes.specialistSettingsPage}>
       <PageHeader pathArrow={'/profile'} pathClose={'/profile'} titleKey={t('burgerMenu.settings')} />
 
-      <Link to={'/profile/settings/notifications'}>
+      <Link to={'/specialist-profile/settings/notifications'}>
         <div className={classes.linkContainer}>
           <p>{t('settings.notifications')}</p>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
