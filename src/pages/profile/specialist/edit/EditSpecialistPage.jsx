@@ -70,8 +70,6 @@ export const EditSpecialistPage = () => {
 
         <CustomButtonSubmit text={t('userPage.saveChangesBtn')} onClick={handleSubmit(submitForm)} />
       </form>
-
-      <p>Profile specialist</p>
     </div>
   )
 }
