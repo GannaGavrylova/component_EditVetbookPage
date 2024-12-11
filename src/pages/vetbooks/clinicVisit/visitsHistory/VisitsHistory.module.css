@@ -1,23 +1,21 @@
-.visits-history {
-  max-width: 375px;
+.visitsHistory {
   margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Контейнер занимает всю высоту экрана */
+  min-height: 100svh; /* Контейнер занимает всю высоту экрана */
   box-sizing: border-box; /* Учитываем padding */
 }
-.visits-list {
+.visitsList {
   flex-grow: 1; /* Список занимает всё оставшееся пространство */
   overflow-y: auto; /* Прокрутка, если список длинный */
   margin-bottom: 20px; /* Отступ перед кнопкой */
- scrollbar-width: none;
+  scrollbar-width: none;
 }
-.visits-list::-webkit-scrollbar {
+.visitsList::-webkit-scrollbar {
   display: none; /* Для Webkit (Chrome, Safari, Edge) */
 }
-.add-button-wrapper {
+.addButtonWrapper {
   flex-shrink: 0; /* Кнопка не сжимается */
   padding-top: 10px;
-  background-color: white; /* Фон, чтобы кнопка перекрывала список */
 }
