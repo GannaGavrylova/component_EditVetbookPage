@@ -463,5 +463,12 @@
   },
   "Modal_locales": {
     "addMessage": "Répondre à la question"
+  },
+  "AllVetBooksPage": {
+    "title": "Carnets vétérinaires",
+    "notice": "Il semble que votre animal n'ait pas encore de carnet vétérinaire numérique :(",
+    "myAnimals": "Mes animaux",
+    "strayAnimals": "Animaux errants",
+    "createNewBook": "Créer un nouveau carnet"
   }
 }

@@ -499,5 +499,12 @@
   },
   "Modal_locales": {
     "addMessage": "Odgovori na pitanje"
+  },
+  "AllVetBooksPage": {
+    "title": "Ветеринарске књижице",
+    "notice": "Чини се да ваш љубимац још увек нема дигиталну ветеринарску књижицу :(",
+    "myAnimals": "Моје животиње",
+    "strayAnimals": "Луталице",
+    "createNewBook": "Направите нову књижицу"
   }
 }

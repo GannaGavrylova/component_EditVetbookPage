@@ -498,5 +498,12 @@
   },
   "Modal_locales": {
     "addMessage": "Odgovori na pitanje"
+  },
+  "AllVetBooksPage": {
+    "title": "Veterinarske knjižice",
+    "notice": "Izgleda da vaš ljubimac još nema digitalnu veterinarsku knjižicu :(",
+    "myAnimals": "Moje životinje",
+    "strayAnimals": "Napustene životinje",
+    "createNewBook": "Kreiraj novu knjižicu"
   }
 }

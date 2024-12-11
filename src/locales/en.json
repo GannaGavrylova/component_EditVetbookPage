@@ -493,5 +493,13 @@
     "closeAnswer": "End Question",
     "bac": "Back"
   },
-  "Modal_locales": { "addMessage": "Answer Question" }
+  "Modal_locales": { "addMessage": "Answer Question" },
+
+  "AllVetBooksPage": {
+    "title": "Veterinary Books",
+    "notice": "It seems your pet doesn't have a digital veterinary book yet :(",
+    "myAnimals": "My Animals",
+    "strayAnimals": "Stray Animals",
+    "createNewBook": "Create New Book"
+  }
 }
