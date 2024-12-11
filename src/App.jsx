@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
 
-import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage, EditSpecialistPage } from './pages'
+import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage, EditSpecialistPage, SpecialistSettingsPage } from './pages'
 
 export const App = () => {
   return (
@@ -29,7 +29,7 @@ export const App = () => {
           <Route path="/profile/my-questions/:questionId/add-message" element={<AddMessagePage />} />
           <Route path="/profile/my-questions/:questionId/close-question" element={<CloseQuestionPage />} />
           <Route path="/specialist-profile/edit" element={<EditSpecialistPage />} />
-
+          <Route path="/specialist-profile/settings" element={<SpecialistSettingsPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/about" element={<AboutServicePage />} />
 
