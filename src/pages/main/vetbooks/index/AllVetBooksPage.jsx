@@ -42,10 +42,10 @@ export const AllVetBooksPage = () => {
       id: 1,
       photo: 'https://cdn.pixabay.com/photo/2022/09/06/07/49/cat-7436051_1280.jpg',
       name: 'Барсик',
-      kindOfAnimal: t('cat'),
+      kindOfAnimal: 'cat',
       weight: '5 кг',
-      gender: t('male'),
-      doctorNotes: t('Recommended examination in 2 weeks'),
+      gender: 'male',
+      doctorNotes: 'Recommended examination in 2 weeks',
     },
   ]
 
