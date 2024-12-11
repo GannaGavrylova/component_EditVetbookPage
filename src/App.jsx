@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
 
-import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage, EditSpecialistPage, SpecialistSettingsPage, SpecialistNotificationsPage } from './pages'
+import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage, EditSpecialistPage, SpecialistSettingsPage, SpecialistNotificationsPage, VisitsHistory, AllVetBooksPage } from './pages'
 
 export const App = () => {
   return (
@@ -18,8 +18,9 @@ export const App = () => {
           <Route path="/main/ask-question/new-animal/add-question-photo" element={<DescriptionAnimalPage />} />
           <Route path="/main/ask-question/question-text" element={<SendTextQuestionPage />} />
           <Route path="/main/ask-question/new-animal/question-saved" element={<ViewSavedQuestion />} />
-          <Route path="/main/vetbooks" element={<AllVetBooksPage/>}/>
+          <Route path="/main/vetbooks" element={<AllVetBooksPage />} />
           <Route path="/main/vetbooks/create" element={<CreateVetbookPage />} />
+          <Route path="/main/vetbooks/:vetbookId/visits-history" element={<VisitsHistory />} />
 
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/profile/edit" element={<EditProfilePage />} />

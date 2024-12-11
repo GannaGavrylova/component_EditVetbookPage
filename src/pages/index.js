@@ -22,3 +22,4 @@ export { EditSpecialistPage } from './profile/specialist/edit/EditSpecialistPage
 export { SpecialistSettingsPage } from './profile/specialist/settings/SpecialistSettingsPage'
 export { SpecialistNotificationsPage } from './profile/specialist/notifications/SpecialistNotificationsPage'
 export { AllVetBooksPage} from './main/vetbooks/index/AllVetBooksPage'
+export { VisitsHistory } from './vetbooks/clinicVisit/visitsHistory/VisitsHistory'
