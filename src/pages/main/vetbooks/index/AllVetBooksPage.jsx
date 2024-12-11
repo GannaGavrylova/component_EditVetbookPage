@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next'
 
 import { CustomButton, PageHeader } from '@shared/components'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import classes from './AllVetBooksPage.module.css'
-import heartGreen from '../../../../assets/vetBooks/heartGreen.png'
-import heartOrange from '../../../../assets/vetBooks/heartOrange.png'
+import heartGreen from '@/assets/vetBooks/heartGreen.png'
+import heartOrange from '@/assets/vetBooks/heartOrange.png'
+import { VetBookItem } from '../components/vetBookItem/VetBookItem'
 
 export const AllVetBooksPage = () => {
   const navigate = useNavigate()
@@ -19,21 +20,21 @@ export const AllVetBooksPage = () => {
       id: 1,
       photo: 'https://cdn.pixabay.com/photo/2022/09/06/07/49/cat-7436051_1280.jpg',
       name: 'Барсик',
-      kindOfAnimal: t('cat'),
+      kindOfAnimal: 'cat',
       weight: '5 кг',
-      gender: t('male'),
-      doctorNotes: t('Recommended examination in 2 weeks'),
+      gender: 'male',
+      doctorNotes: 'Recommended examination in 2 weeks',
     },
     {
       id: 2,
       photo: 'https://cdn.pixabay.com/photo/2018/06/28/14/12/cat-3504008_1280.jpg',
       name: 'Мурка',
-      kindOfAnimal: t('cat'),
+      kindOfAnimal: 'cat',
       weight: '4 кг',
-      gender: t('female'),
-      doctorNotes: t('Vaccination required'),
+      gender: 'female',
+      doctorNotes: 'Vaccination required',
     },
-    { id: 3, photo: 'https://cdn.pixabay.com/photo/2018/03/27/17/25/cat-3266673_640.jpg', name: 'Мурка', kindOfAnimal: t('кошка'), weight: '4 кг', gender: t('Самка'), doctorNotes: t('Необходима вакцинация') },
+    { id: 3, photo: 'https://cdn.pixabay.com/photo/2018/03/27/17/25/cat-3266673_640.jpg', name: 'Мурка', kindOfAnimal: 'кошка', weight: '4 кг', gender: 'Самка', doctorNotes: 'Необходима вакцинация' },
   ]
 
   const mockAnimalsStray = [
@@ -53,7 +54,7 @@ export const AllVetBooksPage = () => {
   return (
     <section className={classes.section}>
       <div className={classes.header}>
-        <PageHeader titleKey={t('AllVetBooksPage.title')} pathArrow="/main" pathClose="/main" />
+        <PageHeader titleKey={t('AllVetBooksPage.title')} pathArrow="/main" pathClose="/main" showClose={false} />
       </div>
 
       {hasNoAnimals ? (
@@ -65,30 +66,9 @@ export const AllVetBooksPage = () => {
             <img src={heartGreen} alt="heartGreen" />
           </div>
 
-          <div className={classes.animalList}>
+          <div>
             {mockAnimals.map((animal) => (
-              <Link key={animal.id} to={`/main/vetbooks/${animal.id}`} className={classes.animalCardLink}>
-                <div className={classes.animalCard}>
-                  <div>
-                    <img src={animal.photo} alt={animal.name} className={classes.photo} />
-                  </div>
-                  <div className={classes.informationBlock}>
-                    <div>
-                      <div className={classes.nameBlock}>
-                        <h2>{animal.name}</h2>
-                      </div>
-                      <div className={classes.personalData}>
-                        <p>{animal.kindOfAnimal}</p>
-                        <p>{animal.weight}</p>
-                        <p>{animal.gender}</p>
-                      </div>
-                    </div>
-                    <div className={classes.orangeBox}>
-                      <p>{animal.doctorNotes}</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <VetBookItem key={animal.id} animal={animal} />
             ))}
           </div>
 
@@ -97,35 +77,13 @@ export const AllVetBooksPage = () => {
             <img src={heartOrange} alt="heartOrange" />
           </div>
 
-          <div className={classes.animalListStray}>
+          <div>
             {mockAnimalsStray.map((animal) => (
-              <Link key={animal.id} to={`/main/vetbooks/${animal.id}`} className={classes.animalCardLink}>
-                <div className={classes.animalCard}>
-                  <div>
-                    <img src={animal.photo} alt={animal.name} className={classes.photo} />
-                  </div>
-                  <div className={classes.informationBlock}>
-                    <div>
-                      <div className={classes.nameBlock}>
-                        <h2>{animal.name}</h2>
-                      </div>
-                      <div className={classes.personalData}>
-                        <p>{animal.kindOfAnimal}</p>
-                        <p>{animal.weight}</p>
-                        <p>{animal.gender}</p>
-                      </div>
-                    </div>
-                    <div className={classes.orangeBox}>
-                      <p>{animal.doctorNotes}</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <VetBookItem key={animal.id} animal={animal} />
             ))}
           </div>
         </>
       )}
-
       <div className={classes.buttonContainer}>
         <CustomButton text={t('AllVetBooksPage.createNewBook')} onClick={handleButtonClick} />
       </div>
