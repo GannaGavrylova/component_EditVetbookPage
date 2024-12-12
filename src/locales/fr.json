@@ -72,6 +72,30 @@
   "customStickTitle": {
     "userText": "Utilisateur"
   },
+  "constants": {
+    "option": {
+      "male": "masculin",
+      "female": "féminin",
+      "unknown": "inconnu"
+    },
+    "selectAnimal": {
+      "fish": "Poisson d'aquarium",
+      "hedgehog": "Hérisson",
+      "snake": "Serpent",
+      "cat": "Chat",
+      "rabbit": "Lapin",
+      "rat": "Rat",
+      "guineaPig": "Cochon d'Inde",
+      "mouse": "Souris",
+      "bird": "Oiseau",
+      "dog": "Chien",
+      "snail": "Escargot",
+      "hamster": "Hamster",
+      "turtle": "Tortue",
+      "chinchilla": "Chinchilla",
+      "other": "Autre"
+    }
+  },
   "errorMessages": {
     "fetchError": "Erreur de chargement des données depuis le serveur",
     "formSendError": "Erreur lors de l'envoi du formulaire. Veuillez réessayer."
@@ -179,7 +203,7 @@
     "title": "Poser une question",
     "addMedia": "Ajoutez une photo et/ou une vidéo",
     "petArt": "Type d'animal",
-    "petWeight": "Poids approximatif de l'animal",
+    "petWeight": "Poids approximatif de l'animal (kg)",
     "petGender": "Sexe de l'animal",
     "homelessCheckbox": "L'animal est sans abri",
     "continueButton": "Continuer",
@@ -191,7 +215,9 @@
       },
       "petWeight": {
         "required": "Le poids de l'animal est obligatoire",
-        "minLength": "Au moins 2 caractères"
+        "minLength": "Au moins 2 caractères",
+        "invalidFormat": "Format d'entrée valide < 1.5 >",
+        "permissibleWeight": "Le poids doit être supérieur à 0 kg et ne doit pas dépasser 100 kg."
       },
       "petGender": {
         "required": "Le sexe de l'animal est obligatoire",
