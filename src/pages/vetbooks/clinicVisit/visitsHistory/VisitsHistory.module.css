@@ -1,0 +1,21 @@
+.visitsHistory {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh; /* Контейнер занимает всю высоту экрана */
+  box-sizing: border-box; /* Учитываем padding */
+}
+.visitsList {
+  flex-grow: 1; /* Список занимает всё оставшееся пространство */
+  overflow-y: auto; /* Прокрутка, если список длинный */
+  margin-bottom: 20px; /* Отступ перед кнопкой */
+  scrollbar-width: none;
+}
+.visitsList::-webkit-scrollbar {
+  display: none; /* Для Webkit (Chrome, Safari, Edge) */
+}
+.addButtonWrapper {
+  flex-shrink: 0; /* Кнопка не сжимается */
+  padding-top: 10px;
+}

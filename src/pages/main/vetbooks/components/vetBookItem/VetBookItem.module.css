@@ -1,0 +1,66 @@
+.animalCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  gap: 7px;
+  margin-bottom: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.animalCard:hover {
+  transform: scale(1.05) translate(1px, 1px);
+}
+
+.informationBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 106px;
+}
+
+.nameBlock h2 {
+  color: var(--color-text-dark);
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.personalData {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.orangeBox {
+  background-color: var(--color-orange);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  white-space: nowrap;
+  height: 26px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+}
+.photo {
+  width: 104px;
+  height: 104px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.orangeBox p {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

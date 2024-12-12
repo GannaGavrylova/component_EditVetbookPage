@@ -178,7 +178,8 @@
     "vetDoctor": "Veterinarian",
     "cynologist": "Cynologist",
     "zooPsychologist": "Zoo Psychologist",
-    "phoneLogin": "Phone login is not yet implemented"
+    "phoneLogin": "Phone login is not yet implemented",
+    "invalidDataFormat": "Invalid data format"
   },
   "formHeader": {
     "backButtonAlt": "Back",
@@ -390,10 +391,12 @@
     "actionsButton": "Actions",
     "selectedQuestions": "Selected Questions",
     "additionalQuestion": "Additional question",
+    "addDataToKeepInTouch": "Provide additional information,\n to stay connected with FreeVet \n and access new services",
     "modalOptions": {
       "editProfile": "Edit Profile",
       "preferences": "Preferences"
     },
+    "saveChangesBtn": "Save changes",
     "logOutButton": "Log Out"
   },
   "DonatePage": {
@@ -516,5 +519,13 @@
     "closeAnswer": "End Question",
     "bac": "Back"
   },
-  "Modal_locales": { "addMessage": "Answer Question" }
+  "Modal_locales": { "addMessage": "Answer Question" },
+
+  "AllVetBooksPage": {
+    "title": "Veterinary Books",
+    "notice": "It seems your pet doesn't have a digital veterinary book yet :(",
+    "myAnimals": "My Animals",
+    "strayAnimals": "Stray Animals",
+    "createNewBook": "Create New Book"
+  }
 }

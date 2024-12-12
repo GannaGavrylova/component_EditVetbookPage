@@ -178,7 +178,8 @@
     "vetDoctor": "Vétérinaire",
     "cynologist": "Cynologue",
     "zooPsychologist": "Psychologue animalier",
-    "phoneLogin": "La connexion par téléphone n'est pas encore disponible"
+    "phoneLogin": "La connexion par téléphone n'est pas encore disponible",
+    "invalidDataFormat": "Format de données invalide"
   },
   "formHeader": {
     "backButtonAlt": "Retour",
@@ -391,10 +392,12 @@
     "strayAnimalsTitle": "Animaux errants",
     "actionsButton": "Actions",
     "additionalQuestion": "Question supplémentaire",
+    "addDataToKeepInTouch": "Fournissez des informations supplémentaires,\n pour rester en contact avec FreeVet\n et accéder à de nouveaux services",
     "modalOptions": {
       "editProfile": "Éditer le profil",
       "preferences": "Préférences"
     },
+    "saveChangesBtn": "Enregistrer les modifications",
     "logOutButton": "Se déconnecter"
   },
 
@@ -486,5 +489,12 @@
   },
   "Modal_locales": {
     "addMessage": "Répondre à la question"
+  },
+  "AllVetBooksPage": {
+    "title": "Carnets vétérinaires",
+    "notice": "Il semble que votre animal n'ait pas encore de carnet vétérinaire numérique :(",
+    "myAnimals": "Mes animaux",
+    "strayAnimals": "Animaux errants",
+    "createNewBook": "Créer un nouveau carnet"
   }
 }

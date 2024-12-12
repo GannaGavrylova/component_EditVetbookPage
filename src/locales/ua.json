@@ -178,7 +178,8 @@
     "vetDoctor": "Ветеринар",
     "cynologist": "Кінолог",
     "zooPsychologist": "Зоопсихолог",
-    "phoneLogin": "Вхід за телефоном ще не реалізовано"
+    "phoneLogin": "Вхід за телефоном ще не реалізовано",
+    "invalidDataFormat": "Невірний формат даних"
   },
   "formHeader": {
     "backButtonAlt": "Назад",
@@ -389,10 +390,12 @@
     "strayAnimalsTitle": "Безпритульні тварини",
     "actionsButton": "Дії",
     "additionalQuestion": "Додаткове питання",
+    "addDataToKeepInTouch": "Вкажіть додаткові дані,\n щоб завжди залишатися на зв’язку з FreeVet\n та отримати доступ до нових сервісів",
     "modalOptions": {
       "editProfile": "Редагувати профіль",
       "preferences": "Уподобання"
     },
+    "saveChangesBtn": "Зберегти зміни",
     "logOutButton": "Вийти"
   },
   "DonatePage": {
@@ -517,5 +520,12 @@
   },
   "Modal_locales": {
     "addMessage": "Відповісти на запитання"
+  },
+  "AllVetBooksPage": {
+    "title": "Ветеринарні книжки",
+    "notice": "Схоже, що у Вашого улюбленця ще немає цифрової ветеринарної книжки :(",
+    "myAnimals": "Мої тварини",
+    "strayAnimals": "Безпритульні тварини",
+    "createNewBook": "Створити нову книжку"
   }
 }
