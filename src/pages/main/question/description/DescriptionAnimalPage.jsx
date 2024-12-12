@@ -1,18 +1,17 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-// import { useTranslatedOptions } from './i18nOption'
 import { useForm } from 'react-hook-form'
-import { useMutation } from '@tanstack/react-query'
 import classes from './DescriptionAnimalPage.module.css'
+// import { useMutation } from '@tanstack/react-query'
+// import { addQuestion } from '@shared/utils/apiService'
 import close from '@/assets/close.svg'
-import { addQuestion } from '@shared/utils/apiService'
-import { FormHeader, LineHeader, FileUploader, CustomInput, CustomCheckbox, CustomSelect, useTranslatedOptions, ErrorMessage, CustomButtonSubmit } from '@/shared/components'
+import { FormHeader, LineHeader, FileUploader, CustomInput, CustomCheckbox, CustomSelect, useTranslatedOptions, CustomButtonSubmit } from '@/shared/components'
 
 export const DescriptionAnimalPage = () => {
   const { t } = useTranslation()
   const { genderOptions, animalTypeOptions } = useTranslatedOptions()
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   const userId = localStorage.getItem('userId')
   const [files, setFiles] = useState([])
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false)
@@ -28,17 +27,17 @@ export const DescriptionAnimalPage = () => {
     mode: 'onChange',
   })
 
-  const { mutate, isLoading, error } = useMutation({
-    mutationFn: async ({ formData }) => await addQuestion(formData),
-    onSuccess: (_response, variables) => {
-      navigate('/main/ask-question/question-text', {
-        state: { ...variables.submissionData },
-      })
-    },
-    onError: (error) => {
-      console.error('Error submitting form:', error)
-    },
-  })
+  // const { mutate, isLoading, error } = useMutation({
+  //   mutationFn: async ({ formData }) => await addQuestion(formData),
+  //   onSuccess: (_response, variables) => {
+  //     navigate('/main/ask-question/question-text', {
+  //       state: { ...variables.submissionData },
+  //     })
+  //   },
+  //   onError: (error) => {
+  //     console.error('Error submitting form:', error)
+  //   },
+  // })
 
   const onUpload = useCallback(
     (uploadedFiles) => {
@@ -75,12 +74,12 @@ export const DescriptionAnimalPage = () => {
     const submissionData = {
       userId,
       petArt: data.petArt,
-      petWeight: data.petWeight,
+      petWeight: data.petWevalueight,
       petGender: data.petGender,
       isHomeless: isCheckboxChecked,
       files,
     }
-    mutate({ formData, submissionData })
+    console.log({ formData, submissionData })
   }
 
   const handleHomelessChange = (e) => {
@@ -143,13 +142,14 @@ export const DescriptionAnimalPage = () => {
                 required: t('descriptionAnimalPage.validationMessages.petArt.selectAnimal'),
               })}
               options={animalTypeOptions}
-              defaultValue="cat"
+              // defaultValue="cat"
               color={'var(--color-text-dark)'}
               borderColor="var(--color-main)"
               width={328}
               onChange={handleAnimalChange}
             />
-            {errors.petArt && <p style={{ color: 'red' }}>{error.petArt.message || t('descriptionAnimalPage.error.generic')}</p>}
+            {/* {errors.petArt && <p style={{ color: 'red' }}>
+            {error.petArt.message || t('descriptionAnimalPage.error.generic')}</p>} */}
           </div>
         ) : (
           <div>
@@ -206,13 +206,20 @@ export const DescriptionAnimalPage = () => {
         <span className={classes.checkboxBox}>
           <CustomCheckbox {...register('confirmation')} name="confirmation" onChange={handleHomelessChange} checked={isCheckboxChecked} /> <span>{t('descriptionAnimalPage.homelessCheckbox')}</span>
         </span>
-        {error && (
+        {/* {error && (
           <div className={classes.errorBox}>
             <ErrorMessage message={t('errorMessages.formSendError')} />
           </div>
-        )}
+        )} */}
         <div className={classes.btnBox}>
-          <CustomButtonSubmit text={t('descriptionAnimalPage.continueButton')} padding={'16px 120.5px'} disabled={!isFormValid || isLoading} />
+          <CustomButtonSubmit
+            text={t('descriptionAnimalPage.continueButton')}
+            padding={'16px 120.5px'}
+            disabled={
+              !isFormValid
+              // ||isLoading
+            }
+          />
         </div>
       </form>
     </div>
