@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  text-align: center;
+}
+
+.customFormHeader > .title {
+  max-width: 375px;
+}

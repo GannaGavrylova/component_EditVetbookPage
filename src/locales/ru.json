@@ -46,7 +46,8 @@
   },
   "customButton": {
     "submitText": "Отправить",
-    "disabledText": "Недоступно"
+    "disabledText": "Недоступно",
+    "save": "Сохранить"
   },
   "customButtonSubmit": {
     "submitText": "Отправить",
@@ -100,6 +101,9 @@
   "errorMessages": {
     "fetchError": "Ошибка загрузки данных с сервера",
     "formSendError": "Ошибка при отправке формы. Пожалуйста, попробуйте снова."
+  },
+  "editVetbook": {
+    "title": "Редактировать Ветпаспорт"
   },
   "fileUploader": {
     "uploadLimitError": "Вы можете загрузить до {{maxFiles}} файлов.",
@@ -158,6 +162,7 @@
     "petGender": "Пол животного",
     "vetBookDescription": "Ветеринарная книжка - это цифровая версия паспорта животного с полезными функциями, упрощающими процесс заботы"
   },
+
   "form": {
     "createAccount": "Создать аккаунт",
     "name": "Имя",

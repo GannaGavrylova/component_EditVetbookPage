@@ -4,17 +4,13 @@ import s from './formHeader.module.css'
 import { Link } from 'react-router-dom'
 import closeIcon from '@/assets/close.svg'
 
-const FormHeader = ({ backPath, closePath, titleKey, size = 'default' }) => {
+const FormHeader = ({ backPath, closePath, titleKey, size = 'default', className }) => {
   const { t } = useTranslation()
-
+  console.log(className)
   return (
-    <header className={s.formHeader}>
+    <header className={`${s.formHeader} ${className || ''}`}>
       {backPath && (
-        <Link
-          to={backPath}
-          className={s.backBtn}
-          aria-label={t('formHeader.backButtonAlt')}
-        >
+        <Link to={backPath} className={s.backBtn} aria-label={t('formHeader.backButtonAlt')}>
           <img src={leftArrow} alt="" />
         </Link>
       )}

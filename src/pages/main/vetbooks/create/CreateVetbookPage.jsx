@@ -16,9 +16,7 @@ export const CreateVetbookPage = () => {
       <div className={classes.createVetbookPage_header}>
         <FormHeader titleKey={t('createTitle')} closePath="/profile" />
       </div>
-      <p className={classes.createVetbookPage_description}>
-        {t('description')}
-      </p>
+      <p className={classes.createVetbookPage_description}>{t('description')}</p>
       <CreateVetbookForm {...formProps} />
     </div>
   )

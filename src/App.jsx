@@ -1,7 +1,34 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Layout } from '@/shared/layout/Layout'
 
-import { IndexPage, VerificationPage, AllQuestionsPage, ChooseAnimalQuestionPage, CloseQuestionPage, DescriptionAnimalPage, DonatePage, MainPage, SendTextQuestionPage, ViewQuestionPage, ViewSavedQuestion, NotFoundPage, UserProfilePage, EditProfilePage, UserNotificationsPage, ProfileSettingsPage, AboutServicePage, AddMessagePage, CreateVetbookPage, ChooseRolePage, EditSpecialistPage, SpecialistSettingsPage, SpecialistNotificationsPage, VisitsHistory, AllVetBooksPage } from './pages'
+import {
+  IndexPage,
+  VerificationPage,
+  AllQuestionsPage,
+  ChooseAnimalQuestionPage,
+  CloseQuestionPage,
+  DescriptionAnimalPage,
+  DonatePage,
+  MainPage,
+  SendTextQuestionPage,
+  ViewQuestionPage,
+  ViewSavedQuestion,
+  NotFoundPage,
+  UserProfilePage,
+  EditProfilePage,
+  UserNotificationsPage,
+  ProfileSettingsPage,
+  AboutServicePage,
+  AddMessagePage,
+  CreateVetbookPage,
+  ChooseRolePage,
+  EditSpecialistPage,
+  SpecialistSettingsPage,
+  SpecialistNotificationsPage,
+  VisitsHistory,
+  AllVetBooksPage,
+  EditVetbookPage,
+} from './pages'
 
 export const App = () => {
   return (
@@ -21,6 +48,7 @@ export const App = () => {
           <Route path="/main/vetbooks" element={<AllVetBooksPage />} />
           <Route path="/main/vetbooks/create" element={<CreateVetbookPage />} />
           <Route path="/main/vetbooks/:vetbookId/visits-history" element={<VisitsHistory />} />
+          <Route path="/main/vetbooks/:vetbookId/vetpass/edit" element={<EditVetbookPage />} />
 
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/profile/edit" element={<EditProfilePage />} />
