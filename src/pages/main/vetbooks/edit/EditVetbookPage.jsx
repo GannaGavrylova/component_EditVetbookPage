@@ -9,7 +9,7 @@ export const EditVetbookPage = () => {
   return (
     <div className={classes.container}>
       <div className={classes.header}>
-        <FormHeader titleKey={t('editVetbook.title')} closePath="/profile" className={classes.customFormHeader} />
+        <FormHeader titleKey={t('editVetbook.title')} maxWidth={345} closePath="/profile" classcustomTitleClass={classes.customFormHeader} />
       </div>
 
       <div className={classes.buttonContainer}>

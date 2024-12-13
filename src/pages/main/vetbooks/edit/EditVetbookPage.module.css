@@ -8,6 +8,6 @@
   text-align: center;
 }
 
-.customFormHeader > .title {
-  max-width: 375px;
+.customFormHeader > {
+  max-width: 100%;
 }
